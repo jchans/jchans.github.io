@@ -104,6 +104,108 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://jchans.github.io/2023/08/10/Learn-new-Next-js-Blog-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/the-cat-2023_200x200.jpg">
+      <meta itemprop="name" content="Hans Chiang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hans' Personal Log">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Hans' Personal Log">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/10/Learn-new-Next-js-Blog-01/" class="post-title-link" itemprop="url">學習 | 用 Next,js 建新的 Blog | 01</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-08-10 17:16:48 / Modified: 18:29:52" itemprop="dateCreated datePublished" datetime="2023-08-10T17:16:48+08:00">2023-08-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ToLearn/" itemprop="url" rel="index"><span itemprop="name">ToLearn</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>自學、或者說準備找新工作的事情又停擺了許久。總是該從什麼地方開始做點東西。打算用 Next.js ，參考<a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10291960"> EasonChang 「從零開始打造炫砲個人部落格」的這個系列文章</a>來做一個以前端乃至廣義的資訊相關的學習過程筆記用的 blog 。</p>
+<p>稍微記錄一些環境的版本：</p>
+<ul>
+<li>node v18.15.0</li>
+<li>npm 9.6.4</li>
+<li>nvm 0.39.3</li>
+</ul>
+<h2 id="建立-Next-js-專案">建立 Next.js 專案</h2>
+<p>教學使用 pnpm 這個套件管理器（我也跟著用看看吧），安裝方式：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+<p>建立 Next.js 專案：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm create next-app --typescript</span><br></pre></td></tr></table></figure>
+<p>建立專案中的選項備忘：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">專案名稱很老套地用： &quot;my-nextjs-blog&quot;</span><br><span class="line">ESLint, Yes</span><br><span class="line">Tailwind CSS, Yes</span><br><span class="line">`src/` directory, No</span><br><span class="line">App Router, Yes</span><br><span class="line">customize the default import alias, No</span><br></pre></td></tr></table></figure>
+<p>圖書館網路有點糟糕，第一次建專案的時候用圖書館的網路中間裝東西好像有東西沒裝好，用手機的熱點分享相對穩定的網路才把專案裝起來。</p>
+<h2 id="佈署到-Vercel">佈署到 Vercel</h2>
+<ol>
+<li>修改 <a target="_blank" rel="noopener" href="http://README.md">README.md</a> ，把預設產生的 <a target="_blank" rel="noopener" href="http://README.md">README.md</a> 改成 <a target="_blank" rel="noopener" href="http://README-default-backup.md">README-default-backup.md</a> 。</li>
+<li>將專案推送到 Github</li>
+<li>將專案佈署到<a target="_blank" rel="noopener" href="https://vercel.com/"> Vercel </a></li>
+</ol>
+<p>這裡基本上要做的只是把 Github 的專案 repo 導入到 Vercel ，一些權限設定之類。我有做一個小改變，專案的名稱在 Vercel 是叫做「 jchans-blog 」。因為覺得這樣還沒買網域名稱之前的網址看起來好看一點。</p>
+<p><a target="_blank" rel="noopener" href="https://jchans-blog.vercel.app/">https://jchans-blog.vercel.app/</a></p>
+<p>其實今天進度很少，但是自己的狀況沒有很好，今天的想法只是不管懂不懂，先動手弄點東西再說。只是把 Next.js 預設的頁面換掉，隨便寫幾個字，跟 Hello World 的概念差不多。但重要的是不要停在這裡。明天繼續吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://jchans.github.io/2023/08/01/memo-2023-08-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -913,93 +1015,9 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jchans.github.io/2023/01/20/memo-2023-01-20/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/the-cat-2023_200x200.jpg">
-      <meta itemprop="name" content="Hans Chiang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hans' Personal Log">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hans' Personal Log">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/01/20/memo-2023-01-20/" class="post-title-link" itemprop="url">memo 2023-01-20</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-01-20 21:33:31" itemprop="dateCreated datePublished" datetime="2023-01-20T21:33:31+08:00">2023-01-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-10 17:01:34" itemprop="dateModified" datetime="2023-04-10T17:01:34+08:00">2023-04-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/memo/" itemprop="url" rel="index"><span itemprop="name">memo</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>前幾天用 hexo 簡單裝了這個 blog (附註 1) ，主要是想讓自己有個地方可以重新開始寫 blog ，一個可以自己稱為「自己的地方」的地方。</p>
-<p>但是可能不太能拿這裡來當面試用的資料，只是自己想記錄一些過程。面試資料的話，之後再另外找地方整理吧。</p>
-<p>附註 1 ： hexo 的主題很多都已經沒有在維護了，想找一個簡潔一點的主題，那時候搜尋到石頭寫的這篇<a target="_blank" rel="noopener" href="https://isdaniel.github.io/hexo-blog-theme/">建立自己 Blog 系列(三) Hexo next theme 介紹</a>，還沒有完全照著設定做完，但至少先讓自己可以寫東西。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
 
 </div>
   </main>
