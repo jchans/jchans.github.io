@@ -1,5 +1,6 @@
 ---
-layout: layouts/layout.html
+title: My D&D 5e Notes
+tag: post
 ---
 
 ## WotC Designers

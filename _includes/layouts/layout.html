@@ -7,14 +7,14 @@ title: Hans' Stuff
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
+    <title>{{ title | default: "Hans' Notes"}}</title>
   </head>
   <body>
     <header>
-      <h1>{{ title }}</h1>
-      test this is layout from layouts/layout.html
+      <h1>{{ title | default: "Hans' Notes"}}</h1>
+
+      用 Eleventy (11ty) 重新整理一些資料
     </header>
-    layout.html
     <main>{{ content }}</main>
   </body>
 </html>

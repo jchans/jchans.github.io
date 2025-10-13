@@ -1,4 +1,7 @@
-# Post-1
+---
+title: Post Title, Post 1
+tag: post
+---
 
 ## Test
 
