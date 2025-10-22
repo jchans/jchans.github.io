@@ -17,11 +17,17 @@ title: Hans' Stuff
     <title>{{ title | default: "Hans' Notes"}}</title>
   </head>
   <body>
-    <header>
+    <div class="page-container">
       <h1>{{ title | default: "Hans' Notes"}}</h1>
 
-      用 Eleventy (11ty) 重新整理一些資料
-    </header>
-    <main>{{ content }}</main>
+      <div class="site-categories">
+        <div class="cat-item item-selected">
+          <a href="/">首頁</a>
+        </div>
+        <div class="cat-item item-disabled">TBD</div>
+      </div>
+
+      <main>{{ content }}</main>
+    </div>
   </body>
 </html>

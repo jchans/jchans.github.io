@@ -1,5 +1,6 @@
 ---
 title: Post Title, Post 1
+preview: "測試：寫一段預覽的文字，不要太長，摘要文章就好。"
 tag: post
 ---
 
