@@ -1,6 +1,6 @@
 ---
 title: My D&D 5e Notes
-tag: post
+tag: 
 ---
 
 ## WotC Designers

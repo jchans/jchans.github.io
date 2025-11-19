@@ -2,11 +2,9 @@
 layout: layouts/layout.html
 ---
 
-## 首頁 memo
+{% for post in collections.post reversed %}
 
-重新整理中
+<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+<p>{{ post.data.preview }}</p>
 
-## 寫作中
-
-TBD
-
+{% endfor %}

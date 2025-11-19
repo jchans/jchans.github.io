@@ -57,6 +57,28 @@ p {
   text-align: justify;
 }
 
+pre {
+  padding: 1rem;
+  color: lightgreen;
+  background: #333333;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1rem;
+  background: #dddddd;
+}
+blockquote,
+p {
+  margin-top: 1rem;
+}
+blockquote p:first-child {
+  margin-top: 0;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .page-container {
   width: 800px;
   padding: 2rem;

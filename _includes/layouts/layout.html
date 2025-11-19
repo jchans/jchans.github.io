@@ -21,10 +21,13 @@ title: Hans' Stuff
       <h1>{{ title | default: "Hans' Notes"}}</h1>
 
       <div class="site-categories">
-        <div class="cat-item item-selected">
+        <!-- <div class="cat-item item-selected"> -->
+        <div class="cat-item">
           <a href="/">首頁</a>
         </div>
-        <div class="cat-item item-disabled">TBD</div>
+        <div class="cat-item">
+          <a href="/site-management/memo/">備忘</a>
+        </div>
       </div>
 
       <main>{{ content }}</main>
