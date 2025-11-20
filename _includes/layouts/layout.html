@@ -18,7 +18,7 @@ title: Hans' Stuff
   </head>
   <body>
     <div class="page-container">
-      <h1>{{ title | default: "Hans' Notes"}}</h1>
+      <h1>Hans' Notes</h1>
 
       <div class="site-categories">
         <!-- <div class="cat-item item-selected"> -->
@@ -30,7 +30,11 @@ title: Hans' Stuff
         </div>
       </div>
 
-      <main>{{ content }}</main>
+      <main>
+        {% if url == "/" %}
+        <h2>{{ title }}</h2>
+        {% endif %} {{ content }}
+      </main>
     </div>
   </body>
 </html>
