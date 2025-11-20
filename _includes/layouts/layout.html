@@ -18,8 +18,6 @@ title: Hans' Stuff
   </head>
   <body>
     <div class="page-container">
-      <h1>Hans' Notes</h1>
-
       <div class="site-categories">
         <!-- <div class="cat-item item-selected"> -->
         <div class="cat-item">
@@ -29,12 +27,10 @@ title: Hans' Stuff
           <a href="/site-management/memo/">備忘</a>
         </div>
       </div>
-
-      <main>
-        {% if url == "/" %}
-        <h2>{{ title }}</h2>
-        {% endif %} {{ content }}
-      </main>
+      <h1>{{ title | default: "Hans' Notes"}}</h1>
+      <main>{{ content }}</main>
+      <hr />
+      <a href="{{ '/' | url }}">回首頁</a>
     </div>
   </body>
 </html>

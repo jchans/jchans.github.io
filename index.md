@@ -4,7 +4,7 @@ layout: layouts/layout.html
 
 {% for post in collections.post reversed %}
 
-<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-<p>{{ post.data.preview }}</p>
+<h2>{{ post.data.title }}</h2>
+<p>{{ post.data.preview }}<a href="{{ post.url }}">....（繼續閱讀）</a></p>
 
 {% endfor %}
