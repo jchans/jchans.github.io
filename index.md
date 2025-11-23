@@ -2,9 +2,18 @@
 layout: layouts/layout.html
 ---
 
+## 近期記事
+
 {% for post in collections.post reversed %}
 
-<h2>{{ post.data.title }}</h2>
-<p>{{ post.data.preview }}<a href="{{ post.url }}">....（繼續閱讀）</a></p>
+### {{ post.data.title }}
+
+{{ post.data.preview }}....[（繼續閱讀）]({{ post.url }})
 
 {% endfor %}
+
+---
+
+## 其他
+
+- [日期記事](/posts-journal/)
