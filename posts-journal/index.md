@@ -8,11 +8,7 @@ show: false
 
 {% if journal.data.show != false %}
 
-## {{ journal.data.title }}
-
-{{ journal.data.preview }}
-
-....[（繼續閱讀）]({{ journal.url }})
+- [{{ journal.data.title }}]({{ journal.url }})
 
 {% endif %}
 
