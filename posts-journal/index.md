@@ -8,8 +8,11 @@ show: false
 
 {% if journal.data.show != false %}
 
-<h2>{{ journal.data.title }}</h2>
-<p>{{ journal.data.preview }}<a href="{{ journal.url }}">....（繼續閱讀）</a></p>
+## {{ journal.data.title }}
+
+{{ journal.data.preview }}
+
+....[（繼續閱讀）]({{ journal.url }})
 
 {% endif %}
 
