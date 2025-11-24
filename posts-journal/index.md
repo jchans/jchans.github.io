@@ -4,11 +4,19 @@ date: 2025-11-20
 show: false
 ---
 
+## 筆記清單
+
 {% for journal in collections.journal reversed %}
 
 {% if journal.data.show != false %}
 
-- [{{ journal.data.title }}]({{ journal.url }})
+---
+
+### {{ journal.data.title }}
+
+{{ journal.data.preview }}
+
+.... [(繼續閱讀)]({{ journal.url }})
 
 {% endif %}
 
