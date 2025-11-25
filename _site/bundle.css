@@ -58,9 +58,14 @@ p {
 }
 
 pre {
+  margin: 0;
   padding: 1rem;
-  color: lightgreen;
+
+  overflow-x: auto;
   background: #333333;
+}
+pre > code {
+  color: lightgreen;
 }
 
 blockquote {
@@ -83,6 +88,7 @@ blockquote p:last-child {
   width: 800px;
   padding: 2rem;
   border-radius: 15px;
+  overflow-x: hidden;
 
   background-color: FloralWhite;
 }
