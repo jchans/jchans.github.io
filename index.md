@@ -8,7 +8,9 @@ layout: layouts/layout.html
 
 ### {{ post.data.title }}
 
-{{ post.data.preview }}....[（繼續閱讀）]({{ post.url }})
+{{ post.data.preview }}
+
+....[（繼續閱讀）]({{ post.url }})
 
 {% endfor %}
 
