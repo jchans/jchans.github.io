@@ -60,7 +60,7 @@ https://www.11ty.dev/docs/collections/
 {% endraw %}
 ```
 
-比較長的 code ，修改了 css 的設定讓 codeblock 內容可以捲動 。
+比較長的 code ，修改了 css 的設定讓 codeblock 內容可以捲動 。（這顯然是想到以前那個 [糖果的廣告](https://www.youtube.com/watch?v=QYElO9T2JkU) ）
 
 ```
 long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long
