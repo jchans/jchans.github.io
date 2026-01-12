@@ -11,9 +11,3 @@ layout: layouts/layout.html
 {{ post.content }}
 
 {% endfor %}
-
----
-
-## 其他
-
-- [類似日記的東西](/posts-journal/)

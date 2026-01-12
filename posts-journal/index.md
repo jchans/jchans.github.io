@@ -1,10 +1,8 @@
 ---
-title: 日期記事
+title: 記事
 date: 2025-11-20
 show: false
 ---
-
-## 龍語筆記
 
 每天的想法雜記
 
@@ -14,7 +12,7 @@ show: false
 
 ---
 
-### {{ journal.data.title }}
+## {{ journal.data.title }}
 
 {{ journal.data.preview }}
 
