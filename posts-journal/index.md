@@ -4,7 +4,9 @@ date: 2025-11-20
 show: false
 ---
 
-## 筆記清單
+## 龍語筆記
+
+每天的想法雜記
 
 {% for journal in collections.journal reversed %}
 

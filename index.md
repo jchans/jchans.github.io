@@ -8,9 +8,7 @@ layout: layouts/layout.html
 
 ### {{ post.data.title }}
 
-{{ post.data.preview }}
-
-....[（繼續閱讀）]({{ post.url }})
+{{ post.content }}
 
 {% endfor %}
 
@@ -18,4 +16,4 @@ layout: layouts/layout.html
 
 ## 其他
 
-- [日期記事](/posts-journal/)
+- [類似日記的東西](/posts-journal/)
