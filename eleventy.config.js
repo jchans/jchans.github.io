@@ -1,8 +1,8 @@
-// import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-// export default function (eleventyConfig) {
-//   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
-//   eleventyConfig.addPassthroughCopy("bundle.css");
-//   eleventyConfig.addPassthroughCopy("assets/images");
-// }
+  eleventyConfig.addPassthroughCopy("bundle.css");
+  eleventyConfig.addPassthroughCopy("assets/images");
+}
