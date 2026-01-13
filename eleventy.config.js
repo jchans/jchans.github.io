@@ -4,5 +4,4 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPassthroughCopy("assets/images");
 }
