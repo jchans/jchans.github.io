@@ -16,6 +16,11 @@ html {
   overflow-y: scroll;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   display: flex;
   justify-content: center;
