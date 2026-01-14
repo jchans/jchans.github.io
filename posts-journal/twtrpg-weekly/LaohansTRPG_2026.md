@@ -29,19 +29,19 @@ tags:
 
 ### 骰子浣熊 Rollcoon／黯潮環野
 
-- 2026/01/02 ，[跑團節目，「黯潮環野」戰役，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- 2026/01/02 ，[「黯潮環野」戰役，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
-- 2025/10/07 ，[跑團節目，黯林信使，第 1 集(更新版)，公開](https://www.youtube.com/watch?v=S6MTeIKFq88)
-- 2025/10/19 ，[跑團節目，黯林信使，第 2 集，公開](https://www.youtube.com/watch?v=Nx_Qlq_Ahyc)
-- 2025/11/05 ，[跑團節目，黯林信使，第 3 集，公開](https://www.youtube.com/watch?v=S-JYxQtPFjU)
-- 2026/01/11 ，[跑團節目，黯林信使，第 4 集，公開](https://www.youtube.com/watch?v=Lnhm47rCNTs)
+- 2025/10/07 ，[黯林信使，第 1 集(更新版)](https://www.youtube.com/watch?v=S6MTeIKFq88)
+- 2025/10/19 ，[黯林信使，第 2 集](https://www.youtube.com/watch?v=Nx_Qlq_Ahyc)
+- 2025/11/05 ，[黯林信使，第 3 集](https://www.youtube.com/watch?v=S-JYxQtPFjU)
+- 2026/01/11 ，[黯林信使，第 4 集](https://www.youtube.com/watch?v=Lnhm47rCNTs)
 
 ### 龍的胃裡面／龍胃戰役
 
-- 2025/12/22 ，[跑團節目，龍胃戰役，第一季第一集，公開](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
-- 2026/01/07 ，[跑團節目，龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
+- 2025/12/22 ，[龍胃戰役，第一季第一集](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
+- 2026/01/07 ，[龍胃戰役，第一季第二集](https://www.youtube.com/watch?v=2z41-xexbYg)
 
 ---
 
