@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/15 12:45
+最後更新：2026/01/15 14:25
 
 ## 摘要
 
@@ -95,3 +95,8 @@ tags:
 ### 2026/01/11
 
 - [跑團節目，黯林信使，第 4 集，公開](https://www.youtube.com/watch?v=Lnhm47rCNTs)
+
+### 2026/01/13
+
+- [Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)。
+- [古城（烏古爾的 trpg 世界）新店面試營運（2026/01/24）公告，店址：新北市中和區景平路 259 巷 45 號地下一樓](https://www.facebook.com/share/p/1G172vz3yb/)
