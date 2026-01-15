@@ -41,6 +41,7 @@ tags:
 
 - 2026/01/02 ，[黯潮環野，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 - 2026/01/08 ，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
+- 2026/01/16 ，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -132,3 +133,7 @@ tags:
   - Doors to Darkness
   - Petersen Guide to Lovecraftian Horrors
   - Call of Cthulhu the Coloring Book
+
+### 2026/01/16
+
+- [跑團節目，黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
