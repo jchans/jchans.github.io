@@ -26,6 +26,10 @@ tags:
 - [跑團節目，龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
 - [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
 
+## 2026/01/08
+
+- [跑團節目，黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
+
 ### 2026/01/11
 
 - [跑團節目，黯林信使，第 4 集，公開](https://www.youtube.com/watch?v=Lnhm47rCNTs)

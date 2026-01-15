@@ -7,9 +7,17 @@ tags:
   - TRPG週記
 ---
 
+![A wizard commanding the pen to write](/assets/images/by-date/2026/LaohansTRPG_2026_cover.jpg)
+
+這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
+
+最後更新：2026/01/15 12:45
+
 ## 摘要
 
-把週記收集的東西整理成一份一整年的紀錄，有些東西會另外分類放，不全只是時序。先從今年的事情開始記錄。
+摘要一些我覺得有趣或者重要的 TRPG 相關的事，整理成一份一整年的紀錄。
+
+有些東西會另外分類放，不全只是時序。先從今年的事情開始記錄。 2025 年有許多我覺得重要的事，因為今年從頭開始記，所以會稍微往前延伸補記一些。
 
 要怎麼取捨、什麼東西重要，是有待確認的東西，目前只是以我自己看到而且我覺得想記錄的東西來記。
 
@@ -29,9 +37,10 @@ tags:
 
 小標題是「頻道名稱／節目或戰役名稱」
 
-### 骰子浣熊 Rollcoon／黯潮環野
+### 骰子浣熊 Rollcoon／黯潮環野 Riftwalker
 
-- 2026/01/02 ，[「黯潮環野」戰役，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- 2026/01/02 ，[黯潮環野，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- 2026/01/08 ，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -48,8 +57,6 @@ tags:
 ---
 
 ## 逐日記事
-
-2025 年 12 月底有許多我覺得重要的事，因為今年從頭開始記，所以會稍微往前延伸幾天。
 
 ### 2025/12/22
 
@@ -70,7 +77,7 @@ tags:
 
 ### 2026/01/02
 
-- [跑團節目，「黯潮環野」戰役，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- [跑團節目，黯潮環野，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 
 ### 2026/01/03
 
@@ -80,6 +87,10 @@ tags:
 
 - [跑團節目，龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
 - [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
+
+### 2026/01/08
+
+- [跑團節目，黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 
 ### 2026/01/11
 

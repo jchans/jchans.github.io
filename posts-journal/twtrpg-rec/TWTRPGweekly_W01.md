@@ -41,7 +41,7 @@ tags:
 
 ### 2026/01/02
 
-- [跑團節目，「黯潮環野」戰役，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- [跑團節目，黯潮環野，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 
 ### 2026/01/03
 
