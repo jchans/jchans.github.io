@@ -1,6 +1,6 @@
 ---
 title: 台灣TRPG協會
-date: 2026-12-31
+date: 2026-12-30
 preview: "收集TRPG協會相關資料"
 tags:
   - TRPG

@@ -87,6 +87,8 @@ tags:
 
 - [跑團節目，龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
 - [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
+- Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
+- [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
 
 ### 2026/01/08
 
@@ -100,3 +102,33 @@ tags:
 
 - [Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)。
 - [古城（烏古爾的 trpg 世界）新店面試營運（2026/01/24）公告，店址：新北市中和區景平路 259 巷 45 號地下一樓](https://www.facebook.com/share/p/1G172vz3yb/)
+
+### 2026/01/15
+
+- Humble Bundle ， CoC 規則書 Bundle ["So You Want To Try Out Call of Cthulhu Book Bundle"](https://www.humblebundle.com/books/so-you-wanna-try-out-call-cthulhu-chaosium-inc-books) ， 26 個產品， 26.24 USD ， 1/15 ~ 2/4 ，書目條列如下：
+  - Call of Cthulhu: Investigator Handbook
+  - Call of Cthulhu: Keeper Screen Pack
+  - Pulp Cthulhu
+  - Malleus Monstrorum
+  - Dead Light and Other Dark Turns
+  - A Cold Fire Within
+  - Berlin The Wicked City
+  - Down Darker Trails
+  - Cthulhu Dark Ages 3rd Ed
+  - Reign of Terror
+  - Mansions of Madness Vol. 1
+  - Petersen's Abominations
+  - Alone Against the Tide
+  - Alone Against the Frost
+  - Does Love Forgive?
+  - Nameless Horrors 2nd Edition
+  - Call of Cthulhu: Keeper Rulebook
+  - Gateways to Terror
+  - Grand Grimoire of Cthulhu Mythos Magic
+  - Keeper Tips
+  - Alone Against the Dark
+  - Malleus Monstrorum Keeper Deck
+  - Call of Cthulhu Starter Set
+  - Doors to Darkness
+  - Petersen Guide to Lovecraftian Horrors
+  - Call of Cthulhu the Coloring Book
