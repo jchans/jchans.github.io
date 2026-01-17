@@ -23,6 +23,13 @@ tags:
 
 協會與跑團節目的記事放前面主要是方便查詢，東西真的比較多的話再另外分頁面紀錄。
 
+關於收錄的項目有什麼增補建議或指正，請在[臉書頁面](https://www.facebook.com/DragonicNotes/)私訊我聯絡，感謝。
+
+### 待想問題
+
+- 協會、推廣活動收錄，但店家的活動要怎麼取捨？新的店家開始營運紀錄，但是他們辦的活動要不要紀錄在這個表上？如何取捨？
+  - 像是 [Lucky Charm 一月底的兩個團](https://www.facebook.com/share/p/1G8ZgyBUt5/)，我就不確定要不要收錄在這邊。收錄的標準是什麼？可能要好好想想。
+
 ---
 
 ## TRPG 協會
@@ -34,6 +41,8 @@ tags:
 ---
 
 ## 推廣活動
+
+辦完的才放上來做紀錄。
 
 ---
 
@@ -62,6 +71,10 @@ tags:
 ---
 
 ## 逐日記事
+
+### 2025/11/14
+
+- [台北， Lucky Charm 跑團專門店臉書頁面公佈可預約時段與費用（開始活動）](https://www.facebook.com/share/p/1Wu4CVi8Go/)
 
 ### 2025/12/22
 
@@ -94,6 +107,7 @@ tags:
 - [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
 - Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
 - [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
+- [GrowLife 靠過來，臉書頁面公佈《雙北聯合-新手跑團夜》，一月、二月活動](https://www.facebook.com/share/p/1HjmLFCMrh/)
 
 ### 2026/01/08
 
