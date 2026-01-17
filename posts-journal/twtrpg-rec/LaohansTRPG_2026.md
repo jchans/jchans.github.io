@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/15 14:25
+最後更新：2026/01/17 12:20
 
 ## 摘要
 
@@ -30,6 +30,10 @@ tags:
 全名：臺灣桌上角色扮演遊戲協會
 
 - 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
+
+---
+
+## 推廣活動
 
 ---
 
@@ -82,7 +86,7 @@ tags:
 
 ### 2026/01/03
 
-- [桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 ）公布](https://www.plurk.com/p/3i5p2033cl)
+- [推廣活動，桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 ）公布](https://www.plurk.com/p/3i5p2033cl)
 
 ### 2026/01/07
 
@@ -137,3 +141,8 @@ tags:
 ### 2026/01/16
 
 - [跑團節目，黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
+
+### 2026/01/17
+
+- [推廣活動，台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 ），公布](https://www.plurk.com/p/3i7o2lfowk)
+- [推廣活動，南部 TRPG 推廣會， 2/8 台南推廣會，公布](https://www.plurk.com/p/3i7nslg5fo)
