@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>備忘</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="site-categories">
+        <!-- <div class="cat-item item-selected"> -->
+        <div class="cat-item">
+          <a href="/">首頁</a>
+        </div>
+        <div class="cat-item">
+          <a href="/posts-journal/">雜記</a>
+        </div>
+        <!-- <div class="cat-item">
+          <a href="/">攝影</a>
+        </div> -->
+        <div class="cat-item">
+          <a href="/site-management/memo/">備忘</a>
+        </div>
+      </div>
+      <h1>備忘</h1>
+      <main><h2>摘要</h2>
+<p>放一些這個網誌的使用上的備忘。</p>
+<p>就我目前的寫作習慣與整理檔案的方式，也許 Eleventy 對我來說是比較適合的工具？</p>
+<h3>測試 Quote</h3>
+<p>寫法參考： https://css-tricks.com/blockquote-bulge/</p>
+<p>這裡寫點引用的東西</p>
+<blockquote>
+<p>引用會是什麼形式？
+測試空行</p>
+<p>這是空一行之後</p>
+<p>測試長句子一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+</blockquote>
+<p>引用之後再寫點東西</p>
+<p>看來是段落？</p>
+<h3>測試 Code Block</h3>
+<p>寫法參考： https://css-tricks.com/considerations-styling-pre-tag/</p>
+<pre><code>sudo apt update
+sudo apt upgrade
+</code></pre>
+<h3>列出文章</h3>
+<p>https://www.11ty.dev/docs/collections/</p>
+<pre><code>
+{% for post in collections.post reversed %}
+
+&lt;h2&gt;&lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.data.title }}&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;{{ post.data.preview }}&lt;/p&gt;
+
+{% endfor %}
+
+</code></pre>
+<p>目前 nunjuck 的語法是用以下方式去寫，但可能有更好的作法，待研究（25-1125）。</p>
+<ul>
+<li>https://github.com/11ty/eleventy/issues/791</li>
+</ul>
+<pre><code>
+{% raw %}
+
+</code></pre>
+<p>比較長的 code ，修改了 css 的設定讓 codeblock 內容可以捲動 。（這顯然是想到以前那個 <a href="https://www.youtube.com/watch?v=QYElO9T2JkU">糖果的廣告</a> ）</p>
+<pre><code>long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long
+</code></pre>
+<h2>log</h2>
+<ul>
+<li>2025-11-20 ，把這 Eleventy 做的靜態頁面整理好，今天開始慢慢把一些寫的東西集中、搬過來吧。</li>
+</ul>
+</main>
+      <hr>
+      <a href="/">回首頁</a>
+    </div>
+  </body>
+</html>
