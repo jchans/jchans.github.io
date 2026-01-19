@@ -1,6 +1,6 @@
 ---
 title: 老翰的TRPG記事 2026
-date: 2026-12-31
+date: 2026-01-01
 preview: "把週記收集的東西整理成一份一整年的紀錄"
 tags:
   - TRPG
@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/17 22:20
+最後更新：2026/01/19 13:00
 
 ## 摘要
 
@@ -32,17 +32,32 @@ tags:
 
 ---
 
-## TRPG 協會
+## 台灣TRPG協會
 
-全名：臺灣桌上角色扮演遊戲協會
+全名：臺灣桌上角色扮演遊戲協會，通常討論的時候會簡稱「TRPG協會」或者「協會」。
+
+### 社群網站
+
+- [臉書](https://www.facebook.com/profile.php?id=61579267510037)
+- [推特/X](https://x.com/TaiwanTRPG)
+- [Threads](https://www.threads.com/@taiwantrpg)
+- [IG](https://www.instagram.com/taiwantrpg/)
+
+### 2026 活動與資訊
 
 - 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
+- 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）。
 
 ---
 
 ## 推廣活動
 
-辦完的才放上來做紀錄。
+按照預定舉辦日期排序，如果已結束會分別註明。
+
+- 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](<(https://www.plurk.com/p/3i5p2033cl)>)
+- 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](<(https://www.plurk.com/p/3i66uty8uo)>)
+- 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](<(https://www.plurk.com/p/3i7o2lfowk)>)
+- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
 
 ---
 
@@ -124,33 +139,7 @@ tags:
 
 ### 2026/01/15
 
-- Humble Bundle ， CoC 規則書 Bundle ["So You Want To Try Out Call of Cthulhu Book Bundle"](https://www.humblebundle.com/books/so-you-wanna-try-out-call-cthulhu-chaosium-inc-books) ， 26 個產品， 26.24 USD ， 1/15 ~ 2/4 ，書目條列如下：
-  - Call of Cthulhu: Investigator Handbook
-  - Call of Cthulhu: Keeper Screen Pack
-  - Pulp Cthulhu
-  - Malleus Monstrorum
-  - Dead Light and Other Dark Turns
-  - A Cold Fire Within
-  - Berlin The Wicked City
-  - Down Darker Trails
-  - Cthulhu Dark Ages 3rd Ed
-  - Reign of Terror
-  - Mansions of Madness Vol. 1
-  - Petersen's Abominations
-  - Alone Against the Tide
-  - Alone Against the Frost
-  - Does Love Forgive?
-  - Nameless Horrors 2nd Edition
-  - Call of Cthulhu: Keeper Rulebook
-  - Gateways to Terror
-  - Grand Grimoire of Cthulhu Mythos Magic
-  - Keeper Tips
-  - Alone Against the Dark
-  - Malleus Monstrorum Keeper Deck
-  - Call of Cthulhu Starter Set
-  - Doors to Darkness
-  - Petersen Guide to Lovecraftian Horrors
-  - Call of Cthulhu the Coloring Book
+- Humble Bundle ， CoC 規則書 Bundle ["So You Want To Try Out Call of Cthulhu Book Bundle"](https://www.humblebundle.com/books/so-you-wanna-try-out-call-cthulhu-chaosium-inc-books) ， 26 個產品， 26.24 USD ， 1/15 ~ 2/4
 
 ### 2026/01/16
 
@@ -160,3 +149,7 @@ tags:
 
 - [推廣活動，台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 ），公布](https://www.plurk.com/p/3i7o2lfowk)
 - [推廣活動，南部 TRPG 推廣會， 2/8 台南推廣會，公布](https://www.plurk.com/p/3i7nslg5fo)
+
+### 2026/01/18
+
+- 台灣TRPG協會，貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）。
