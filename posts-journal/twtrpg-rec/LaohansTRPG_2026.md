@@ -1,6 +1,6 @@
 ---
 title: 老翰的TRPG記事 2026
-date: 2026-01-01
+date: 2026-12-31
 preview: "把週記收集的東西整理成一份一整年的紀錄"
 tags:
   - TRPG
