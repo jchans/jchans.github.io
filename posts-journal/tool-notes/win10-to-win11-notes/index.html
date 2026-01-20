@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>Windows 10 升級 Windows 11 後的一些設定筆記</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="site-categories">
+        <!-- <div class="cat-item item-selected"> -->
+        <div class="cat-item">
+          <a href="/">首頁</a>
+        </div>
+        <div class="cat-item">
+          <a href="/posts-journal/">雜記</a>
+        </div>
+        <!-- <div class="cat-item">
+          <a href="/">攝影</a>
+        </div> -->
+        <div class="cat-item">
+          <a href="/site-management/memo/">備忘</a>
+        </div>
+      </div>
+      <h1>Windows 10 升級 Windows 11 後的一些設定筆記</h1>
+      <main><p>參考工具：問 ChatGPT ：「Windows 10 升級為 Windows 11 後，如何最佳化自己的系統？」</p>
+<ol>
+<li>關掉動畫效果</li>
+</ol>
+<p>設定→協助工具→視覺效果</p>
+<ol start="2">
+<li>把工作列往左移（開始按鈕移到最左邊）</li>
+</ol>
+<p>設定→個人化→工作列→工作列行為→工作列對齊（選靠左）</p>
+<ol start="3">
+<li>用 Win10 版的右鍵選單</li>
+</ol>
+<p>ref: https://learn.microsoft.com/en-us/answers/questions/2287432/(article)-restore-old-right-click-context-menu-in?forum=windows-all&amp;referrer=answers</p>
+<p>Restore the old Context Menu in Windows 11</p>
+<p>Terminal(Admin) Command:</p>
+<pre><code>reg.exe add &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&quot; /f /ve
+</code></pre>
+<p>Restore Modern Context menus in Windows 11</p>
+<p>To undo this change, in a Terminal Window, execute this command:</p>
+<pre><code>reg.exe delete &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}&quot; /f
+</code></pre>
+<ol start="4">
+<li>如果是為了中文寫作，我還是比較喜歡新酷音，所以安裝 PIME</li>
+</ol>
+<p>https://github.com/EasyIME/PIME</p>
+</main>
+      <hr>
+      <a href="/jchans.github.io/">回首頁</a>
+    </div>
+  </body>
+</html>
