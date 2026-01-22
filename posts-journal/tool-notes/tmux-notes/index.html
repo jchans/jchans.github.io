@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>Tmux 使用備忘</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="site-categories">
+        <!-- <div class="cat-item item-selected"> -->
+        <div class="cat-item">
+          <a href="/">首頁</a>
+        </div>
+        <div class="cat-item">
+          <a href="/posts-journal/">雜記</a>
+        </div>
+        <!-- <div class="cat-item">
+          <a href="/">攝影</a>
+        </div> -->
+        <div class="cat-item">
+          <a href="/site-management/memo/">備忘</a>
+        </div>
+      </div>
+      <h1>Tmux 使用備忘</h1>
+      <main><h2>Start tmux at terminal start</h2>
+<p>ref: <a href="https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux">How can I set my default shell to start up tmux</a></p>
+<pre><code>if command -v tmux &amp;&gt; /dev/null &amp;&amp; [ -n &quot;$PS1&quot; ] &amp;&amp; [[ ! &quot;$TERM&quot; =~ screen ]] &amp;&amp; [[ ! &quot;$TERM&quot; =~ tmux ]] &amp;&amp; [ -z &quot;$TMUX&quot; ]; then
+  exec tmux
+fi
+</code></pre>
+<h2>Making TMUX use Alt+Num to select window</h2>
+<p>ref: <a href="https://superuser.com/questions/680238/making-tmux-use-altnum-to-select-window">Making TMUX use Alt+Num to select window</a></p>
+<p>My preferred settings, create &quot;~/.tmux.conf&quot; and add setting as following:</p>
+<pre><code>bind-key -n M-1 select-window -t 0
+bind-key -n M-2 select-window -t 1
+bind-key -n M-3 select-window -t 2
+bind-key -n M-4 select-window -t 3
+bind-key -n M-5 select-window -t 4
+</code></pre>
+</main>
+      <hr>
+      <a href="/jchans.github.io/">回首頁</a>
+    </div>
+  </body>
+</html>
