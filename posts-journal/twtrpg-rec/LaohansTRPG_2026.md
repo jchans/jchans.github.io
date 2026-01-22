@@ -70,6 +70,7 @@ tags:
 - 2026/01/02 ，[黯潮環野，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 - 2026/01/08 ，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 - 2026/01/16 ，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
+- 2026/01/22 ，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -82,6 +83,7 @@ tags:
 
 - 2025/12/22 ，[龍胃戰役，第一季第一集](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
 - 2026/01/07 ，[龍胃戰役，第一季第二集](https://www.youtube.com/watch?v=2z41-xexbYg)
+- 2026/01/22 ，[龍胃戰役，第一季第三集](https://www.youtube.com/watch?v=4WVw6m5jNuE)
 
 ---
 
@@ -153,3 +155,8 @@ tags:
 ### 2026/01/18
 
 - 台灣TRPG協會，貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）。
+
+### 2026/01/22
+
+- [跑團節目，黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
+- [跑團節目，龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
