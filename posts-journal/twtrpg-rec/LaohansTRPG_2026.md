@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/27 14:00
+最後更新：2026/01/27 14:05
 
 ## 摘要
 
@@ -178,6 +178,10 @@ tags:
 
 - [跑團節目，黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
 - [跑團節目，龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
+
+### 2026/01/24
+
+- [第二屆香港TRPG 交流會（1/24 ~ 1/25）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
 
 ### 2026/01/25
 
