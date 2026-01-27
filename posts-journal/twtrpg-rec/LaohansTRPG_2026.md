@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/19 13:00
+最後更新：2026/01/27 14:00
 
 ## 摘要
 
@@ -25,6 +25,10 @@ tags:
 
 關於收錄的項目有什麼增補建議或指正，請在[臉書頁面](https://www.facebook.com/DragonicNotes/)私訊我聯絡，感謝。
 
+### 收錄原則
+
+- 同一個活動的宣傳貼文，除非有特殊原因，否則只收錄第一篇公佈資訊的貼文連結（2026/01/27）
+
 ### 待想問題
 
 - 協會、推廣活動收錄，但店家的活動要怎麼取捨？新的店家開始營運紀錄，但是他們辦的活動要不要紀錄在這個表上？如何取捨？
@@ -36,6 +40,8 @@ tags:
 
 全名：臺灣桌上角色扮演遊戲協會，通常討論的時候會簡稱「TRPG協會」或者「協會」。
 
+連結收錄的部份目前會以臉書貼文為主。
+
 ### 社群網站
 
 - [臉書](https://www.facebook.com/profile.php?id=61579267510037)
@@ -45,8 +51,16 @@ tags:
 
 ### 2026 活動與資訊
 
+- 2025/09/04 協會[社群帳號開始貼文](https://www.facebook.com/share/p/1AYsn8BWp8/)
+- 2025/09/07 [台灣TRPG協會 × 魔法都市嘉年華](https://www.facebook.com/share/p/17js27VvNj/)公佈活動資訊（9/20 ~ 9/21）
+- 2025/09/11 [「TRPG全境擴散計畫」推廣活動](https://www.facebook.com/share/p/1C2obmtupp/)公佈活動資訊（10/04）
+- 2025/09/17 公佈協會的 [5大理念](https://www.facebook.com/share/p/17wdNJGZWF/)
+- 2025/09/26 公告[理事及監事名單](https://www.facebook.com/share/p/19DhSL9dP3/)
+- 2025/11/15 分享於人本三重青少年基地，[11/14 「青少年TRPG體驗」活動成果照片](https://www.facebook.com/share/p/1G4vaom7SE/)
+- 2025/11/16 [《VirtualLive TRPG 線上推廣企劃》公佈活動資訊（9/20 ~ 9/21）](https://www.facebook.com/share/p/1GCqvyHP6A/)
+- 2025/12/05 [台灣TRPG協會 × D3 龍山地下城奇幻市集](https://www.facebook.com/share/p/1BbqJHNpoA/)公佈活動資訊，（ 12/13 ~ 12/14 週六、週日）
 - 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
-- 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）。
+- 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
 
 ---
 
@@ -93,6 +107,10 @@ tags:
 
 - [台北， Lucky Charm 跑團專門店臉書頁面公佈可預約時段與費用（開始活動）](https://www.facebook.com/share/p/1Wu4CVi8Go/)
 
+### 2025/12/13
+
+- D3龍山地下城奇幻市集（12/13 ~ 12/14）
+
 ### 2025/12/22
 
 - [跑團節目，龍胃戰役，第一季第一集，公開](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
@@ -107,7 +125,7 @@ tags:
 
 ### 2025/12/31
 
-- 怪奇物語第五季（最終季）最後一集上架 Netflix ，在這集上架之後 Threads 上引起許多人詢問 D&D 相關的問題，想玩 D&D 、哪裡可以玩到等等。
+- 怪奇物語第五季（最終季）最後一集上架 Netflix ，在這集上架之後 Threads 上引起許多人詢問 D&D 相關的問題，想玩 D&D 、哪裡可以玩到等等
 - Tim Kask 過世， TSR 在 1975 年的第一位員工，他的 D&D 角色名字是 Kwalish （有譯作夸力許）。來源：[EN World](https://www.enworld.org/threads/tim-kask-tsrs-first-employee-passes-at-age-76.716970/)
 
 ### 2026/01/02
@@ -136,7 +154,7 @@ tags:
 
 ### 2026/01/13
 
-- [Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)。
+- [Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)
 - [古城（烏古爾的 trpg 世界）新店面試營運（2026/01/24）公告，店址：新北市中和區景平路 259 巷 45 號地下一樓](https://www.facebook.com/share/p/1G172vz3yb/)
 
 ### 2026/01/15
@@ -154,9 +172,14 @@ tags:
 
 ### 2026/01/18
 
-- 台灣TRPG協會，貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）。
+- 台灣TRPG協會，貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
 
 ### 2026/01/22
 
 - [跑團節目，黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
 - [跑團節目，龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
+
+### 2026/01/25
+
+- [VTuber 艾絲黛拉‧莉芙 EstellaLiv 初配信](https://www.youtube.com/live/Wegz-YNuDXo)，記錄者（老翰）大概是 2025 年看到 YouTube 上他做的 D&D 相關的 Shorts 、許多關於 D&D 的小短片。之後如果有跑團相關的影片歸類為跑團節目？待想
+- [VTuber 雲依珊，噗浪 2026 自介文](https://www.plurk.com/p/3i91ip860j)，提到 2025/08/05 開始跑了第一個團務、噗浪之後應該會以發TRPG相關為主
