@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/27 14:05
+最後更新：2026/01/30 20:50
 
 ## 摘要
 
@@ -85,6 +85,7 @@ tags:
 - 2026/01/08 ，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 - 2026/01/16 ，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
 - 2026/01/22 ，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
+- 2026/01/29 ，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -113,7 +114,7 @@ tags:
 
 ### 2025/12/22
 
-- [跑團節目，龍胃戰役，第一季第一集，公開](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
+- 跑團節目，[龍胃戰役，第一季第一集，公開](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
 
 ### 2025/12/24
 
@@ -130,15 +131,15 @@ tags:
 
 ### 2026/01/02
 
-- [跑團節目，黯潮環野，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
+- 跑團節目，[黯潮環野，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 
 ### 2026/01/03
 
-- [推廣活動，桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 ）公布](https://www.plurk.com/p/3i5p2033cl)
+- 推廣活動，[桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 ）公布](https://www.plurk.com/p/3i5p2033cl)
 
 ### 2026/01/07
 
-- [跑團節目，龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
+- 跑團節目，[龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
 - [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
 - Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
 - [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
@@ -146,11 +147,11 @@ tags:
 
 ### 2026/01/08
 
-- [跑團節目，黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
+- 跑團節目，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 
 ### 2026/01/11
 
-- [跑團節目，黯林信使，第 4 集，公開](https://www.youtube.com/watch?v=Lnhm47rCNTs)
+- 跑團節目，[黯林信使，第 4 集，公開](https://www.youtube.com/watch?v=Lnhm47rCNTs)
 
 ### 2026/01/13
 
@@ -163,12 +164,12 @@ tags:
 
 ### 2026/01/16
 
-- [跑團節目，黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
+- 跑團節目，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
 
 ### 2026/01/17
 
-- [推廣活動，台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 ），公布](https://www.plurk.com/p/3i7o2lfowk)
-- [推廣活動，南部 TRPG 推廣會， 2/8 台南推廣會，公布](https://www.plurk.com/p/3i7nslg5fo)
+- 推廣活動，[台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 ），公布](https://www.plurk.com/p/3i7o2lfowk)
+- 推廣活動，[南部 TRPG 推廣會， 2/8 台南推廣會，公布](https://www.plurk.com/p/3i7nslg5fo)
 
 ### 2026/01/18
 
@@ -176,8 +177,8 @@ tags:
 
 ### 2026/01/22
 
-- [跑團節目，黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
-- [跑團節目，龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
+- 跑團節目，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
+- 跑團節目，[龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
 
 ### 2026/01/24
 
@@ -187,3 +188,7 @@ tags:
 
 - [VTuber 艾絲黛拉‧莉芙 EstellaLiv 初配信](https://www.youtube.com/live/Wegz-YNuDXo)，記錄者（老翰）大概是 2025 年看到 YouTube 上他做的 D&D 相關的 Shorts 、許多關於 D&D 的小短片。之後如果有跑團相關的影片歸類為跑團節目？待想
 - [VTuber 雲依珊，噗浪 2026 自介文](https://www.plurk.com/p/3i91ip860j)，提到 2025/08/05 開始跑了第一個團務、噗浪之後應該會以發TRPG相關為主
+
+### 2026/01/29
+
+- 跑團節目，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
