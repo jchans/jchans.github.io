@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/01/30 20:50
+最後更新：2026/02/01 22:40
 
 ## 摘要
 
@@ -56,11 +56,12 @@ tags:
 - 2025/09/11 [「TRPG全境擴散計畫」推廣活動](https://www.facebook.com/share/p/1C2obmtupp/)公佈活動資訊（10/04）
 - 2025/09/17 公佈協會的 [5大理念](https://www.facebook.com/share/p/17wdNJGZWF/)
 - 2025/09/26 公告[理事及監事名單](https://www.facebook.com/share/p/19DhSL9dP3/)
-- 2025/11/15 分享於人本三重青少年基地，[11/14 「青少年TRPG體驗」活動成果照片](https://www.facebook.com/share/p/1G4vaom7SE/)
+- 2025/11/15 分享活動成果，人本三重青少年基地，[11/14 「青少年TRPG體驗」](https://www.facebook.com/share/p/1G4vaom7SE/)
 - 2025/11/16 [《VirtualLive TRPG 線上推廣企劃》公佈活動資訊（9/20 ~ 9/21）](https://www.facebook.com/share/p/1GCqvyHP6A/)
 - 2025/12/05 [台灣TRPG協會 × D3 龍山地下城奇幻市集](https://www.facebook.com/share/p/1BbqJHNpoA/)公佈活動資訊，（ 12/13 ~ 12/14 週六、週日）
 - 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
 - 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
+- 2026/01/30 分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
 
 ---
 
@@ -68,10 +69,14 @@ tags:
 
 按照預定舉辦日期排序，如果已結束會分別註明。
 
+- 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
+- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
+
+### 已結束
+
 - 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](<(https://www.plurk.com/p/3i5p2033cl)>)
 - 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](<(https://www.plurk.com/p/3i66uty8uo)>)
 - 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](<(https://www.plurk.com/p/3i7o2lfowk)>)
-- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
 
 ---
 
@@ -180,6 +185,10 @@ tags:
 - 跑團節目，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
 - 跑團節目，[龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
 
+### 2026/01/23
+
+- 推廣活動，[桃園 trpg 推廣會， 2 月 TRPG 推廣活動（ 2/07 ）公布](https://www.plurk.com/p/3i8khkv386)
+
 ### 2026/01/24
 
 - [第二屆香港TRPG 交流會（1/24 ~ 1/25）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
@@ -192,3 +201,7 @@ tags:
 ### 2026/01/29
 
 - 跑團節目，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
+
+### 2026/01/30
+
+- 台灣TRPG協會，分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
