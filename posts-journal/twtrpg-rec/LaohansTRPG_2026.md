@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/01 22:40
+最後更新：2026/02/01 23:05
 
 ## 摘要
 
@@ -74,9 +74,9 @@ tags:
 
 ### 已結束
 
-- 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](<(https://www.plurk.com/p/3i5p2033cl)>)
-- 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](<(https://www.plurk.com/p/3i66uty8uo)>)
-- 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](<(https://www.plurk.com/p/3i7o2lfowk)>)
+- 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](https://www.plurk.com/p/3i5p2033cl)
+- 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3i66uty8uo)
+- 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](https://www.plurk.com/p/3i7o2lfowk)
 
 ---
 
