@@ -132,7 +132,7 @@ tags:
 
 ### 2025/11/14
 
-- [台北， Lucky Charm 跑團專門店臉書頁面公佈可預約時段與費用（開始活動）](https://www.facebook.com/share/p/1Wu4CVi8Go/)
+- 店家記事，[台北， Lucky Charm 跑團專門店臉書頁面公佈可預約時段與費用（開始活動）](https://www.facebook.com/share/p/1Wu4CVi8Go/)
 
 ### 2025/12/13
 
@@ -144,11 +144,11 @@ tags:
 
 ### 2025/12/24
 
-- [「今夜我想來點新模組」臉書，CoCTRPG 劇本徵稿企劃](https://www.facebook.com/share/p/1bUcvHnnPK/?mibextid=wwXIfr)
+- 創作活動，[「今夜我想來點新模組」臉書，CoCTRPG 劇本徵稿企劃](https://www.facebook.com/share/p/1bUcvHnnPK/?mibextid=wwXIfr)
 
 ### 2025/12/28
 
-- [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
+- 台灣TRPG協會，[臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
 
 ### 2025/12/31
 
@@ -171,7 +171,7 @@ tags:
 - 推廣活動，[TRPG 在新竹，線下實體推廣活動（ 1/31 舉辦）公布](https://www.plurk.com/p/3i66uty8uo)
 - Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
 - [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
-- [GrowLife 靠過來，臉書頁面公佈《雙北聯合-新手跑團夜》，一月、二月活動](https://www.facebook.com/share/p/1HjmLFCMrh/)
+- 店家記事，[GrowLife 靠過來，臉書頁面公佈《雙北聯合-新手跑團夜》，一月、二月活動](https://www.facebook.com/share/p/1HjmLFCMrh/)
 
 ### 2026/01/08
 
