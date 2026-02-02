@@ -71,6 +71,7 @@ tags:
 
 - 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
 - 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
+- 2026/02/15 ~ 2026/03/01 ，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》](https://www.plurk.com/p/3i9unasgdv)
 
 ### 已結束
 
@@ -127,7 +128,7 @@ tags:
 
 ---
 
-## 逐日記事
+## 2025 年末
 
 ### 2025/11/14
 
@@ -135,7 +136,7 @@ tags:
 
 ### 2025/12/13
 
-- D3龍山地下城奇幻市集（2025/12/13 ~ 2025/12/14 ， [2025/09/01 ~ 2025/09/16 攤位招募](https://www.facebook.com/share/p/1DALDzNukt/) ）
+- D3龍山地下城奇幻市集（2025/12/13 ~ 2025/12/14 期間舉辦）， [2025/09/01 ~ 2025/09/16 攤位招募](https://www.facebook.com/share/p/1DALDzNukt/) ）
 
 ### 2025/12/22
 
@@ -154,18 +155,20 @@ tags:
 - 怪奇物語第五季（最終季）最後一集上架 Netflix ，在這集上架之後 Threads 上引起許多人詢問 D&D 相關的問題，想玩 D&D 、哪裡可以玩到等等
 - Tim Kask 過世， TSR 在 1975 年的第一位員工，他的 D&D 角色名字是 Kwalish （有譯作夸力許）。來源：[EN World](https://www.enworld.org/threads/tim-kask-tsrs-first-employee-passes-at-age-76.716970/)
 
+## 2026 年 01 月
+
 ### 2026/01/02
 
 - 跑團節目，[黯潮環野，第一季 Ep. 1 & 2 ，公開](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 
 ### 2026/01/03
 
-- 推廣活動，[桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 ）公布](https://www.plurk.com/p/3i5p2033cl)
+- 推廣活動，[桃園 trpg 推廣會， 1 月 TRPG 推廣活動（ 1/17 舉辦）公布](https://www.plurk.com/p/3i5p2033cl)
 
 ### 2026/01/07
 
 - 跑團節目，[龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
-- [TRPG 在新竹，線下實體推廣活動（ 1/31 ）公布](https://www.plurk.com/p/3i66uty8uo)
+- [TRPG 在新竹，線下實體推廣活動（ 1/31 舉辦）公布](https://www.plurk.com/p/3i66uty8uo)
 - Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
 - [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
 - [GrowLife 靠過來，臉書頁面公佈《雙北聯合-新手跑團夜》，一月、二月活動](https://www.facebook.com/share/p/1HjmLFCMrh/)
@@ -193,7 +196,7 @@ tags:
 
 ### 2026/01/17
 
-- 推廣活動，[台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 ），公布](https://www.plurk.com/p/3i7o2lfowk)
+- 推廣活動，[台中 TRPG 拓展企劃，一月台中 TRPG 新手推廣活動（ 1/31 舉辦），公布](https://www.plurk.com/p/3i7o2lfowk)
 - 推廣活動，[南部 TRPG 推廣會， 2/8 台南推廣會，公布](https://www.plurk.com/p/3i7nslg5fo)
 
 ### 2026/01/18
@@ -207,11 +210,11 @@ tags:
 
 ### 2026/01/23
 
-- 推廣活動，[桃園 trpg 推廣會， 2 月 TRPG 推廣活動（ 2/07 ）公布](https://www.plurk.com/p/3i8khkv386)
+- 推廣活動，[桃園 trpg 推廣會， 2 月 TRPG 推廣活動（ 2/07 舉辦）公布](https://www.plurk.com/p/3i8khkv386)
 
 ### 2026/01/24
 
-- [第二屆香港TRPG 交流會（1/24 ~ 1/25）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
+- [第二屆香港TRPG 交流會（1/24 ~ 1/25 期間舉辦）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
 
 ### 2026/01/25
 
@@ -225,3 +228,9 @@ tags:
 ### 2026/01/30
 
 - 台灣TRPG協會，分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
+
+## 2026 年 02 月
+
+### 2026/02/01 週日
+
+- 推廣活動，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》（ 2/15 ~ 3/01 期間舉辦），公布](https://www.plurk.com/p/3i9unasgdv)
