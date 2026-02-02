@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/03 01:40
+最後更新：2026/02/03 02:20
 
 ## 摘要
 
@@ -183,8 +183,8 @@ tags:
 
 ### 2026/01/13
 
-- [Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)
-- [古城（烏古爾的 trpg 世界）新店面試營運（2026/01/24）公告，店址：新北市中和區景平路 259 巷 45 號地下一樓](https://www.facebook.com/share/p/1G172vz3yb/)
+- GM 記事，[Max 的 龍與魔 X 馬茲提卡 3.0 版 網站](https://maxtrpg.github.io/maztica/) 在噗浪上[公開](https://www.plurk.com/p/3i74xakmxd)
+- 店家記事，[古城（烏古爾的 trpg 世界）新店面試營運（2026/01/24）公告，店址：新北市中和區景平路 259 巷 45 號地下一樓](https://www.facebook.com/share/p/1G172vz3yb/)
 
 ### 2026/01/15
 
@@ -214,7 +214,7 @@ tags:
 
 ### 2026/01/24
 
-- [第二屆香港TRPG 交流會（1/24 ~ 1/25 期間舉辦）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
+- 香港記事，[第二屆香港TRPG 交流會（1/24 ~ 1/25 期間舉辦）](https://www.facebook.com/share/p/175XvB1f1G/)，記錄者（老翰）大概不太可能過去參訪，僅記錄。
 
 ### 2026/01/25
 
