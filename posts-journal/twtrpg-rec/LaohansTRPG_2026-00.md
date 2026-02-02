@@ -218,8 +218,8 @@ tags:
 
 ### 2026/01/25
 
-- [VTuber 艾絲黛拉‧莉芙 EstellaLiv 初配信](https://www.youtube.com/live/Wegz-YNuDXo)，記錄者（老翰）大概是 2025 年看到 YouTube 上他做的 D&D 相關的 Shorts 、許多關於 D&D 的小短片。之後如果有跑團相關的影片歸類為跑團節目？待想
-- [VTuber 雲依珊，噗浪 2026 自介文](https://www.plurk.com/p/3i91ip860j)，提到 2025/08/05 開始跑了第一個團務、噗浪之後應該會以發TRPG相關為主
+- VTuber ，[艾絲黛拉‧莉芙 EstellaLiv 初配信](https://www.youtube.com/live/Wegz-YNuDXo)，記錄者（老翰）大概是 2025 年看到 YouTube 上他做的 D&D 相關的 Shorts 、許多關於 D&D 的小短片。之後如果有跑團相關的影片歸類為跑團節目？待想
+- VTuber ，[雲依珊，噗浪 2026 自介文](https://www.plurk.com/p/3i91ip860j)，提到 2025/08/05 開始跑了第一個團務、噗浪之後應該會以發TRPG相關為主
 
 ### 2026/01/29
 
