@@ -168,7 +168,7 @@ tags:
 ### 2026/01/07
 
 - 跑團節目，[龍胃戰役，第一季第二集，公開](https://www.youtube.com/watch?v=2z41-xexbYg)
-- [TRPG 在新竹，線下實體推廣活動（ 1/31 舉辦）公布](https://www.plurk.com/p/3i66uty8uo)
+- 推廣活動，[TRPG 在新竹，線下實體推廣活動（ 1/31 舉辦）公布](https://www.plurk.com/p/3i66uty8uo)
 - Bob World Builder 上架影片 [5 Easy Ways to Homebrew D&D in 2026](https://www.youtube.com/watch?v=pkdgbTxCbxI)
 - [Bob's Dungeon Crawl Classics RPG Megabundle](https://www.humblebundle.com/books/bobs-dungeon-crawl-classics-rpg-megabundle-presented-bob-world-builder-books) ， 1/2 ~ 1/22
 - [GrowLife 靠過來，臉書頁面公佈《雙北聯合-新手跑團夜》，一月、二月活動](https://www.facebook.com/share/p/1HjmLFCMrh/)
