@@ -128,7 +128,9 @@ tags:
 
 ---
 
-## 2025 年末
+## 逐日記事
+
+2026 年開始逐日整理記事，但也把 2025 年末開始、會延續到 2026 的一些事情補記在這裡。
 
 ### 2025/11/14
 
@@ -154,6 +156,8 @@ tags:
 
 - 怪奇物語第五季（最終季）最後一集上架 Netflix ，在這集上架之後 Threads 上引起許多人詢問 D&D 相關的問題，想玩 D&D 、哪裡可以玩到等等
 - Tim Kask 過世， TSR 在 1975 年的第一位員工，他的 D&D 角色名字是 Kwalish （有譯作夸力許）。來源：[EN World](https://www.enworld.org/threads/tim-kask-tsrs-first-employee-passes-at-age-76.716970/)
+
+---
 
 ## 2026 年 01 月
 
@@ -228,6 +232,8 @@ tags:
 ### 2026/01/30
 
 - 台灣TRPG協會，分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
+
+---
 
 ## 2026 年 02 月
 
