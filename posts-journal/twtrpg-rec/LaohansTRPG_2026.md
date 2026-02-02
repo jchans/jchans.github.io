@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/01 23:30
+最後更新：2026/02/02 12:00
 
 ## 摘要
 
@@ -104,6 +104,26 @@ tags:
 - 2025/12/22 ，[龍胃戰役，第一季第一集](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
 - 2026/01/07 ，[龍胃戰役，第一季第二集](https://www.youtube.com/watch?v=2z41-xexbYg)
 - 2026/01/22 ，[龍胃戰役，第一季第三集](https://www.youtube.com/watch?v=4WVw6m5jNuE)
+
+---
+
+## VTuber
+
+### 周默Zhoumo
+
+- YouTube頻道：[周默Zhoumo](https://www.youtube.com/@zhoumo_cloudhorizon)
+- 播放清單： [TRPG夢境實錄 / 雜談](https://www.youtube.com/playlist?list=PLXM_WTukJKOkqJbPsTyojMHQXtB8p9WU_)
+
+### 魔法布丁罐
+
+- YouTube頻道：[魔法布丁罐](https://www.youtube.com/@mahoupurinkan/)
+- 播放清單：[【TRPG】雜談](https://www.youtube.com/playlist?list=PLIy5Jdy48sACpiC2TJV-OmVjhqZ5AOwKp)
+- 播放清單：[【TRPG】跑團直播](https://www.youtube.com/playlist?list=PLIy5Jdy48sAAOeZlm50pyZKCpKBKs4Nxh)
+
+### 待整理
+
+- [YiShan 雲依珊 ch.](https://www.youtube.com/@YiShan_Vliver/)
+- [艾絲黛拉‧莉芙EstellaLiv](https://www.youtube.com/@Estella_Liv2025/)
 
 ---
 
