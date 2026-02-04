@@ -25,7 +25,8 @@ body {
   display: flex;
   justify-content: center;
 
-  background-color: CadetBlue;
+  /* background-color: CadetBlue; */
+  background-color: #a08a7e;
 }
 
 h1.page-title > a {
@@ -141,7 +142,8 @@ blockquote p:last-child {
   width: 100%;
   /* border-radius: 5px; */
 
-  background: CadetBlue;
+  /* background: CadetBlue; */
+  background-color: #7e83a0;
 }
 
 .site-categories > .cat-item {
