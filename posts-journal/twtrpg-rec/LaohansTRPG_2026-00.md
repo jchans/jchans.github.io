@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/03 16:25
+最後更新：2026/02/04 12:45
 
 ## 摘要
 
@@ -45,7 +45,9 @@ tags:
 - [Threads](https://www.threads.com/@taiwantrpg)
 - [IG](https://www.instagram.com/taiwantrpg/)
 
-## 2026 活動與資訊
+### 活動與資訊
+
+#### 2025
 
 - 2025/09/04 協會[社群帳號開始貼文](https://www.facebook.com/share/p/1AYsn8BWp8/)
 - 2025/09/07 [台灣TRPG協會 × 魔法都市嘉年華](https://www.facebook.com/share/p/17js27VvNj/)公佈活動資訊（9/20 ~ 9/21）
@@ -56,6 +58,9 @@ tags:
 - 2025/11/16 [《VirtualLive TRPG 線上推廣企劃》公佈活動資訊（9/20 ~ 9/21）](https://www.facebook.com/share/p/1GCqvyHP6A/)
 - 2025/12/05 [台灣TRPG協會 × D3 龍山地下城奇幻市集](https://www.facebook.com/share/p/1BbqJHNpoA/)公佈活動資訊，（ 12/13 ~ 12/14 週六、週日）
 - 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
+
+#### 2026
+
 - 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
 - 2026/01/30 分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
 
@@ -83,6 +88,8 @@ tags:
 
 ### 骰子浣熊 Rollcoon／黯潮環野 Riftwalker
 
+頻道：[骰子浣熊 Rollcoon](https://www.youtube.com/@Rollcoon)
+
 - 2026/01/02 ，[黯潮環野，第一季 Ep. 1 & 2 ](https://www.youtube.com/watch?v=6BwwMMFDYo8)
 - 2026/01/08 ，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
 - 2026/01/16 ，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
@@ -91,12 +98,16 @@ tags:
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
+頻道：[酥魚&獾的trpg酒館](https://www.youtube.com/@%E9%85%A5%E9%AD%9A%E8%88%87%E7%8D%BE%E7%9A%84trpg%E9%85%92%E9%A4%A8)
+
 - 2025/10/07 ，[黯林信使，第 1 集(更新版)](https://www.youtube.com/watch?v=S6MTeIKFq88)
 - 2025/10/19 ，[黯林信使，第 2 集](https://www.youtube.com/watch?v=Nx_Qlq_Ahyc)
 - 2025/11/05 ，[黯林信使，第 3 集](https://www.youtube.com/watch?v=S-JYxQtPFjU)
 - 2026/01/11 ，[黯林信使，第 4 集](https://www.youtube.com/watch?v=Lnhm47rCNTs)
 
 ### 龍的胃裡面／龍胃戰役
+
+頻道：[龍的胃裡面](https://www.youtube.com/@InsideTheWyrm)
 
 - 2025/12/22 ，[龍胃戰役，第一季第一集](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
 - 2026/01/07 ，[龍胃戰役，第一季第二集](https://www.youtube.com/watch?v=2z41-xexbYg)
