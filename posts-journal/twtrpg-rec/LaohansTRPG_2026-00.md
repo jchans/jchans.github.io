@@ -95,6 +95,7 @@ tags:
 - 2026/01/16 ，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
 - 2026/01/22 ，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
 - 2026/01/29 ，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
+- 2026/02/06 ，[黯潮環野，第一季 Ep. 7](https://www.youtube.com/watch?v=dW1t3u6eFH8)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -117,7 +118,7 @@ tags:
 
 ## VTuber
 
-### 周默Zhoumo
+### 周默
 
 - YouTube頻道：[周默Zhoumo](https://www.youtube.com/@zhoumo_cloudhorizon)
 - 播放清單： [TRPG夢境實錄 / 雜談](https://www.youtube.com/playlist?list=PLXM_WTukJKOkqJbPsTyojMHQXtB8p9WU_)
@@ -128,10 +129,14 @@ tags:
 - 播放清單：[【TRPG】雜談](https://www.youtube.com/playlist?list=PLIy5Jdy48sACpiC2TJV-OmVjhqZ5AOwKp)
 - 播放清單：[【TRPG】跑團直播](https://www.youtube.com/playlist?list=PLIy5Jdy48sAAOeZlm50pyZKCpKBKs4Nxh)
 
+### 艾絲黛拉‧莉芙
+
+- YouTube頻道：[艾絲黛拉‧莉芙EstellaLiv](https://www.youtube.com/@Estella_Liv2025/)
+- 播放清單：[【TRPG】龍與地下城的世界](https://www.youtube.com/playlist?list=PLlYewz4XKxHQPBtzcJ9jpEOjqIp9-89fU)
+
 ### 待整理
 
 - [YiShan 雲依珊 ch.](https://www.youtube.com/@YiShan_Vliver/)
-- [艾絲黛拉‧莉芙EstellaLiv](https://www.youtube.com/@Estella_Liv2025/)
 
 ---
 
