@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/10 03:15
+最後更新：2026/02/10 14:25
 
 ## 摘要
 
@@ -23,11 +23,12 @@ tags:
 
 ## 收錄原則
 
-- 同一個活動的宣傳貼文，除非有特殊原因，否則只收錄第一篇公佈資訊的貼文連結（2026/01/27）
+- 同一個活動的宣傳貼文，除非有特殊原因，否則只收錄第一篇公佈資訊的貼文連結。（2026/01/27）
+- 節目、影片的部份，目前只收錄免費公開可閱覽的部份。（2026/02/10）
 
-### 待想問題
+### 待想課題
 
-- 協會、推廣活動收錄，但店家的活動要怎麼取捨？新的店家開始營運紀錄，但是他們辦的活動要不要紀錄在這個表上？如何取捨？
+- 協會、推廣活動逐一收錄，但店家的活動要怎麼取捨？新的店家開始營運紀錄，但是他們辦的活動要不要紀錄在這個表上？如何取捨？
   - 像是 [Lucky Charm 一月底的兩個團](https://www.facebook.com/share/p/1G8ZgyBUt5/)，我就不確定要不要收錄在這邊。收錄的標準是什麼？可能要好好想想。
 
 ---
@@ -70,8 +71,6 @@ tags:
 
 按照預定舉辦日期排序，如果已結束會分別註明。
 
-- 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
-- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
 - 2026/02/15 ~ 2026/03/01 ，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》](https://www.plurk.com/p/3i9unasgdv)
 
 ### 已結束
@@ -79,6 +78,8 @@ tags:
 - 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](https://www.plurk.com/p/3i5p2033cl)
 - 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3i66uty8uo)
 - 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](https://www.plurk.com/p/3i7o2lfowk)
+- 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
+- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
 
 ---
 
@@ -191,7 +192,7 @@ tags:
 
 ### 2026/01/08
 
-- 跑團節目，[黯潮環野，第一季 Ep. 3 ](https://www.youtube.com/watch?v=2JlwnF9acEs)
+- 跑團節目，[黯潮環野，第一季 Ep. 3 ，公開](https://www.youtube.com/watch?v=2JlwnF9acEs)
 
 ### 2026/01/11
 
@@ -208,7 +209,7 @@ tags:
 
 ### 2026/01/16
 
-- 跑團節目，[黯潮環野，第一季 Ep. 4](https://www.youtube.com/watch?v=hok8sURO1Zc)
+- 跑團節目，[黯潮環野，第一季 Ep. 4 ，公開](https://www.youtube.com/watch?v=hok8sURO1Zc)
 
 ### 2026/01/17
 
@@ -221,7 +222,7 @@ tags:
 
 ### 2026/01/22
 
-- 跑團節目，[黯潮環野，第一季 Ep. 5](https://www.youtube.com/watch?v=hjHwproL8TE)
+- 跑團節目，[黯潮環野，第一季 Ep. 5 ，公開](https://www.youtube.com/watch?v=hjHwproL8TE)
 - 跑團節目，[龍胃戰役，第一季第三集，公開](https://www.youtube.com/watch?v=4WVw6m5jNuE)
 
 ### 2026/01/23
@@ -239,7 +240,7 @@ tags:
 
 ### 2026/01/29
 
-- 跑團節目，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
+- 跑團節目，[黯潮環野，第一季 Ep. 6 ，公開](https://www.youtube.com/watch?v=90G_tLI7gOU)
 
 ### 2026/01/30
 
@@ -255,4 +256,4 @@ tags:
 
 ### 2026/02/06
 
-- 跑團節目，[黯潮環野，第一季 Ep. 7](https://www.youtube.com/watch?v=dW1t3u6eFH8)
+- 跑團節目，[黯潮環野，第一季 Ep. 7 ，公開](https://www.youtube.com/watch?v=dW1t3u6eFH8)
