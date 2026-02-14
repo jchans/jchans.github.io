@@ -65,6 +65,7 @@ tags:
 
 - 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
 - 2026/01/30 分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
+- 2026/02/12 分享活動成果，人本三重青少年基地，[2/12 「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
 
 ---
 
@@ -258,3 +259,11 @@ tags:
 ### 2026/02/06 週五
 
 - 跑團節目，[黯潮環野，第一季 Ep. 7 ，公開](https://www.youtube.com/watch?v=dW1t3u6eFH8)
+
+### 2026/02/12 週四
+
+- 台灣TRPG協會，分享活動成果，人本三重青少年基地，[2/12 「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
+
+### 2026/02/14 週六
+
+- 推廣活動，蜥友推廣會，[公開旁聽連結](https://www.plurk.com/p/3ibmg6xc3i)
