@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/14 15:10
+最後更新：2026/02/16 00:30
 
 ## 摘要
 
@@ -65,7 +65,8 @@ tags:
 
 - 2026/01/18 貼文招募人員[【台灣TRPG協會公開招募】](https://www.facebook.com/share/p/1DMmckP1YV/)（多個平台公佈，這邊只收錄臉書貼文連結）
 - 2026/01/30 分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
-- 2026/02/12 分享活動成果，人本三重青少年基地，[2/12 「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
+- 2026/02/12 分享活動成果（2/12 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
+- 2026/02/15 分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
 
 ---
 
@@ -262,8 +263,12 @@ tags:
 
 ### 2026/02/12 週四
 
-- 台灣TRPG協會，分享活動成果，人本三重青少年基地，[2/12 「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
+- 台灣TRPG協會，分享活動成果（2/12 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
 
 ### 2026/02/14 週六
 
 - 推廣活動，蜥友推廣會，[公開旁聽連結](https://www.plurk.com/p/3ibmg6xc3i)
+
+### 2026/02/15 週日
+
+- 台灣TRPG協會，分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
