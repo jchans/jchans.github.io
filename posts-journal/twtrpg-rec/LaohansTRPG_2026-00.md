@@ -101,6 +101,7 @@ tags:
 - 2026/01/29 ，[黯潮環野，第一季 Ep. 6](https://www.youtube.com/watch?v=90G_tLI7gOU)
 - 2026/02/06 ，[黯潮環野，第一季 Ep. 7](https://www.youtube.com/watch?v=dW1t3u6eFH8)
 - 2026/02/13 ，[黯潮環野，第一季 Ep. 8](https://www.youtube.com/watch?v=DkUL-ZEb2HA)
+- 2026/02/16 ，[特別企劃，過年特輯（上）](https://www.youtube.com/watch?v=VRxMXqo75Lw)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -278,3 +279,7 @@ tags:
 
 - 台灣TRPG協會，分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
 - 推廣活動，【蜥友推廣會－春日．影】，活動開始。
+
+### 2026/02/16 週一
+
+- 骰子浣熊頻道，[特別企劃，過年特輯（上）](https://www.youtube.com/watch?v=VRxMXqo75Lw)
