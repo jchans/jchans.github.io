@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/02/17 02:00
+最後更新：2026/02/26 15:35
 
 ## 摘要
 
@@ -67,6 +67,7 @@ tags:
 - 2026/01/30 分享活動成果，人本三重青少年基地，[1/29 「青少年TRPG體驗」](https://www.facebook.com/share/p/17DvXT56jB/)
 - 2026/02/12 分享活動成果（2/12 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
 - 2026/02/15 分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
+- 2026/02/24 與政大合作活動[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦），公布](https://www.facebook.com/share/p/17CHQBXAi8/)
 
 ---
 
@@ -111,6 +112,7 @@ tags:
 - 2025/10/19 ，[黯林信使，第 2 集](https://www.youtube.com/watch?v=Nx_Qlq_Ahyc)
 - 2025/11/05 ，[黯林信使，第 3 集](https://www.youtube.com/watch?v=S-JYxQtPFjU)
 - 2026/01/11 ，[黯林信使，第 4 集](https://www.youtube.com/watch?v=Lnhm47rCNTs)
+- 2026/02/21 ，[黯林信使，第 5 集](https://www.youtube.com/watch?v=LU8SOgPRRtE)
 
 ### 龍的胃裡面／龍胃戰役
 
@@ -283,3 +285,11 @@ tags:
 ### 2026/02/16 週一
 
 - 骰子浣熊頻道，[特別企劃，過年特輯（上）](https://www.youtube.com/watch?v=VRxMXqo75Lw)
+
+### 2026/02/21 週六
+
+- 跑團節目，[黯林信使，第 5 集，公開](https://www.youtube.com/watch?v=LU8SOgPRRtE)
+
+### 2026/02/24 週二
+
+- 台灣TRPG協會，與政大合作活動[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦），公布](https://www.facebook.com/share/p/17CHQBXAi8/)
