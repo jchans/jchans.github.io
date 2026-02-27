@@ -293,3 +293,7 @@ tags:
 ### 2026/02/24 週二
 
 - 台灣TRPG協會，與政大合作活動[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦），公布](https://www.facebook.com/share/p/17CHQBXAi8/)
+
+### 2026/02/26 週四
+
+- [TRPG嘉年華（官方用語目前不確定寫法暫用此稱呼）公佈 2026 活動招商公告&簡介](https://www.facebook.com/share/p/1D3QBEMYkY/)
