@@ -75,6 +75,9 @@ tags:
 
 按照預定舉辦日期排序，如果已結束會分別註明。
 
+- 2026/03/06 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
+- 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
+
 ### 已結束
 
 - 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](https://www.plurk.com/p/3i5p2033cl)
@@ -102,6 +105,8 @@ tags:
 - 2026/02/06 ，[黯潮環野，第一季 Ep. 7](https://www.youtube.com/watch?v=dW1t3u6eFH8)
 - 2026/02/13 ，[黯潮環野，第一季 Ep. 8](https://www.youtube.com/watch?v=DkUL-ZEb2HA)
 - 2026/02/16 ，[特別企劃，過年特輯（上）](https://www.youtube.com/watch?v=VRxMXqo75Lw)
+- 2026/02/28 ，[特別企劃，過年特輯（下）](https://www.youtube.com/watch?v=CieUH-itQ2E)
+- 2026/03/06 ，[黯潮環野，第一季 Ep. 9](https://www.youtube.com/watch?v=VeMRmuz_XcY)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -120,6 +125,7 @@ tags:
 - 2025/12/22 ，[龍胃戰役，第一季第一集](https://www.youtube.com/watch?v=bbIv9G_6nTQ)
 - 2026/01/07 ，[龍胃戰役，第一季第二集](https://www.youtube.com/watch?v=2z41-xexbYg)
 - 2026/01/22 ，[龍胃戰役，第一季第三集](https://www.youtube.com/watch?v=4WVw6m5jNuE)
+- 2026/02/14 ，[龍胃戰役，第一季第四集](https://www.youtube.com/watch?v=DkiZYMCKh0o)
 
 ---
 
@@ -275,6 +281,7 @@ tags:
 ### 2026/02/14 週六
 
 - 推廣活動，【蜥友推廣會－春日．影】，[公開旁聽連結](https://www.plurk.com/p/3ibmg6xc3i)
+- 跑團節目，[龍胃戰役，第一季第四集，公開](https://www.youtube.com/watch?v=DkiZYMCKh0o)
 
 ### 2026/02/15 週日
 
@@ -297,7 +304,29 @@ tags:
 
 - [靠過來主辦，TRPG嘉年華，公佈 2026 活動招商公告&簡介](https://www.facebook.com/share/p/1D3QBEMYkY/)
 
+### 2026/02/28 週六
+
+- 骰子浣熊頻道，[特別企劃，過年特輯（下）](https://www.youtube.com/watch?v=CieUH-itQ2E)
+
 ### 2026/03/02 週一
 
+- D&D Beyond 公告了一份 [FAQ](https://dndbeyond-support.wizards.com/hc/en-us/sections/46714233564564-5-5e-Change-FAQs) 表示接下來 D&D 5e 2024 年的版本會統一以 5.5e 標示，，ENWorlds 的[報導](https://www.enworld.org/threads/d-d-2024-is-now-officially-called-5-5e.718185/)。
 - 蜥友推廣會， 3/1 最後一團結束， 3/2 22:00 伺服器刪除。
 - 附記：筆者與主辦確認屆次，同樣的形式自 2023 年開始已經辦了四屆，（ 2024 春節、 2025 春節、 2025 暑假、 2026 春節），開始使用「蜥友推廣會」、簡稱「蜥推」，是 2025 年暑假開始。
+
+### 2026/03/03 週二
+
+- D&D 公開了[新的官方網站](https://www.dungeonsanddragons.com/)，ENWorlds 的[報導](https://www.enworld.org/threads/dungeons-dragons-has-a-new-home-webpage.718201/)。
+
+### 2026/03/05 週四
+
+- 推廣活動，[TRPG 在新竹，線下實體推廣活動（ 3/28 舉辦）公布](https://www.plurk.com/p/3ied8haxgt)
+
+### 2026/03/06 週五
+
+- 推廣活動，[桃園 trpg 推廣會， 3 月 TRPG 推廣活動（ 3/21 舉辦）公布](https://www.plurk.com/p/3iei4rapmc)
+- 跑團節目，[黯潮環野，第一季 Ep. 9](https://www.youtube.com/watch?v=VeMRmuz_XcY)
+
+### 2026/03/07 週六
+
+- 奇幻森林市集2026 ， [TRPG互動專區攤位招募](https://www.plurk.com/p/3iemp32ni4)
