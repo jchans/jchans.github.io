@@ -68,6 +68,7 @@ tags:
 - 2026/02/12 分享活動成果（2/12 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1BubCvEMkS/)
 - 2026/02/15 分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
 - 2026/02/24 與政大合作活動[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦），公布](https://www.facebook.com/share/p/17CHQBXAi8/)
+- 2026/03/09 分享活動成果，[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦）](https://www.facebook.com/share/p/1FtTXAT1bm/)
 
 ---
 
@@ -75,7 +76,7 @@ tags:
 
 按照預定舉辦日期排序，如果已結束會分別註明。
 
-- 2026/03/06 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
+- 2026/03/21 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
 - 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
 
 ### 已結束
@@ -107,6 +108,7 @@ tags:
 - 2026/02/16 ，[特別企劃，過年特輯（上）](https://www.youtube.com/watch?v=VRxMXqo75Lw)
 - 2026/02/28 ，[特別企劃，過年特輯（下）](https://www.youtube.com/watch?v=CieUH-itQ2E)
 - 2026/03/06 ，[黯潮環野，第一季 Ep. 9](https://www.youtube.com/watch?v=VeMRmuz_XcY)
+- 2026/03/13 ，[黯潮環野，第一季 Ep. 10](https://www.youtube.com/watch?v=Kjz991Pe03U)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -117,6 +119,7 @@ tags:
 - 2025/11/05 ，[黯林信使，第 3 集](https://www.youtube.com/watch?v=S-JYxQtPFjU)
 - 2026/01/11 ，[黯林信使，第 4 集](https://www.youtube.com/watch?v=Lnhm47rCNTs)
 - 2026/02/21 ，[黯林信使，第 5 集](https://www.youtube.com/watch?v=LU8SOgPRRtE)
+- 2026/03/15 ，[黯林信使，第 6 集(最終回)](https://www.youtube.com/watch?v=MH7HQW_B9Ao)
 
 ### 龍的胃裡面／龍胃戰役
 
@@ -330,3 +333,20 @@ tags:
 ### 2026/03/07 週六
 
 - 奇幻森林市集2026 ， [TRPG互動專區攤位招募](https://www.plurk.com/p/3iemp32ni4)
+
+### 2026/03/09 週一
+
+- 台灣TRPG協會，分享活動成果，[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦）](https://www.facebook.com/share/p/1FtTXAT1bm/)
+
+### 2026/03/11 週三
+
+- 台灣TRPG協會，人本三重青少年基地，[04/18、05/09、06/13週六下午 「TRPG桌遊活動」公布]](https://www.facebook.com/share/p/1LtmY2rdj6/)
+- 台灣TRPG協會，[4/3(五)～4/5(日)春季新銳桌遊節活動相關訊息公佈](https://www.facebook.com/share/p/1CTv4Kg6k1/)
+
+### 2026/03/13 週五
+
+- 跑團節目，[黯潮環野，第一季 Ep. 10](https://www.youtube.com/watch?v=Kjz991Pe03U)
+
+### 2026/03/15 週日
+
+- 跑團節目，[黯林信使，第 6 集，公開](https://www.youtube.com/watch?v=MH7HQW_B9Ao)
