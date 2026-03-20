@@ -11,6 +11,8 @@ tags:
 
 AI 爆炸的時代，我有點跟不上。
 
+測試，靜態網站產生掛了嗎？
+
 ## 寫完放出的去處
 
 - [老翰的地下城v2](https://laohanj.blogspot.com/) ， TRPG 方面的文章
