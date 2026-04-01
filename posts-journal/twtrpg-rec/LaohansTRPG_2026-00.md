@@ -11,7 +11,7 @@ tags:
 
 這裡是工作稿，完成到一定程度會更新到 blogger 的貼文
 
-最後更新：2026/03/20 00:30
+最後更新：2026/04/01 14:35
 
 ## 摘要
 
@@ -59,7 +59,7 @@ tags:
 - 2025/11/15 分享活動成果，人本三重青少年基地，[11/14 「青少年TRPG體驗」](https://www.facebook.com/share/p/1G4vaom7SE/)
 - 2025/11/16 [《VirtualLive TRPG 線上推廣企劃》公佈活動資訊（9/20 ~ 9/21）](https://www.facebook.com/share/p/1GCqvyHP6A/)
 - 2025/12/05 [台灣TRPG協會 × D3 龍山地下城奇幻市集](https://www.facebook.com/share/p/1BbqJHNpoA/)公佈活動資訊，（ 12/13 ~ 12/14 週六、週日）
-- 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
+- 2025/12/28 [臺灣桌上角色扮演遊戲協會活動「Virtual Live TRPG 線上推廣企劃」舉辦， 4/11~4/12 舉辦](https://virtualtrpg.trpgtw.org/virtuallivetrpg/)
 
 #### 2026
 
@@ -69,15 +69,15 @@ tags:
 - 2026/02/15 分享活動成果（2/15 分享，2/16記錄時沒有註明實際活動時間），人本三重青少年基地，[「青少年TRPG體驗」](https://www.facebook.com/share/p/1Bw8F576tD/)
 - 2026/02/24 與政大合作活動[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦），公布](https://www.facebook.com/share/p/17CHQBXAi8/)
 - 2026/03/09 分享活動成果，[「TRPG全境擴散計畫，TRPG體驗會－政大場」（ 3/07 舉辦）](https://www.facebook.com/share/p/1FtTXAT1bm/)
+- 2026/03/11 人本三重青少年基地，[04/18、05/09、06/13週六下午 「TRPG桌遊活動」公布](https://www.facebook.com/share/p/1LtmY2rdj6/)
+- 2026/03/11 [4/3(五)～4/5(日)春季新銳桌遊節活動相關訊息公佈](https://www.facebook.com/share/p/1CTv4Kg6k1/)
+- 2026/04/01 [奇幻森林遊樂園市集2026 相關活動資訊公佈](https://www.facebook.com/share/p/1DgePYtg1Q/)
 
 ---
 
 ## 推廣活動
 
 按照預定舉辦日期排序，如果已結束會分別註明。
-
-- 2026/03/21 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
-- 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
 
 ### 已結束
 
@@ -87,6 +87,8 @@ tags:
 - 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
 - 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
 - 2026/02/15 ~ 2026/03/01 ，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》](https://www.plurk.com/p/3i9unasgdv)
+- 2026/03/21 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
+- 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
 
 ---
 
@@ -109,6 +111,8 @@ tags:
 - 2026/02/28 ，[特別企劃，過年特輯（下）](https://www.youtube.com/watch?v=CieUH-itQ2E)
 - 2026/03/06 ，[黯潮環野，第一季 Ep. 9](https://www.youtube.com/watch?v=VeMRmuz_XcY)
 - 2026/03/13 ，[黯潮環野，第一季 Ep. 10](https://www.youtube.com/watch?v=Kjz991Pe03U)
+- 2026/03/21 ，[黯潮環野，第一季 Ep. 11](https://www.youtube.com/watch?v=BZLutyw7UAE)
+- 2026/03/27 ，[黯潮環野，第一季 Ep. 12](https://www.youtube.com/watch?v=BZLutyw7UAE)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -150,9 +154,15 @@ tags:
 - YouTube頻道：[艾絲黛拉‧莉芙EstellaLiv](https://www.youtube.com/@Estella_Liv2025/)
 - 播放清單：[【TRPG】龍與地下城的世界](https://www.youtube.com/playlist?list=PLlYewz4XKxHQPBtzcJ9jpEOjqIp9-89fU)
 
+### YiShan 雲依珊 ch.
+
+- [YouTube頻道](https://www.youtube.com/@YiShan_Vliver/)
+- 播放清單：[TRPG團務記錄檔](https://www.youtube.com/playlist?list=PL88E7UBUMunZalue_xBLrBjJnK6mr_gmk)
+-
+
 ### 待整理
 
-- [YiShan 雲依珊 ch.](https://www.youtube.com/@YiShan_Vliver/)
+- 嗚夫沃夫的寂靜之音
 
 ---
 
@@ -311,6 +321,10 @@ tags:
 
 - 骰子浣熊頻道，[特別企劃，過年特輯（下）](https://www.youtube.com/watch?v=CieUH-itQ2E)
 
+---
+
+## 逐日記事／2026 年 03 月
+
 ### 2026/03/02 週一
 
 - D&D Beyond 公告了一份 [FAQ](https://dndbeyond-support.wizards.com/hc/en-us/sections/46714233564564-5-5e-Change-FAQs) 表示接下來 D&D 5e 2024 年的版本會統一以 5.5e 標示，，ENWorlds 的[報導](https://www.enworld.org/threads/d-d-2024-is-now-officially-called-5-5e.718185/)。
@@ -340,7 +354,7 @@ tags:
 
 ### 2026/03/11 週三
 
-- 台灣TRPG協會，人本三重青少年基地，[04/18、05/09、06/13週六下午 「TRPG桌遊活動」公布]](https://www.facebook.com/share/p/1LtmY2rdj6/)
+- 台灣TRPG協會，人本三重青少年基地，[04/18、05/09、06/13週六下午 「TRPG桌遊活動」公布](https://www.facebook.com/share/p/1LtmY2rdj6/)
 - 台灣TRPG協會，[4/3(五)～4/5(日)春季新銳桌遊節活動相關訊息公佈](https://www.facebook.com/share/p/1CTv4Kg6k1/)
 
 ### 2026/03/13 週五
@@ -350,3 +364,31 @@ tags:
 ### 2026/03/15 週日
 
 - 跑團節目，[黯林信使，第 6 集(最終回)，公開](https://www.youtube.com/watch?v=MH7HQW_B9Ao)
+
+### 2026/03/21 週六
+
+- 桃園 trpg 推廣會， 3 月 TRPG 推廣活動
+- 跑團節目，[黯潮環野，第一季 Ep. 11](https://www.youtube.com/watch?v=BZLutyw7UAE)
+
+### 2026/03/27 週五
+
+- 跑團節目，[黯潮環野，第一季 Ep. 12](https://www.youtube.com/watch?v=BZLutyw7UAE)
+
+### 2026/03/28 週六
+
+- TRPG 在新竹，線下實體推廣活動
+- 悠子個人委託頁面[公開](https://www.plurk.com/p/3ihi6xzudb)。（整理者附註：以這個表單的性質，好像整理個人的資料很怪，但這感覺是蠻大的事情，還是紀錄一下）
+
+### 2026/03/31 週二
+
+- Free League 的系統（ Dragonbane ， Drakar och Demoner (Swedish only) ， Forbidden Lands ， Symbaroum ， Coriolis: The Great Dark ， Coriolis – The Third Horizon ）第三方開放授權， FTL 授權（Free Tabletop License），詳見[連結](https://freeleaguepublishing.com/community-content/free-tabletop-licenses/)。
+
+---
+
+## 逐日記事／2026 年 04 月
+
+### 2026/04/01 週三
+
+- 台灣TRPG協會，[奇幻森林遊樂園市集2026 相關活動資訊公佈， 4/11~4/12 舉辦](https://www.facebook.com/share/p/1DgePYtg1Q/)
+
+---
