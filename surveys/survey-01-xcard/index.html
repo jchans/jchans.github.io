@@ -1,1399 +1,2160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRPG 問卷集｜01｜安全工具「X 卡」——逐題摘要報告</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #1a1410;
-    --ink-light: #4a3f35;
-    --ink-faint: #8a7a6e;
-    --paper: #f5f0e8;
-    --paper-warm: #ede6d6;
-    --paper-dark: #e2d9c5;
-    --accent: #8b2e2e;
-    --accent-light: #c4574a;
-    --accent-pale: #f0dbd8;
-    --rule: #c8bba8;
-    --highlight: #e8c84a;
-    --gm-color: #2e5c8b;
-    --gm-pale: #d8e5f0;
-    --player-color: #2e7a4a;
-    --player-pale: #d5ecde;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.85;
-    font-size: 15px;
-    position: relative;
-    min-height: 100vh;
-  }
-
-  /* Grain texture overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.6;
-  }
-
-  /* Decorative left stripe */
-  .page-stripe {
-    position: fixed;
-    left: 0; top: 0; bottom: 0;
-    width: 6px;
-    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-light) 50%, var(--accent) 100%);
-    z-index: 10;
-  }
-
-  .container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 60px 48px 100px 72px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Header */
-  .report-header {
-    padding-bottom: 40px;
-    margin-bottom: 48px;
-    border-bottom: 2px solid var(--ink);
-    position: relative;
-  }
-
-  .report-label {
-    font-family: 'Crimson Pro', serif;
-    font-size: 12px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 400;
-    margin-bottom: 12px;
-  }
-
-  .report-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--ink);
-    margin-bottom: 8px;
-  }
-
-  .report-subtitle {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--ink-light);
-    font-style: italic;
-  }
-
-  .report-meta {
-    margin-top: 20px;
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-
-  .meta-item {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .meta-label {
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-  }
-
-  .meta-value {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--ink);
-    line-height: 1;
-  }
-
-  .meta-value small {
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--ink-light);
-  }
-
-  /* Section headings */
-  .section-divider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin: 56px 0 32px;
-  }
-
-  .section-divider-label {
-    font-family: 'Crimson Pro', serif;
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    white-space: nowrap;
-  }
-
-  .section-divider-rule {
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
-  }
-
-  .section-tag {
-    display: inline-block;
-    font-family: 'Crimson Pro', serif;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border: 1px solid;
-    border-radius: 2px;
-  }
-
-  .tag-gm { color: var(--gm-color); border-color: var(--gm-color); background: var(--gm-pale); }
-  .tag-player { color: var(--player-color); border-color: var(--player-color); background: var(--player-pale); }
-  .tag-general { color: var(--accent); border-color: var(--accent); background: var(--accent-pale); }
-
-  /* Question blocks */
-  .q-block {
-    margin-bottom: 48px;
-    animation: fadeUp 0.5s ease both;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .q-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 16px;
-  }
-
-  .q-number {
-    font-family: 'Crimson Pro', serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: var(--accent);
-    background: var(--accent-pale);
-    border: 1px solid var(--accent);
-    padding: 4px 8px;
-    white-space: nowrap;
-    margin-top: 2px;
-    flex-shrink: 0;
-  }
-
-  .q-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--ink);
-    line-height: 1.5;
-  }
-
-  .q-title small {
-    display: block;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--ink-faint);
-    margin-top: 4px;
-  }
-
-  .q-body {
-    padding-left: 46px;
-  }
-
-  /* Stats summary bar */
-  .stat-summary {
-    display: flex;
-    gap: 24px;
-    padding: 14px 18px;
-    background: var(--paper-warm);
-    border-left: 3px solid var(--ink);
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    font-size: 13px;
-  }
-
-  .stat-item { display: flex; align-items: baseline; gap: 6px; }
-  .stat-num { font-family: 'Crimson Pro', serif; font-size: 22px; font-weight: 400; color: var(--ink); line-height: 1; }
-  .stat-desc { color: var(--ink-light); }
-
-  /* Bar chart */
-  .bar-chart {
-    margin: 18px 0 24px;
-  }
-
-  .bar-row {
-    display: grid;
-    grid-template-columns: 80px 1fr 60px;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-  }
-
-  .bar-label {
-    font-size: 12px;
-    color: var(--ink-light);
-    text-align: right;
-    line-height: 1.3;
-  }
-
-  .bar-track {
-    height: 22px;
-    background: var(--paper-dark);
-    border-radius: 2px;
-    overflow: visible;
-    position: relative;
-  }
-
-  .bar-fill {
-    height: 100%;
-    border-radius: 2px;
-    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-  }
-
-  .bar-fill::after {
-    content: attr(data-label);
-    position: absolute;
-    left: calc(100% + 6px);
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 10px;
-    color: var(--ink-light);
-    font-weight: 500;
-    white-space: nowrap;
-  }
-
-  .bar-fill-neutral { background: var(--ink-light); }
-  .bar-fill-positive { background: var(--player-color); }
-  .bar-fill-negative { background: var(--accent); }
-  .bar-fill-mid { background: var(--ink-faint); }
-  .bar-fill-gm { background: var(--gm-color); }
-  .bar-fill-accent { background: var(--accent-light); }
-
-  .bar-count { font-family: 'Crimson Pro', serif; font-size: 15px; color: var(--ink-faint); }
-
-  /* Bimodal note */
-  .bimodal-note {
-    display: flex;
-    gap: 16px;
-    margin: 8px 0 20px;
-    font-size: 12px;
-  }
-
-  .bimodal-block {
-    flex: 1;
-    padding: 10px 14px;
-    border-radius: 2px;
-    text-align: center;
-  }
-
-  .bimodal-block strong {
-    display: block;
-    font-family: 'Crimson Pro', serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 2px;
-  }
-
-  .bimodal-low { background: var(--accent-pale); color: var(--accent); }
-  .bimodal-mid { background: var(--paper-dark); color: var(--ink-faint); }
-  .bimodal-high { background: var(--gm-pale); color: var(--gm-color); }
-
-  /* Analysis text */
-  .analysis {
-    background: var(--paper-warm);
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    padding: 18px 20px;
-    margin: 16px 0;
-  }
-
-  .analysis-label {
-    font-family: 'Crimson Pro', serif;
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 8px;
-  }
-
-  .analysis p {
-    color: var(--ink-light);
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 8px;
-  }
-
-  .analysis p:last-child { margin-bottom: 0; }
-
-  /* Cross-link callout */
-  .crosslink {
-    display: flex;
-    gap: 12px;
-    padding: 14px 16px;
-    border: 1px dashed var(--rule);
-    margin: 16px 0;
-    background: white;
-    font-size: 13px;
-  }
-
-  .crosslink-icon {
-    font-family: 'Crimson Pro', serif;
-    font-size: 18px;
-    color: var(--highlight);
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-
-  .crosslink p { color: var(--ink-light); line-height: 1.7; }
-  .crosslink strong { color: var(--ink); font-weight: 500; }
-
-  /* Finding list */
-  .finding-list {
-    list-style: none;
-    margin: 12px 0;
-  }
-
-  .finding-list li {
-    padding: 10px 0 10px 20px;
-    border-bottom: 1px solid var(--paper-dark);
-    position: relative;
-    font-size: 14px;
-    color: var(--ink-light);
-    line-height: 1.75;
-  }
-
-  .finding-list li:last-child { border-bottom: none; }
-
-  .finding-list li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-family: 'Crimson Pro', serif;
-  }
-
-  .finding-list li strong { color: var(--ink); font-weight: 500; }
-
-  /* Subcategory */
-  .subcategory {
-    margin: 16px 0;
-    padding: 14px 16px;
-    border-left: 2px solid var(--rule);
-  }
-
-  .subcategory-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-
-  .subcategory p {
-    font-size: 13px;
-    color: var(--ink-light);
-    line-height: 1.75;
-  }
-
-  /* n=XX badge */
-  .n-badge {
-    display: inline-block;
-    font-family: 'Crimson Pro', serif;
-    font-size: 12px;
-    background: var(--paper-dark);
-    padding: 1px 8px;
-    border-radius: 2px;
-    color: var(--ink-faint);
-    margin-left: 8px;
-    vertical-align: middle;
-  }
-
-  /* Overall analysis section */
-  .overall-section {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 2px solid var(--ink);
-  }
-
-  .overall-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--ink);
-    margin-bottom: 32px;
-  }
-
-  .finding-card {
-    margin-bottom: 28px;
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: 16px;
-  }
-
-  .finding-num {
-    font-family: 'Crimson Pro', serif;
-    font-size: 36px;
-    font-weight: 300;
-    color: var(--rule);
-    line-height: 1;
-    padding-top: 4px;
-    text-align: right;
-  }
-
-  .finding-content {}
-
-  .finding-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 8px;
-  }
-
-  .finding-text {
-    font-size: 14px;
-    color: var(--ink-light);
-    line-height: 1.8;
-  }
-
-  /* Footer */
-  .report-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-    font-size: 12px;
-    color: var(--ink-faint);
-    line-height: 1.7;
-  }
-
-  /* Author note */
-  .author-note {
-    margin-top: 12px;
-    padding: 14px 18px;
-    border: 1px dashed var(--ink-faint);
-    background: white;
-    position: relative;
-  }
-
-  .author-note-label {
-    font-family: 'Crimson Pro', serif;
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 8px;
-  }
-
-  .author-note p {
-    font-size: 14px;
-    color: var(--ink-light);
-    line-height: 1.85;
-    margin-bottom: 6px;
-  }
-
-  .author-note p:last-child { margin-bottom: 0; }
-
-  /* Intro section */
-  .intro-section {
-    margin-bottom: 48px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .intro-block {
-    margin-bottom: 28px;
-  }
-
-  .intro-block:last-child {
-    margin-bottom: 0;
-  }
-
-  .intro-heading {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-left: 3px solid var(--accent);
-  }
-
-  .intro-block p {
-    font-size: 14px;
-    color: var(--ink-light);
-    line-height: 1.85;
-    margin-bottom: 8px;
-  }
-
-  .intro-block p:last-child { margin-bottom: 0; }
-
-  .intro-stats {
-    display: flex;
-    gap: 24px;
-    margin: 14px 0;
-    flex-wrap: wrap;
-  }
-
-  .intro-stat-group {
-    flex: 1;
-    min-width: 160px;
-    background: var(--paper-warm);
-    border: 1px solid var(--rule);
-    padding: 12px 16px;
-    border-radius: 2px;
-  }
-
-  .intro-stat-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-
-  .intro-stat-list {
-    list-style: none;
-    font-size: 13px;
-    color: var(--ink-light);
-    line-height: 1.8;
-  }
-
-  .intro-stat-list li::before {
-    content: '·';
-    margin-right: 6px;
-    color: var(--accent);
-  }
-
-  /* Responsive */
-  @media (max-width: 640px) {
-    .container { padding: 40px 24px 60px 32px; }
-    .report-title { font-size: 22px; }
-    .bar-row { grid-template-columns: 60px 1fr 48px; }
-    .bimodal-note { flex-direction: column; gap: 8px; }
-  }
-
-  /* Staggered animation for blocks */
-  .q-block:nth-child(1) { animation-delay: 0.05s; }
-  .q-block:nth-child(2) { animation-delay: 0.1s; }
-  .q-block:nth-child(3) { animation-delay: 0.15s; }
-  .q-block:nth-child(4) { animation-delay: 0.2s; }
-  .q-block:nth-child(5) { animation-delay: 0.25s; }
-  .q-block:nth-child(6) { animation-delay: 0.3s; }
-
-  /* Animated bars */
-  .bar-fill { width: 0; }
-  .bar-fill.animated { transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
-</style>
-</head>
-<body>
-
-<div class="page-stripe"></div>
-
-<div class="container">
-
-  <!-- Header -->
-  <header class="report-header">
-    <div class="report-label">TRPG 問卷集 · 第 01 回</div>
-    <h1 class="report-title">安全工具「X 卡」</h1>
-    <div class="report-subtitle">逐題摘要分析報告</div>
-    <div class="report-meta">
-      <div class="meta-item">
-        <span class="meta-label">有效回覆</span>
-        <span class="meta-value">116 <small>份</small></span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">GM 區段</span>
-        <span class="meta-value">94 <small>份</small></span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">玩家區段</span>
-        <span class="meta-value">111 <small>份</small></span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">問卷題數</span>
-        <span class="meta-value">13 <small>題（含分支）</small></span>
-      </div>
-    </div>
-  </header>
-
-  <!-- Intro -->
-  <div class="intro-section">
-    <div class="intro-block">
-      <h2 class="intro-heading">緣起</h2>
-      <p>四月初台灣 TRPG 社群中一起引發廣泛討論的事件，讓 X 卡的使用再度成為話題。剛好四月開始想嘗試用「問卷」的形式來研究台灣 TRPG 相關的事情，覺得也許適合做一次問卷來初步調查同好關於 X 卡的想法。</p>
-    </div>
-    <div class="intro-block">
-      <h2 class="intro-heading">問卷準備與投放</h2>
-      <p>這次覺得問題比較重要，決定稍微擴大規模。在準備問卷問題的時候，在 4 個我平常比較有待著（看看訊息、回應或互動）的伺服器裡提供早期版本的問卷，請團友們幫忙看問題的設計與安排，感謝有提供建議的大家。</p>
-      <p>這次問卷投放的地方，除了我個人的社群帳號（臉書、噗浪、Threads、推特）之外，投在我之前整理的「公開的 Discord 伺服器清單」的 20 個伺服器裡。</p>
-      <p>有想過是不是要去各推廣會臉書社團、巴哈的 TRPG 版等地方投放，但我覺得很多地方我是連打招呼都沒有就去貼東西不太行的，擴大投放的做法會慢慢進行。這次還是先保守一點。</p>
-      <p>問卷收集期間：2026 年 4 月 14 日至 16 日</p>
-    </div>
-    <div class="intro-block">
-      <h2 class="intro-heading">問卷回應概觀</h2>
-      <p>這次問卷共收到 116 份回應。</p>
-      <div class="intro-stats">
-        <div class="intro-stat-group">
-          <div class="intro-stat-title">GM 的部份</div>
-          <ul class="intro-stat-list">
-            <li>收到回應 94 份</li>
-            <li>其中只回應 GM 部份的 5 份</li>
-          </ul>
-        </div>
-        <div class="intro-stat-group">
-          <div class="intro-stat-title">玩家的部份</div>
-          <ul class="intro-stat-list">
-            <li>收到回應 111 份</li>
-            <li>其中只回應玩家部份的 22 份</li>
-          </ul>
-        </div>
-      </div>
-      <p>「同時回應玩家與 GM 提問的部分」有 89 份，大約是這份問卷 76.7% 的回應。「只回應玩家的部分」大約是總問卷的兩成多，比我想像中少一點，有可能是有帶團的同好相對較關注這個議題，也許只擔任玩家的同好如果遊戲持續進行、順利，也不太需要 X 卡這樣的工具。這也許有機會再深入探討。</p>
-      <p>整個社群的 GM／玩家比例可能是之後可以再研究看看的題目。就這次的問卷而言，我覺得好像有接觸到我想問的人們。以下我會把我的想法附在各題 Claude（AI 工具）分析的意見下面。</p>
-    </div>
-  </div>
-
-  <!-- Section: Background -->
-  <div class="section-divider">
-    <span class="section-divider-label">壹 · 背景與身份</span>
-    <span class="section-divider-rule"></span>
-    <span class="section-tag tag-general">全體受訪者</span>
-  </div>
-
-  <!-- Q1 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q1</div>
-      <div class="q-title">
-        角色傾向分佈
-        <small>幾乎只擔任玩家（1）～幾乎只擔任 GM（5）　<span class="n-badge">n = 116</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">1</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-positive" data-width="21.6" data-label="21.6%"></div></div>
-          <div class="bar-count">25 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">2</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-positive" data-width="15.5" data-label="15.5%"></div></div>
-          <div class="bar-count">18 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">3</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-mid" data-width="20.7" data-label="20.7%"></div></div>
-          <div class="bar-count">24 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">4</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-gm" data-width="26.7" data-label="26.7%"></div></div>
-          <div class="bar-count">31 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">5</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-gm" data-width="15.5" data-label="15.5%"></div></div>
-          <div class="bar-count">18 人</div>
-        </div>
-      </div>
-      <div class="analysis">
-        <div class="analysis-label">分析摘要</div>
-        <p>受訪者身份分布廣泛，偏 GM 傾向者（4–5 分）合計 42.2%，偏玩家傾向者（1–2 分）合計 37.1%，雙重身份者（3 分）佔 20.7%。樣本涵蓋各層級參與者，具備一定的角色多樣性。本題同時作為後續 GM 與玩家分支的背景變項。</p>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>以總問卷數量 116 人來說，也許太細分的資料分析不見得能夠反映趨勢，但是看起來「比較常擔任玩家還是 GM」這個問題來說，收到了一個大致上數量接近的、「或多或少都會擔任 GM 或玩家」只是比例不同的樣本。</p>
-        <p>由「只填寫玩家的部份」22 人來看，也是有 3 個人是「幾乎都擔任玩家」，但可能很偶爾還是有擔任 GM。而有 5 個 GM 沒有填寫玩家的部份，可能比較少擔任玩家或幾乎沒擔任玩家？這只是猜測，希望他們還是偶爾有機會擔任玩家。</p>
-        <p>總之，我覺得這似乎是個有趣的樣本分佈。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q2 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q2</div>
-      <div class="q-title">
-        是否知道 X 卡？
-        <small>知悉率　<span class="n-badge">n = 116</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="stat-summary">
-        <div class="stat-item"><span class="stat-num">87.1%</span><span class="stat-desc">知道（101 人）</span></div>
-        <div class="stat-item"><span class="stat-num">12.9%</span><span class="stat-desc">不知道（15 人）</span></div>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">知道</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-positive" data-width="87.1" data-label="87.1%"></div></div>
-          <div class="bar-count">101 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">不知道</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-negative" data-width="12.9" data-label="12.9%"></div></div>
-          <div class="bar-count">15 人</div>
-        </div>
-      </div>
-      <div class="analysis">
-        <div class="analysis-label">分析摘要</div>
-        <p>大多數受訪者已知悉 X 卡的存在，顯示此工具在受訪群體中具有相當程度的滲透率。然而，不知道的比例仍達 12.9%，部分受訪者補充「知道名稱但未深入了解」或「概念模糊」，意味著知悉率可能高估實際理解程度。</p>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>八成五以上的人知道 X 卡是什麼，然而即使是在我四處張貼問卷的時候，我也還是有注意到有些同好的確是不知道 X 卡是什麼的，有些同好會在群組裡幫忙解釋或介紹……這大概也是我選擇在 Discord 社群投放的原因之一。</p>
-        <p>已經知道 X 卡的同好 101 人，他們可能想在一些議題上提供他們的意見或回饋；我在設計問卷的時候有預想到這個情況，對那些已熟悉 X 卡、想深入討論的同好稍微覺得有點抱歉，題目的設計上構想相對單純，希望那些允許自由輸入文字的部份有讓大家表達自己的想法。</p>
-        <p>不知道 X 卡是什麼的同好 15 人，非常感謝你們還是填寫了這份問卷。我最初的問卷設計原本是「不知道 X 卡」是什麼，問卷就會直接結束。但後來調整了想法，還好有改成無論知不知道 X 卡都可以完整回答這份問卷。從這 15 位回應，大致上可以看出可能是「根本不知道這個工具的存在」，因為不知道這個工具，自然對它抱持中立態度；但從回覆來看，他們並非沒有安全意識，多數人有自己的替代做法。</p>
-        <p>回應中有少數明顯不符合邏輯的答案（例如填寫「不知道 X 卡是什麼」卻在 GM 的部份填「總是會準備 X 卡作為團務安全工具」），提醒了我之後需要設計防呆機制來篩選這類情況。這次因為數量極少且不確定，所以並未剔除，之後會在問題之間設計看看能不能避免有這種不合理的答案出現。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q3 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q3</div>
-      <div class="q-title">
-        是否讀過 X 卡原始說明或中文譯本？
-        <small>閱讀率　<span class="n-badge">n = 116</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="stat-summary">
-        <div class="stat-item"><span class="stat-num">48.3%</span><span class="stat-desc">有（56 人）</span></div>
-        <div class="stat-item"><span class="stat-num">51.7%</span><span class="stat-desc">沒有（60 人）</span></div>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">有</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-gm" data-width="48.3" data-label="48.3%"></div></div>
-          <div class="bar-count">56 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">沒有</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-mid" data-width="51.7" data-label="51.7%"></div></div>
-          <div class="bar-count">60 人</div>
-        </div>
-      </div>
-      <div class="analysis">
-        <div class="analysis-label">分析摘要</div>
-        <p>閱讀率略低於半數，近乎對半分。搭配 Q2 來看，知悉 X 卡（87.1%）與實際閱讀原始說明（48.3%）之間存在明顯落差，約有三分之一受訪者屬「有所聽聞但未深讀」的狀態。此知識落差在後續開放回覆中亦有呼應。</p>
-      </div>
-      <div class="crosslink">
-        <span class="crosslink-icon">⇢</span>
-        <p><strong>Q2–Q3 連動分析：</strong>知悉率（87.1%）→ 閱讀率（48.3%）→ 後續問題顯示的實際使用或正確執行比例更低，呈現工具普及的「漏斗效應」：從「聽說過」到「了解」到「正確執行」，每個環節均有明顯流失。</p>
-      </div>
-      <div style="margin-top:16px;">
-        <div class="analysis-label" style="margin-bottom:10px;">知悉與閱讀狀況分佈　n = 116</div>
-        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px;font-size:12px;color:var(--ink-light);">
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--player-color);margin-right:6px;vertical-align:middle;"></span>有讀過原文／譯本</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--gm-color);margin-right:6px;vertical-align:middle;"></span>沒有讀過原文／譯本</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--ink-faint);margin-right:6px;vertical-align:middle;"></span>不知道 X 卡</span>
-        </div>
-        <div class="bar-chart">
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">知道 X 卡</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;">
-              <div class="bar-fill stacked-seg bar-fill-positive" data-width="48.3" style="border-radius:2px 0 0 2px;" title="有讀過：56 人（48.3%）"></div>
-              <div class="bar-fill stacked-seg bar-fill-gm" data-width="38.8" style="border-radius:0 2px 2px 0;" title="沒讀過：45 人（38.8%）"></div>
-            </div>
-            <div class="bar-count">101 人</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRPG 問卷集｜01｜安全工具「X 卡」——逐題摘要報告</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --ink: #1a1410;
+        --ink-light: #4a3f35;
+        --ink-faint: #8a7a6e;
+        --paper: #f5f0e8;
+        --paper-warm: #ede6d6;
+        --paper-dark: #e2d9c5;
+        --accent: #8b2e2e;
+        --accent-light: #c4574a;
+        --accent-pale: #f0dbd8;
+        --rule: #c8bba8;
+        --highlight: #e8c84a;
+        --gm-color: #2e5c8b;
+        --gm-pale: #d8e5f0;
+        --player-color: #2e7a4a;
+        --player-pale: #d5ecde;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: 300;
+        background: var(--paper);
+        color: var(--ink);
+        line-height: 1.85;
+        font-size: 15px;
+        position: relative;
+        min-height: 100vh;
+      }
+
+      /* Grain texture overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.6;
+      }
+
+      /* Decorative left stripe */
+      .page-stripe {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+        background: linear-gradient(
+          180deg,
+          var(--accent) 0%,
+          var(--accent-light) 50%,
+          var(--accent) 100%
+        );
+        z-index: 10;
+      }
+
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 60px 48px 100px 72px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Header */
+      .report-header {
+        padding-bottom: 40px;
+        margin-bottom: 48px;
+        border-bottom: 2px solid var(--ink);
+        position: relative;
+      }
+
+      .report-label {
+        font-family: "Crimson Pro", serif;
+        font-size: 12px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+
+      .report-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: var(--ink);
+        margin-bottom: 8px;
+      }
+
+      .report-subtitle {
+        font-family: "Noto Serif TC", serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--ink-light);
+        font-style: italic;
+      }
+
+      .report-meta {
+        margin-top: 20px;
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .meta-label {
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+      }
+
+      .meta-value {
+        font-family: "Noto Serif TC", serif;
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1;
+      }
+
+      .meta-value small {
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--ink-light);
+      }
+
+      /* Section headings */
+      .section-divider {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 56px 0 32px;
+      }
+
+      .section-divider-label {
+        font-family: "Crimson Pro", serif;
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        white-space: nowrap;
+      }
+
+      .section-divider-rule {
+        flex: 1;
+        height: 1px;
+        background: var(--rule);
+      }
+
+      .section-tag {
+        display: inline-block;
+        font-family: "Crimson Pro", serif;
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border: 1px solid;
+        border-radius: 2px;
+      }
+
+      .tag-gm {
+        color: var(--gm-color);
+        border-color: var(--gm-color);
+        background: var(--gm-pale);
+      }
+      .tag-player {
+        color: var(--player-color);
+        border-color: var(--player-color);
+        background: var(--player-pale);
+      }
+      .tag-general {
+        color: var(--accent);
+        border-color: var(--accent);
+        background: var(--accent-pale);
+      }
+
+      /* Question blocks */
+      .q-block {
+        margin-bottom: 48px;
+        animation: fadeUp 0.5s ease both;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .q-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+
+      .q-number {
+        font-family: "Crimson Pro", serif;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        color: var(--accent);
+        background: var(--accent-pale);
+        border: 1px solid var(--accent);
+        padding: 4px 8px;
+        white-space: nowrap;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .q-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1.5;
+      }
+
+      .q-title small {
+        display: block;
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--ink-faint);
+        margin-top: 4px;
+      }
+
+      .q-body {
+        padding-left: 46px;
+      }
+
+      /* Stats summary bar */
+      .stat-summary {
+        display: flex;
+        gap: 24px;
+        padding: 14px 18px;
+        background: var(--paper-warm);
+        border-left: 3px solid var(--ink);
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
+
+      .stat-item {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+      }
+      .stat-num {
+        font-family: "Crimson Pro", serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: var(--ink);
+        line-height: 1;
+      }
+      .stat-desc {
+        color: var(--ink-light);
+      }
+
+      /* Bar chart */
+      .bar-chart {
+        margin: 18px 0 24px;
+      }
+
+      .bar-row {
+        display: grid;
+        grid-template-columns: 80px 1fr 60px;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .bar-label {
+        font-size: 12px;
+        color: var(--ink-light);
+        text-align: right;
+        line-height: 1.3;
+      }
+
+      .bar-track {
+        height: 22px;
+        background: var(--paper-dark);
+        border-radius: 2px;
+        overflow: visible;
+        position: relative;
+      }
+
+      .bar-fill {
+        height: 100%;
+        border-radius: 2px;
+        transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+      }
+
+      .bar-fill::after {
+        content: attr(data-label);
+        position: absolute;
+        left: calc(100% + 6px);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 10px;
+        color: var(--ink-light);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .bar-fill-neutral {
+        background: var(--ink-light);
+      }
+      .bar-fill-positive {
+        background: var(--player-color);
+      }
+      .bar-fill-negative {
+        background: var(--accent);
+      }
+      .bar-fill-mid {
+        background: var(--ink-faint);
+      }
+      .bar-fill-gm {
+        background: var(--gm-color);
+      }
+      .bar-fill-accent {
+        background: var(--accent-light);
+      }
+
+      .bar-count {
+        font-family: "Crimson Pro", serif;
+        font-size: 15px;
+        color: var(--ink-faint);
+      }
+
+      /* Bimodal note */
+      .bimodal-note {
+        display: flex;
+        gap: 16px;
+        margin: 8px 0 20px;
+        font-size: 12px;
+      }
+
+      .bimodal-block {
+        flex: 1;
+        padding: 10px 14px;
+        border-radius: 2px;
+        text-align: center;
+      }
+
+      .bimodal-block strong {
+        display: block;
+        font-family: "Crimson Pro", serif;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 2px;
+      }
+
+      .bimodal-low {
+        background: var(--accent-pale);
+        color: var(--accent);
+      }
+      .bimodal-mid {
+        background: var(--paper-dark);
+        color: var(--ink-faint);
+      }
+      .bimodal-high {
+        background: var(--gm-pale);
+        color: var(--gm-color);
+      }
+
+      /* Analysis text */
+      .analysis {
+        background: var(--paper-warm);
+        border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+        padding: 18px 20px;
+        margin: 16px 0;
+      }
+
+      .analysis-label {
+        font-family: "Crimson Pro", serif;
+        font-size: 10px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        margin-bottom: 8px;
+      }
+
+      .analysis p {
+        color: var(--ink-light);
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 8px;
+      }
+
+      .analysis p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Cross-link callout */
+      .crosslink {
+        display: flex;
+        gap: 12px;
+        padding: 14px 16px;
+        border: 1px dashed var(--rule);
+        margin: 16px 0;
+        background: white;
+        font-size: 13px;
+      }
+
+      .crosslink-icon {
+        font-family: "Crimson Pro", serif;
+        font-size: 18px;
+        color: var(--highlight);
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      .crosslink p {
+        color: var(--ink-light);
+        line-height: 1.7;
+      }
+      .crosslink strong {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      /* Finding list */
+      .finding-list {
+        list-style: none;
+        margin: 12px 0;
+      }
+
+      .finding-list li {
+        padding: 10px 0 10px 20px;
+        border-bottom: 1px solid var(--paper-dark);
+        position: relative;
+        font-size: 14px;
+        color: var(--ink-light);
+        line-height: 1.75;
+      }
+
+      .finding-list li:last-child {
+        border-bottom: none;
+      }
+
+      .finding-list li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-family: "Crimson Pro", serif;
+      }
+
+      .finding-list li strong {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      /* Subcategory */
+      .subcategory {
+        margin: 16px 0;
+        padding: 14px 16px;
+        border-left: 2px solid var(--rule);
+      }
+
+      .subcategory-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 6px;
+      }
+
+      .subcategory p {
+        font-size: 13px;
+        color: var(--ink-light);
+        line-height: 1.75;
+      }
+
+      /* n=XX badge */
+      .n-badge {
+        display: inline-block;
+        font-family: "Crimson Pro", serif;
+        font-size: 12px;
+        background: var(--paper-dark);
+        padding: 1px 8px;
+        border-radius: 2px;
+        color: var(--ink-faint);
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      /* Overall analysis section */
+      .overall-section {
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 2px solid var(--ink);
+      }
+
+      .overall-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 32px;
+      }
+
+      .finding-card {
+        margin-bottom: 28px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 16px;
+      }
+
+      .finding-num {
+        font-family: "Crimson Pro", serif;
+        font-size: 36px;
+        font-weight: 300;
+        color: var(--rule);
+        line-height: 1;
+        padding-top: 4px;
+        text-align: right;
+      }
+
+      .finding-content {
+      }
+
+      .finding-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 8px;
+      }
+
+      .finding-text {
+        font-size: 14px;
+        color: var(--ink-light);
+        line-height: 1.8;
+      }
+
+      /* Footer */
+      .report-footer {
+        margin-top: 60px;
+        padding-top: 20px;
+        border-top: 1px solid var(--rule);
+        font-size: 12px;
+        color: var(--ink-faint);
+        line-height: 1.7;
+      }
+
+      /* Author note */
+      .author-note {
+        margin-top: 12px;
+        padding: 14px 18px;
+        border: 1px dashed var(--ink-faint);
+        background: white;
+        position: relative;
+      }
+
+      .author-note-label {
+        font-family: "Crimson Pro", serif;
+        font-size: 10px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        margin-bottom: 8px;
+      }
+
+      .author-note p {
+        font-size: 14px;
+        color: var(--ink-light);
+        line-height: 1.85;
+        margin-bottom: 6px;
+      }
+
+      .author-note p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Intro section */
+      .intro-section {
+        margin-bottom: 48px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .intro-block {
+        margin-bottom: 28px;
+      }
+
+      .intro-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .intro-heading {
+        font-family: "Noto Serif TC", serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border-left: 3px solid var(--accent);
+      }
+
+      .intro-block p {
+        font-size: 14px;
+        color: var(--ink-light);
+        line-height: 1.85;
+        margin-bottom: 8px;
+      }
+
+      .intro-block p:last-child {
+        margin-bottom: 0;
+      }
+
+      .intro-stats {
+        display: flex;
+        gap: 24px;
+        margin: 14px 0;
+        flex-wrap: wrap;
+      }
+
+      .intro-stat-group {
+        flex: 1;
+        min-width: 160px;
+        background: var(--paper-warm);
+        border: 1px solid var(--rule);
+        padding: 12px 16px;
+        border-radius: 2px;
+      }
+
+      .intro-stat-title {
+        font-family: "Noto Serif TC", serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 6px;
+      }
+
+      .intro-stat-list {
+        list-style: none;
+        font-size: 13px;
+        color: var(--ink-light);
+        line-height: 1.8;
+      }
+
+      .intro-stat-list li::before {
+        content: "·";
+        margin-right: 6px;
+        color: var(--accent);
+      }
+
+      /* Responsive */
+      @media (max-width: 640px) {
+        .container {
+          padding: 40px 24px 60px 32px;
+        }
+        .report-title {
+          font-size: 22px;
+        }
+        .bar-row {
+          grid-template-columns: 60px 1fr 48px;
+        }
+        .bimodal-note {
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+
+      /* Staggered animation for blocks */
+      .q-block:nth-child(1) {
+        animation-delay: 0.05s;
+      }
+      .q-block:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .q-block:nth-child(3) {
+        animation-delay: 0.15s;
+      }
+      .q-block:nth-child(4) {
+        animation-delay: 0.2s;
+      }
+      .q-block:nth-child(5) {
+        animation-delay: 0.25s;
+      }
+      .q-block:nth-child(6) {
+        animation-delay: 0.3s;
+      }
+
+      /* Animated bars */
+      .bar-fill {
+        width: 0;
+      }
+      .bar-fill.animated {
+        transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-stripe"></div>
+
+    <div class="container">
+      <!-- Header -->
+      <header class="report-header">
+        <div class="report-label">TRPG 問卷集 · 第 01 回</div>
+        <h1 class="report-title">安全工具「X 卡」</h1>
+        <div class="report-subtitle">逐題摘要分析報告</div>
+        <div class="report-meta">
+          <div class="meta-item">
+            <span class="meta-label">有效回覆</span>
+            <span class="meta-value">116 <small>份</small></span>
           </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">不知道 X 卡</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;">
-              <div class="bar-fill stacked-seg bar-fill-mid" data-width="12.9" title="不知道：15 人（12.9%）"></div>
-            </div>
-            <div class="bar-count">15 人</div>
+          <div class="meta-item">
+            <span class="meta-label">GM 區段</span>
+            <span class="meta-value">94 <small>份</small></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">玩家區段</span>
+            <span class="meta-value">111 <small>份</small></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">問卷題數</span>
+            <span class="meta-value">13 <small>題（含分支）</small></span>
           </div>
         </div>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>這邊開始就會有點有趣了，這題問回應者「有沒有讀過 X 卡文件的原文或譯本」。我在整理資料的過程中有些困惑，分享給一些團友尋求建議，有團友提到「沒讀過 X 卡原文或譯本的人的回應不應該採用」。我覺得稍微激烈了一點。沒有讀過的團友，願意來填這份問卷，本身就已經表示他們對這個工具或廣義的安全工具議題有一定的興趣，這份問卷如果能讓他們知道自己不了解的部分，並且提供連結，也是蠻好的事情。</p>
-        <p>順帶附上原文與譯本的連結：<br>
-        <a href="http://tinyurl.com/x-card-rpg" target="_blank">X-Card by John Stavropoulos（原文）</a><br>
-        <a href="https://docs.google.com/document/d/1w0lJuThtmem2ExlwNeQt05UZxHEAQFT81Mx31zlichQ/" target="_blank">X-Card 原文中譯（海豬譯）</a></p>
-        <p>這題收到的資料搭配後續的問題……有一些更有趣的發現，這邊就先不多談。</p>
+      </header>
+
+      <!-- Intro -->
+      <div class="intro-section">
+        <div class="intro-block">
+          <h2 class="intro-heading">緣起</h2>
+          <p>
+            四月初台灣 TRPG 社群中一起引發廣泛討論的事件，讓 X
+            卡的使用再度成為話題。剛好四月開始想嘗試用「問卷」的形式來研究台灣
+            TRPG 相關的事情，覺得也許適合做一次問卷來初步調查同好關於 X
+            卡的想法。
+          </p>
+        </div>
+        <div class="intro-block">
+          <h2 class="intro-heading">問卷準備與投放</h2>
+          <p>
+            這次覺得問題比較重要，決定稍微擴大規模。在準備問卷問題的時候，在 4
+            個我平常比較有待著（看看訊息、回應或互動）的伺服器裡提供早期版本的問卷，請團友們幫忙看問題的設計與安排，感謝有提供建議的大家。
+          </p>
+          <p>
+            這次問卷投放的地方，除了我個人的社群帳號（臉書、噗浪、Threads、推特）之外，投在我之前整理的「公開的
+            Discord 伺服器清單」的 20 個伺服器裡。
+          </p>
+          <p>
+            有想過是不是要去各推廣會臉書社團、巴哈的 TRPG
+            版等地方投放，但我覺得很多地方我是連打招呼都沒有就去貼東西不太行的，擴大投放的做法會慢慢進行。這次還是先保守一點。
+          </p>
+          <p>問卷收集期間：2026 年 4 月 14 日至 16 日</p>
+        </div>
+        <div class="intro-block">
+          <h2 class="intro-heading">問卷回應概觀</h2>
+          <p>這次問卷共收到 116 份回應。</p>
+          <div class="intro-stats">
+            <div class="intro-stat-group">
+              <div class="intro-stat-title">GM 的部份</div>
+              <ul class="intro-stat-list">
+                <li>收到回應 94 份</li>
+                <li>其中只回應 GM 部份的 5 份</li>
+              </ul>
+            </div>
+            <div class="intro-stat-group">
+              <div class="intro-stat-title">玩家的部份</div>
+              <ul class="intro-stat-list">
+                <li>收到回應 111 份</li>
+                <li>其中只回應玩家部份的 22 份</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            「同時回應玩家與 GM 提問的部分」有 89 份，大約是這份問卷 76.7%
+            的回應。「只回應玩家的部分」大約是總問卷的兩成多，比我想像中少一點，有可能是有帶團的同好相對較關注這個議題，也許只擔任玩家的同好如果遊戲持續進行、順利，也不太需要
+            X 卡這樣的工具。這也許有機會再深入探討。
+          </p>
+          <p>
+            整個社群的
+            GM／玩家比例可能是之後可以再研究看看的題目。就這次的問卷而言，我覺得好像有接觸到我想問的人們。以下我會把我的想法附在各題
+            Claude（AI 工具）分析的意見下面。
+          </p>
+        </div>
       </div>
 
-    </div>
-  </div>
+      <!-- Section: Background -->
+      <div class="section-divider">
+        <span class="section-divider-label">壹 · 背景與身份</span>
+        <span class="section-divider-rule"></span>
+        <span class="section-tag tag-general">全體受訪者</span>
+      </div>
 
-  <!-- Q4 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q4</div>
-      <div class="q-title">
-        其他安全工具使用情形
-        <small>開放題，非必填　<span class="n-badge">n = 71 有填寫</span></small>
+      <!-- Q1 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q1</div>
+          <div class="q-title">
+            角色傾向分佈
+            <small>幾乎只擔任玩家（1）～幾乎只擔任 GM（5）　<span class="n-badge">n = 116</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label">1</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-positive" data-width="21.6" data-label="21.6%"></div>
+              </div>
+              <div class="bar-count">25 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">2</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-positive" data-width="15.5" data-label="15.5%"></div>
+              </div>
+              <div class="bar-count">18 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">3</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-mid" data-width="20.7" data-label="20.7%"></div>
+              </div>
+              <div class="bar-count">24 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">4</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-gm" data-width="26.7" data-label="26.7%"></div>
+              </div>
+              <div class="bar-count">31 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">5</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-gm" data-width="15.5" data-label="15.5%"></div>
+              </div>
+              <div class="bar-count">18 人</div>
+            </div>
+          </div>
+          <div class="analysis">
+            <div class="analysis-label">分析摘要</div>
+            <p>
+              受訪者身份分布廣泛，偏 GM 傾向者（4–5 分）合計
+              42.2%，偏玩家傾向者（1–2 分）合計 37.1%，雙重身份者（3 分）佔
+              20.7%。樣本涵蓋各層級參與者，具備一定的角色多樣性。本題同時作為後續
+              GM 與玩家分支的背景變項。
+            </p>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              以總問卷數量 116
+              人來說，也許太細分的資料分析不見得能夠反映趨勢，但是看起來「比較常擔任玩家還是
+              GM」這個問題來說，收到了一個大致上數量接近的、「或多或少都會擔任
+              GM 或玩家」只是比例不同的樣本。
+            </p>
+            <p>
+              由「只填寫玩家的部份」22 人來看，也是有 3
+              個人是「幾乎都擔任玩家」，但可能很偶爾還是有擔任 GM。而有 5 個 GM
+              沒有填寫玩家的部份，可能比較少擔任玩家或幾乎沒擔任玩家？這只是猜測，希望他們還是偶爾有機會擔任玩家。
+            </p>
+            <p>總之，我覺得這似乎是個有趣的樣本分佈。</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="q-body">
-      <div class="subcategory">
-        <div class="subcategory-title">提及頻率最高（多次出現）</div>
-        <ul class="finding-list">
-          <li><strong>線與帷幕（Lines & Veils）：</strong>最常被提及，常與 X 卡並用，部分受訪者表示使用頻率甚至高於 X 卡本身</li>
-          <li><strong>Session 0（第零次聚會）：</strong>多名受訪者視其為「事前安全機制」的核心做法</li>
-          <li><strong>門是開著的（Open Door Policy）：</strong>允許玩家隨時離席，視作低門檻的替代或補充工具</li>
-        </ul>
-      </div>
-      <div class="subcategory">
-        <div class="subcategory-title">其他提及工具（少數出現）</div>
-        <p>紅燈/黃燈系統、CATS、平台插件（如 ccfolia 的「！按鈕」、燈號提示）、扮演同意清單、事前書面調查、聲響道具（如硬幣）</p>
-      </div>
-      <div class="subcategory">
-        <div class="subcategory-title">明確表示無使用其他工具者</div>
-        <p>約佔有填寫者的 30–35%，部分解釋為尚未遇到需要使用的情況，或習慣以口頭方式直接溝通。</p>
-      </div>
-      <div class="analysis">
-        <div class="analysis-label">補充說明</div>
-        <p>有回覆顯示，X 卡的文字或數位替代形式（如打出「X」字符、私訊 GM）在線上團中已自然發展出來，成為實體 X 卡的功能性變體。</p>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>這題讓回應者自由填入文字，分享一些他們使用的其他安全工具。Claude 從回應的文字中整理了較常被提及的工具、較少被提及的工具、沒有明確名稱但功能接近的替代做法，以及單純以口頭溝通取代工具的情況。</p>
-        <p>這題收到的資訊其實很雜，每個人的寫法跟用語都不太一樣（畢竟很多都是國外的東西，大家習慣的翻譯可能不同）。我自己有手動整理過一次……花了不少時間。我覺得 Claude 分析的結論跟我整理完的想法差不多，但是他跑完整份文件不用一分鐘……。所以……抱歉……以後再做這類問卷，我可能還是會用 AI 工具幫忙整理資料吧。我知道不少人可能對 AI 工具很反感，但我覺得整理資料的部份……好像是這類工具非常適合的工作。只是需要花點時間看原始資料、確認它整理的內容是否符合原始資料就是了。</p>
-        <p>這裡提到的安全工具，我覺得搭配 GM 使用 X 卡的頻率的資料一起看數據會比較有趣，就等 Q6 再談。</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Section: GM -->
-  <div class="section-divider">
-    <span class="section-divider-label">貳 · GM 區段（主持人視角）</span>
-    <span class="section-divider-rule"></span>
-    <span class="section-tag tag-gm">GM 區段　n = 94</span>
-  </div>
+      <!-- Q2 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q2</div>
+          <div class="q-title">
+            是否知道 X 卡？
+            <small>知悉率　<span class="n-badge">n = 116</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="stat-summary">
+            <div class="stat-item">
+              <span class="stat-num">87.1%</span><span class="stat-desc">知道（101 人）</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">12.9%</span><span class="stat-desc">不知道（15 人）</span>
+            </div>
+          </div>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label">知道</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-positive" data-width="87.1" data-label="87.1%"></div>
+              </div>
+              <div class="bar-count">101 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">不知道</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-negative" data-width="12.9" data-label="12.9%"></div>
+              </div>
+              <div class="bar-count">15 人</div>
+            </div>
+          </div>
+          <div class="analysis">
+            <div class="analysis-label">分析摘要</div>
+            <p>
+              大多數受訪者已知悉 X
+              卡的存在，顯示此工具在受訪群體中具有相當程度的滲透率。然而，不知道的比例仍達
+              12.9%，部分受訪者補充「知道名稱但未深入了解」或「概念模糊」，意味著知悉率可能高估實際理解程度。
+            </p>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              八成五以上的人知道 X
+              卡是什麼，然而即使是在我四處張貼問卷的時候，我也還是有注意到有些同好的確是不知道
+              X 卡是什麼的，有些同好會在群組裡幫忙解釋或介紹……這大概也是我選擇在
+              Discord 社群投放的原因之一。
+            </p>
+            <p>
+              已經知道 X 卡的同好 101
+              人，他們可能想在一些議題上提供他們的意見或回饋；我在設計問卷的時候有預想到這個情況，對那些已熟悉
+              X
+              卡、想深入討論的同好稍微覺得有點抱歉，題目的設計上構想相對單純，希望那些允許自由輸入文字的部份有讓大家表達自己的想法。
+            </p>
+            <p>
+              不知道 X 卡是什麼的同好 15
+              人，非常感謝你們還是填寫了這份問卷。我最初的問卷設計原本是「不知道
+              X
+              卡」是什麼，問卷就會直接結束。但後來調整了想法，還好有改成無論知不知道
+              X 卡都可以完整回答這份問卷。從這 15
+              位回應，大致上可以看出可能是「根本不知道這個工具的存在」，因為不知道這個工具，自然對它抱持中立態度；但從回覆來看，他們並非沒有安全意識，多數人有自己的替代做法。
+            </p>
+            <p>
+              回應中有少數明顯不符合邏輯的答案（例如填寫「不知道 X
+              卡是什麼」卻在 GM 的部份填「總是會準備 X
+              卡作為團務安全工具」），提醒了我之後需要設計防呆機制來篩選這類情況。這次因為數量極少且不確定，所以並未剔除，之後會在問題之間設計看看能不能避免有這種不合理的答案出現。
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Q5 note -->
-  <div style="margin-bottom:24px;padding:12px 16px;border-left:2px solid var(--rule);font-size:13px;color:var(--ink-faint);">
-    Q5 為跳轉題，讓填寫者可以選擇略過 GM 區段直接填寫玩家部份，因此不列入分析。如果你注意到題號從 Q4 跳到 Q6，這就是原因。
-  </div>
+      <!-- Q3 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q3</div>
+          <div class="q-title">
+            是否讀過 X 卡原始說明或中文譯本？
+            <small>閱讀率　<span class="n-badge">n = 116</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="stat-summary">
+            <div class="stat-item">
+              <span class="stat-num">48.3%</span><span class="stat-desc">有（56 人）</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">51.7%</span><span class="stat-desc">沒有（60 人）</span>
+            </div>
+          </div>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label">有</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-gm" data-width="48.3" data-label="48.3%"></div>
+              </div>
+              <div class="bar-count">56 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">沒有</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-mid" data-width="51.7" data-label="51.7%"></div>
+              </div>
+              <div class="bar-count">60 人</div>
+            </div>
+          </div>
+          <div class="analysis">
+            <div class="analysis-label">分析摘要</div>
+            <p>
+              閱讀率略低於半數，近乎對半分。搭配 Q2 來看，知悉 X
+              卡（87.1%）與實際閱讀原始說明（48.3%）之間存在明顯落差，約有三分之一受訪者屬「有所聽聞但未深讀」的狀態。此知識落差在後續開放回覆中亦有呼應。
+            </p>
+          </div>
+          <div class="crosslink">
+            <span class="crosslink-icon">⇢</span>
+            <p>
+              <strong>Q2–Q3 連動分析：</strong>知悉率（87.1%）→ 閱讀率（48.3%）→
+              後續問題顯示的實際使用或正確執行比例更低，呈現工具普及的「漏斗效應」：從「聽說過」到「了解」到「正確執行」，每個環節均有明顯流失。
+            </p>
+          </div>
+          <div style="margin-top: 16px">
+            <div class="analysis-label" style="margin-bottom: 10px">
+              知悉與閱讀狀況分佈　n = 116
+            </div>
+            <div style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: var(--ink-light);
+              ">
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: var(--player-color);
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>有讀過原文／譯本</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: var(--gm-color);
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>沒有讀過原文／譯本</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: var(--ink-faint);
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>不知道 X 卡</span>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  知道 X 卡
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg bar-fill-positive" data-width="48.3" style="border-radius: 2px 0 0 2px" title="有讀過：56 人（48.3%）"></div>
+                  <div class="bar-fill stacked-seg bar-fill-gm" data-width="38.8" style="border-radius: 0 2px 2px 0" title="沒讀過：45 人（38.8%）"></div>
+                </div>
+                <div class="bar-count">101 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  不知道 X 卡
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg bar-fill-mid" data-width="12.9" title="不知道：15 人（12.9%）"></div>
+                </div>
+                <div class="bar-count">15 人</div>
+              </div>
+            </div>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              這邊開始就會有點有趣了，這題問回應者「有沒有讀過 X
+              卡文件的原文或譯本」。我在整理資料的過程中有些困惑，分享給一些團友尋求建議，有團友提到「沒讀過
+              X
+              卡原文或譯本的人的回應不應該採用」。我覺得稍微激烈了一點。沒有讀過的團友，願意來填這份問卷，本身就已經表示他們對這個工具或廣義的安全工具議題有一定的興趣，這份問卷如果能讓他們知道自己不了解的部分，並且提供連結，也是蠻好的事情。
+            </p>
+            <p>
+              順帶附上原文與譯本的連結：<br>
+              <a href="http://tinyurl.com/x-card-rpg" target="_blank">X-Card by John Stavropoulos（原文）</a><br>
+              <a href="https://docs.google.com/document/d/1w0lJuThtmem2ExlwNeQt05UZxHEAQFT81Mx31zlichQ/" target="_blank">X-Card 原文中譯（海豬譯）</a>
+            </p>
+            <p>
+              這題收到的資料搭配後續的問題……有一些更有趣的發現，這邊就先不多談。
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Q6 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q6</div>
-      <div class="q-title">
-        GM 使用 X 卡的頻率
-        <small>1 = 完全不使用　5 = 總是使用　<span class="n-badge">n = 94　mean = 3.10</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="bimodal-note">
-        <div class="bimodal-block bimodal-low">
-          <strong>42.6%</strong>
-          低使用端（1–2 分）<br>40 人
+      <!-- Q4 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q4</div>
+          <div class="q-title">
+            其他安全工具使用情形
+            <small>開放題，非必填　<span class="n-badge">n = 71 有填寫</span></small>
+          </div>
         </div>
-        <div class="bimodal-block bimodal-mid">
-          <strong>8.5%</strong>
-          中間（3 分）<br>8 人
-        </div>
-        <div class="bimodal-block bimodal-high">
-          <strong>49.0%</strong>
-          高使用端（4–5 分）<br>46 人
-        </div>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">1</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-negative" data-width="24.5" data-label="24.5%"></div></div>
-          <div class="bar-count">23 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">2</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-accent" data-width="18.1" data-label="18.1%"></div></div>
-          <div class="bar-count">17 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">3</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-mid" data-width="8.5" data-label="8.5%"></div></div>
-          <div class="bar-count">8 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">4</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-gm" data-width="21.3" data-label="21.3%"></div></div>
-          <div class="bar-count">20 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">5</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-gm" data-width="27.7" data-label="27.7%"></div></div>
-          <div class="bar-count">26 人</div>
-        </div>
-      </div>
-      <div class="analysis">
-        <div class="analysis-label">分析摘要</div>
-        <p>數據呈現明顯的雙峰分佈——低使用端（1–2 分，42.6%）與高使用端（4–5 分，49.0%）各佔將近半數，中間值（3 分）反而最少（8.5%）。這意味著 GM 群體在 X 卡使用態度上存在顯著的兩極化傾向，並非中性態度佔多數的常態分佈，有必要審慎對待平均數的代表性。</p>
-      </div>
-      <div class="crosslink">
-        <span class="crosslink-icon">⇢</span>
-        <p><strong>Q3–Q6 進一步分析：</strong>是否讀過原文與 GM 使用 X 卡頻率之間存在統計上的顯著關聯（卡方檢定 p = 0.036，Mann-Whitney U 檢定 p = 0.012）。有讀過原文的 GM 平均使用頻率為 3.50，沒讀過者為 2.64，中位數分別為 4 與 2。</p>
-        <p style="font-size:12px;color:var(--ink-faint);margin-top:6px;">＊老翰目前沒有能力去判斷這些數字的意義或者正確性，謹存參。</p>
-      </div>
-      <div style="margin-top:16px;">
-        <div style="font-size:12px;color:var(--ink-faint);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">GM 使用 X 卡頻率分佈　依是否讀過原文分組　1 = 完全不使用　5 = 總是使用</div>
-        <div style="display:flex;gap:20px;margin-bottom:12px;font-size:12px;color:var(--ink-light);">
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#2e7a4a;margin-right:6px;vertical-align:middle;"></span>有讀過原文／譯本（n = 50）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#2e5c8b;margin-right:6px;vertical-align:middle;"></span>沒讀過原文／譯本（n = 44）</span>
-        </div>
-        <div id="stacked-chart"></div>
-        <div style="font-size:12px;color:var(--ink-faint);margin-top:10px;display:flex;gap:24px;flex-wrap:wrap;">
-          <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:#2e7a4a;margin-right:4px;vertical-align:middle;"></span>有讀　平均 <strong style="color:var(--ink);">3.50</strong>　中位數 <strong style="color:var(--ink);">4</strong></span>
-          <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:#2e5c8b;margin-right:4px;vertical-align:middle;"></span>沒讀　平均 <strong style="color:var(--ink);">2.64</strong>　中位數 <strong style="color:var(--ink);">2</strong></span>
+        <div class="q-body">
+          <div class="subcategory">
+            <div class="subcategory-title">提及頻率最高（多次出現）</div>
+            <ul class="finding-list">
+              <li>
+                <strong>線與帷幕（Lines & Veils）：</strong>最常被提及，常與 X
+                卡並用，部分受訪者表示使用頻率甚至高於 X 卡本身
+              </li>
+              <li>
+                <strong>Session 0（第零次聚會）：</strong>多名受訪者視其為「事前安全機制」的核心做法
+              </li>
+              <li>
+                <strong>門是開著的（Open Door Policy）：</strong>允許玩家隨時離席，視作低門檻的替代或補充工具
+              </li>
+            </ul>
+          </div>
+          <div class="subcategory">
+            <div class="subcategory-title">其他提及工具（少數出現）</div>
+            <p>
+              紅燈/黃燈系統、CATS、平台插件（如 ccfolia
+              的「！按鈕」、燈號提示）、扮演同意清單、事前書面調查、聲響道具（如硬幣）
+            </p>
+          </div>
+          <div class="subcategory">
+            <div class="subcategory-title">明確表示無使用其他工具者</div>
+            <p>
+              約佔有填寫者的
+              30–35%，部分解釋為尚未遇到需要使用的情況，或習慣以口頭方式直接溝通。
+            </p>
+          </div>
+          <div class="analysis">
+            <div class="analysis-label">補充說明</div>
+            <p>
+              有回覆顯示，X 卡的文字或數位替代形式（如打出「X」字符、私訊
+              GM）在線上團中已自然發展出來，成為實體 X 卡的功能性變體。
+            </p>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              這題讓回應者自由填入文字，分享一些他們使用的其他安全工具。Claude
+              從回應的文字中整理了較常被提及的工具、較少被提及的工具、沒有明確名稱但功能接近的替代做法，以及單純以口頭溝通取代工具的情況。
+            </p>
+            <p>
+              這題收到的資訊其實很雜，每個人的寫法跟用語都不太一樣（畢竟很多都是國外的東西，大家習慣的翻譯可能不同）。我自己有手動整理過一次……花了不少時間。我覺得
+              Claude
+              分析的結論跟我整理完的想法差不多，但是他跑完整份文件不用一分鐘……。所以……抱歉……以後再做這類問卷，我可能還是會用
+              AI 工具幫忙整理資料吧。我知道不少人可能對 AI
+              工具很反感，但我覺得整理資料的部份……好像是這類工具非常適合的工作。只是需要花點時間看原始資料、確認它整理的內容是否符合原始資料就是了。
+            </p>
+            <p>
+              這裡提到的安全工具，我覺得搭配 GM 使用 X
+              卡的頻率的資料一起看數據會比較有趣，就等 Q6 再談。
+            </p>
+          </div>
         </div>
       </div>
-      <script>
-      (function() {
-        var rows = [
-          { score: 1, yes: { count: 7,  pct: 14.0 }, no: { count: 16, pct: 36.4 } },
-          { score: 2, yes: { count: 7,  pct: 14.0 }, no: { count: 10, pct: 22.7 } },
-          { score: 3, yes: { count: 6,  pct: 12.0 }, no: { count: 2,  pct:  4.5 } },
-          { score: 4, yes: { count: 14, pct: 28.0 }, no: { count: 6,  pct: 13.6 } },
-          { score: 5, yes: { count: 16, pct: 32.0 }, no: { count: 10, pct: 22.7 } },
-        ];
-        var total = 94;
-        var body = document.getElementById('stacked-chart');
-        body.innerHTML = rows.map(function(r) {
-          var yesPct = (r.yes.count / total * 100).toFixed(1);
-          var noPct  = (r.no.count  / total * 100).toFixed(1);
-          return '<div class="bar-row">' +
-            '<div class="bar-label">' + r.score + '</div>' +
-            '<div class="bar-track" style="overflow:hidden;display:flex;">' +
-              '<div class="bar-fill stacked-seg" data-width="' + yesPct + '" style="background:#2e7a4a;" title="有讀過：' + r.yes.count + ' 人（組內 ' + r.yes.pct + '%）"></div>' +
-              '<div class="bar-fill stacked-seg" data-width="' + noPct + '" style="background:#2e5c8b;" title="沒讀過：' + r.no.count + ' 人（組內 ' + r.no.pct + '%）"></div>' +
-            '</div>' +
-            '<div class="bar-count">' + (r.yes.count + r.no.count) + ' 人</div>' +
-          '</div>';
-        }).join('');
-        setTimeout(function() {
-          document.querySelectorAll('.stacked-seg').forEach(function(seg) {
-            seg.style.width = seg.getAttribute('data-width') + '%';
-          });
-        }, 200);
-      })();
-      </script>
-      <div class="author-note" style="margin-top:16px;">
-        <div class="author-note-label">老翰的想法</div>
-        <p>雖然只看使用頻率會覺得，好像選用與否有點兩極化？但是把「有沒有讀過原文」也放進去之後，我覺得有些人是讀過而選擇不使用，有蠻多人是沒讀過所以選擇不用，我覺得都是很合理的。</p>
-        <p>再往下看，有人可能會驚覺：「有不少使用 X 卡的 GM 是沒有讀過 X 卡的原文文件的。」（mind-blown.jpg | 腦袋爆炸變成宇宙的迷因圖）</p>
-        <p>我剛看到這樣的結果的時候也有一點點驚訝，但重看幾次，又稍微能夠理解。</p>
-        <p>這就好像是 TRPG 的永恆提問：「沒讀過規則書是不是可以帶團？」<br>
-        「只是跑過團，能不能帶團？」<br>
-        「只是在別的團看過 X 卡，是不是就可以在自己的團也用 X 卡？」</p>
-        <p>就 X 卡的使用方式與文件規模來說，我是比較傾向玩家在別的 GM 的團看過 X 卡之後，不見得知道或者讀過原始的文件，在自己帶團如果是想提供安全的跑團環境與氛圍而引入這個工具是蠻好的。但如果你現在知道了原始文件的存在，建議有空的話去讀讀原文或中譯本吧。</p>
-        <p>
-          <a href="http://tinyurl.com/x-card-rpg" target="_blank">X-Card by John Stavropoulos（原文）</a><br>
-          <a href="https://docs.google.com/document/d/1w0lJuThtmem2ExlwNeQt05UZxHEAQFT81Mx31zlichQ/" target="_blank">X-Card 原文中譯（海豬譯）</a>
+
+      <!-- Section: GM -->
+      <div class="section-divider">
+        <span class="section-divider-label">貳 · GM 區段（主持人視角）</span>
+        <span class="section-divider-rule"></span>
+        <span class="section-tag tag-gm">GM 區段　n = 94</span>
+      </div>
+
+      <!-- Q5 note -->
+      <div style="
+          margin-bottom: 24px;
+          padding: 12px 16px;
+          border-left: 2px solid var(--rule);
+          font-size: 13px;
+          color: var(--ink-faint);
+        ">
+        Q5 為跳轉題，讓填寫者可以選擇略過 GM
+        區段直接填寫玩家部份，因此不列入分析。如果你注意到題號從 Q4 跳到
+        Q6，這就是原因。
+      </div>
+
+      <!-- Q6 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q6</div>
+          <div class="q-title">
+            GM 使用 X 卡的頻率
+            <small>1 = 完全不使用　5 = 總是使用　<span class="n-badge">n = 94　mean = 3.10</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="bimodal-note">
+            <div class="bimodal-block bimodal-low">
+              <strong>42.6%</strong>
+              低使用端（1–2 分）<br>40 人
+            </div>
+            <div class="bimodal-block bimodal-mid">
+              <strong>8.5%</strong>
+              中間（3 分）<br>8 人
+            </div>
+            <div class="bimodal-block bimodal-high">
+              <strong>49.0%</strong>
+              高使用端（4–5 分）<br>46 人
+            </div>
+          </div>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label">1</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-negative" data-width="24.5" data-label="24.5%"></div>
+              </div>
+              <div class="bar-count">23 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">2</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-accent" data-width="18.1" data-label="18.1%"></div>
+              </div>
+              <div class="bar-count">17 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">3</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-mid" data-width="8.5" data-label="8.5%"></div>
+              </div>
+              <div class="bar-count">8 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">4</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-gm" data-width="21.3" data-label="21.3%"></div>
+              </div>
+              <div class="bar-count">20 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">5</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-gm" data-width="27.7" data-label="27.7%"></div>
+              </div>
+              <div class="bar-count">26 人</div>
+            </div>
+          </div>
+          <div class="analysis">
+            <div class="analysis-label">分析摘要</div>
+            <p>
+              數據呈現明顯的雙峰分佈——低使用端（1–2 分，42.6%）與高使用端（4–5
+              分，49.0%）各佔將近半數，中間值（3 分）反而最少（8.5%）。這意味著
+              GM 群體在 X
+              卡使用態度上存在顯著的兩極化傾向，並非中性態度佔多數的常態分佈，有必要審慎對待平均數的代表性。
+            </p>
+          </div>
+          <div class="crosslink">
+            <span class="crosslink-icon">⇢</span>
+            <p>
+              <strong>Q3–Q6 進一步分析：</strong>是否讀過原文與 GM 使用 X
+              卡頻率之間存在統計上的顯著關聯（卡方檢定 p = 0.036，Mann-Whitney U
+              檢定 p = 0.012）。有讀過原文的 GM 平均使用頻率為 3.50，沒讀過者為
+              2.64，中位數分別為 4 與 2。
+            </p>
+            <p style="font-size: 12px; color: var(--ink-faint); margin-top: 6px">
+              ＊老翰目前沒有能力去判斷這些數字的意義或者正確性，謹存參。
+            </p>
+          </div>
+          <div style="margin-top: 16px">
+            <div style="
+                font-size: 12px;
+                color: var(--ink-faint);
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+              ">
+              GM 使用 X 卡頻率分佈　依是否讀過原文分組　1 = 完全不使用　5 =
+              總是使用
+            </div>
+            <div style="
+                display: flex;
+                gap: 20px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: var(--ink-light);
+              ">
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #2e7a4a;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>有讀過原文／譯本（n = 50）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #2e5c8b;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>沒讀過原文／譯本（n = 44）</span>
+            </div>
+            <div id="stacked-chart"></div>
+            <div style="
+                font-size: 12px;
+                color: var(--ink-faint);
+                margin-top: 10px;
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+              ">
+              <span><span style="
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 2px;
+                    background: #2e7a4a;
+                    margin-right: 4px;
+                    vertical-align: middle;
+                  "></span>有讀　平均
+                <strong style="color: var(--ink)">3.50</strong>　中位數
+                <strong style="color: var(--ink)">4</strong></span>
+              <span><span style="
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 2px;
+                    background: #2e5c8b;
+                    margin-right: 4px;
+                    vertical-align: middle;
+                  "></span>沒讀　平均
+                <strong style="color: var(--ink)">2.64</strong>　中位數
+                <strong style="color: var(--ink)">2</strong></span>
+            </div>
+          </div>
+          <script>
+            (function () {
+              var rows = [
+                {
+                  score: 1,
+                  yes: { count: 7, pct: 14.0 },
+                  no: { count: 16, pct: 36.4 },
+                },
+                {
+                  score: 2,
+                  yes: { count: 7, pct: 14.0 },
+                  no: { count: 10, pct: 22.7 },
+                },
+                {
+                  score: 3,
+                  yes: { count: 6, pct: 12.0 },
+                  no: { count: 2, pct: 4.5 },
+                },
+                {
+                  score: 4,
+                  yes: { count: 14, pct: 28.0 },
+                  no: { count: 6, pct: 13.6 },
+                },
+                {
+                  score: 5,
+                  yes: { count: 16, pct: 32.0 },
+                  no: { count: 10, pct: 22.7 },
+                },
+              ];
+              var total = 94;
+              var body = document.getElementById("stacked-chart");
+              body.innerHTML = rows
+                .map(function (r) {
+                  var yesPct = ((r.yes.count / total) * 100).toFixed(1);
+                  var noPct = ((r.no.count / total) * 100).toFixed(1);
+                  return (
+                    '<div class="bar-row">' +
+                    '<div class="bar-label">' +
+                    r.score +
+                    "</div>" +
+                    '<div class="bar-track" style="overflow:hidden;display:flex;">' +
+                    '<div class="bar-fill stacked-seg" data-width="' +
+                    yesPct +
+                    '" style="background:#2e7a4a;" title="有讀過：' +
+                    r.yes.count +
+                    " 人（組內 " +
+                    r.yes.pct +
+                    '%）"></div>' +
+                    '<div class="bar-fill stacked-seg" data-width="' +
+                    noPct +
+                    '" style="background:#2e5c8b;" title="沒讀過：' +
+                    r.no.count +
+                    " 人（組內 " +
+                    r.no.pct +
+                    '%）"></div>' +
+                    "</div>" +
+                    '<div class="bar-count">' +
+                    (r.yes.count + r.no.count) +
+                    " 人</div>" +
+                    "</div>"
+                  );
+                })
+                .join("");
+              setTimeout(function () {
+                document
+                  .querySelectorAll(".stacked-seg")
+                  .forEach(function (seg) {
+                    seg.style.width = seg.getAttribute("data-width") + "%";
+                  });
+              }, 200);
+            })();
+          </script>
+          <div class="author-note" style="margin-top: 16px">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              雖然只看使用頻率會覺得，好像選用與否有點兩極化？但是把「有沒有讀過原文」也放進去之後，我覺得有些人是讀過而選擇不使用，有蠻多人是沒讀過所以選擇不用，我覺得都是很合理的。
+            </p>
+            <p>
+              再往下看，有人可能會驚覺：「有不少使用 X 卡的 GM 是沒有讀過 X
+              卡的原文文件的。」（mind-blown.jpg | 腦袋爆炸變成宇宙的迷因圖）
+            </p>
+            <p>
+              我剛看到這樣的結果的時候也有一點點驚訝，但重看幾次，又稍微能夠理解。
+            </p>
+            <p>
+              這就好像是 TRPG 的永恆提問：「沒讀過規則書是不是可以帶團？」<br>
+              「只是跑過團，能不能帶團？」<br>
+              「只是在別的團看過 X 卡，是不是就可以在自己的團也用 X 卡？」
+            </p>
+            <p>
+              就 X 卡的使用方式與文件規模來說，我是比較傾向玩家在別的 GM
+              的團看過 X
+              卡之後，不見得知道或者讀過原始的文件，在自己帶團如果是想提供安全的跑團環境與氛圍而引入這個工具是蠻好的。但如果你現在知道了原始文件的存在，建議有空的話去讀讀原文或中譯本吧。
+            </p>
+            <p>
+              <a href="http://tinyurl.com/x-card-rpg" target="_blank">X-Card by John Stavropoulos（原文）</a><br>
+              <a href="https://docs.google.com/document/d/1w0lJuThtmem2ExlwNeQt05UZxHEAQFT81Mx31zlichQ/" target="_blank">X-Card 原文中譯（海豬譯）</a>
+            </p>
+          </div>
+
+          <div style="margin-top: 24px">
+            <div class="analysis-label" style="margin-bottom: 10px">
+              Q4 其他安全工具提及次數　依 X 卡使用程度分色
+            </div>
+            <div style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: var(--ink-light);
+              ">
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #2e7a4a;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>高使用 X 卡（Q6 4–5 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #9fe1cb;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>中等使用（Q6 2–3 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #c4574a;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>完全不使用（Q6 1 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #b4b2a9;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>只填玩家區段</span>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  X 卡使用者（GM 人數）
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="48.9" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用（4–5 分）：48.9%"></div>
+                  <div class="bar-fill stacked-seg" data-width="26.6" style="background: #9fe1cb; border-radius: 0" title="中等使用（2–3 分）：26.6%"></div>
+                  <div class="bar-fill stacked-seg" data-width="24.5" style="background: #c4574a; border-radius: 0 2px 2px 0" title="完全不使用（1 分）：24.5%"></div>
+                </div>
+                <div class="bar-count">94 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  線與帷幕（Lines & Veils）
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="19.1" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用（4–5 分）：19.1%"></div>
+                  <div class="bar-fill stacked-seg" data-width="4.3" style="background: #9fe1cb; border-radius: 0" title="中等使用（2–3 分）：4.3%"></div>
+                  <div class="bar-fill stacked-seg" data-width="2.1" style="background: #b4b2a9; border-radius: 0 2px 2px 0" title="只填玩家區段：2.1%"></div>
+                </div>
+                <div class="bar-count">24 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  門是開著的（Open Door）
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="5.3" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用（4–5 分）：5.3%"></div>
+                  <div class="bar-fill stacked-seg" data-width="2.1" style="background: #9fe1cb; border-radius: 0 2px 2px 0" title="中等使用（2–3 分）：2.1%"></div>
+                </div>
+                <div class="bar-count">7 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  Session 0（第零次聚會）
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="2.1" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用（4–5 分）：2.1%"></div>
+                  <div class="bar-fill stacked-seg" data-width="3.2" style="background: #9fe1cb; border-radius: 0 2px 2px 0" title="中等使用（2–3 分）：3.2%"></div>
+                </div>
+                <div class="bar-count">5 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  口頭溝通／直接說
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="1.1" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用（4–5 分）：1.1%"></div>
+                  <div class="bar-fill stacked-seg" data-width="1.1" style="background: #9fe1cb; border-radius: 0" title="中等使用（2–3 分）：1.1%"></div>
+                  <div class="bar-fill stacked-seg" data-width="3.2" style="background: #c4574a; border-radius: 0 2px 2px 0" title="完全不使用（1 分）：3.2%"></div>
+                </div>
+                <div class="bar-count">5 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  平台插件（ccfolia 等）
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="2.1" style="background: #2e7a4a; border-radius: 2px" title="高使用（4–5 分）：2.1%"></div>
+                </div>
+                <div class="bar-count">2 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">
+                  扮演同意清單／事前調查
+                </div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="2.1" style="background: #2e7a4a; border-radius: 2px" title="高使用（4–5 分）：2.1%"></div>
+                </div>
+                <div class="bar-count">2 次</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label" style="white-space: nowrap">CATS</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="1.1" style="background: #9fe1cb; border-radius: 2px" title="中等使用（2–3 分）：1.1%"></div>
+                </div>
+                <div class="bar-count">1 次</div>
+              </div>
+            </div>
+          </div>
+          <div class="author-note" style="margin-top: 16px">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              這個圖表整理了前面用文字調查「其他安全工具」被提及的次數，並且同時把有使用
+              X 卡的 GM
+              依照不同頻率標色，讓大家參考這次回應中，各工具相對的提及頻率與使用者分布。
+            </p>
+            <p>
+              可以明確看到的是，安全工具裡「線與帷幕（Lines &
+              Veils）」的確是第二常被提到的工具，而且在「總是會準備 X 卡」的 GM
+              中有三分之一多一點會搭配線與帷幕使用。
+            </p>
+            <p>
+              其他工具提及次數較少，在樣本規模的限制下不宜過度詮釋，僅供參考。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q7</div>
+          <div class="q-title">
+            GM 考慮或不考慮使用 X 卡的理由
+            <small>開放題，非必填　<span class="n-badge">n = 71</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="subcategory">
+            <div class="subcategory-title">
+              支持使用 / 高頻率使用的理由（意見一致性高）
+            </div>
+            <ul class="finding-list">
+              <li>
+                認為 X
+                卡具有「<strong>象徵性宣示</strong>」功能——即使不常被實際使用，其存在本身即傳遞「本場允許提出不適」的訊號，降低玩家開口的心理門檻
+              </li>
+              <li>
+                將玩家安全體驗列為首要優先；尤其在開放招募（野團）或玩家互不相識的情境中，認為
+                X 卡的存在是一種基本保障
+              </li>
+              <li>
+                視 X 卡為提升 <strong>GM 專業形象</strong>與玩家信任感的工具
+              </li>
+            </ul>
+          </div>
+          <div class="subcategory">
+            <div class="subcategory-title">
+              不使用或低頻率使用的理由（多元，意見一致性中等）
+            </div>
+            <ul class="finding-list">
+              <li>
+                <strong>情境因素：</strong>主要與親友或熟悉玩家跑團，已建立足夠默契與信任，認為不需要額外工具；或自身帶團量少
+              </li>
+              <li>
+                <strong>前置替代策略：</strong>偏好以 Session
+                0、事前問卷或個別溝通取代，認為在遊戲中斷性較高的 X
+                卡不如「事前說清楚」有效
+              </li>
+              <li>
+                <strong>遺忘與慣性：</strong>有受訪者坦言主要原因為「常忘記」，並非主動反對
+              </li>
+              <li>
+                <strong>執行層面的結構性侷限：</strong>玩家在沉浸狀態下難以即時辨識自身不適、X
+                卡僅能中斷而無法解釋問題所在、線上文字/語音團中操作不便
+              </li>
+            </ul>
+          </div>
+          <div class="crosslink">
+            <span class="crosslink-icon">⇢</span>
+            <p>
+              <strong>Q6–Q7 連動分析：</strong>Q6 的雙峰分佈在 Q7
+              的質性內容中獲得具體說明。「幾乎不使用」者多數並非反對 X
+              卡的立場，而是以不同前置策略取代，或受情境條件制約；「總是使用」者則傾向將
+              X 卡定位為象徵性宣示，而非期待其被頻繁觸發。<strong>兩端的核心目標（確保玩家安全）趨向一致，差異主要在於工具偏好與使用時機。</strong>
+            </p>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              雖然 AI 統整的文字回應稍微有點 AI
+              味，但就我看原始資料的感覺是合理的整理。無論是使用 X 卡或者不使用
+              X 卡的 GM 的想法，我覺得都值得參考。
+            </p>
+            <p>
+              如果你是 GM，我覺得讀這段其他 GM
+              分享的看法時，重要的不是把他們的意見當作標準答案，而是想想你的跑團環境中，你作為
+              GM 遇到的環境會讓你有什麼樣的想法。畢竟每個 GM
+              的個性不同、他們的玩家組成不同、玩家們的個性也各個不同，這些 GM
+              提供的使用或不使用 X
+              卡的想法，都各自有他們自己的脈絡。搞清楚你自己的脈絡，是你作為一個
+              GM 的重要功課。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q8</div>
+          <div class="q-title">
+            GM 對此議題的補充意見
+            <small>開放題，非必填　<span class="n-badge">n = 27</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <ul class="finding-list">
+            <li>
+              <strong>工具定位的釐清（多則回覆呼應）：</strong>X
+              卡本身不創造安全，只是促進安全的介面；真正的安全來自成員間的信任、共識與相互關懷。X
+              卡是「工具的最後手段」，更重要的是建立日常溝通文化。
+            </li>
+            <li>
+              <strong>使用者素養的問題：</strong>使用者若未充分理解 X
+              卡的目的，可能將其視為「有放就沒事」的護身符；玩家在沉浸於故事時往往缺乏即時察覺不適的能力，X
+              卡在此情況下形同虛設。
+            </li>
+            <li>
+              <strong>濫用疑慮的反思：</strong>論點集中於——擔心濫用的人往往本就缺乏對群體的信任；工具本身無法解決信任問題，X
+              卡僅是信任環境下的潤滑劑。
+            </li>
+            <li>
+              <strong>心理門檻問題：</strong>即使受訪者個人樂於為他人使用 X
+              卡創造條件，自己卻難以主動使用，顯示「舉卡」這一行為對部分人而言仍有相當的社交成本。
+            </li>
+            <li>
+              <strong>線上使用的特殊困難：</strong>文字團或語音團的媒介特性，使得實體 X 卡的操作流程難以複製，部分
+              GM 因此失去了 X 卡「無需解釋即可迴避」的設計優勢。
+            </li>
+          </ul>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              這題收到的回應我覺得蠻值得一讀，指出了一些 X
+              卡在使用上可能遇到的問題，也提醒了不能只是準備了 X
+              卡，卻忘記當初準備它是為了營造安全的跑團環境。應用上，還是如上一題的心得，我覺得作為一個
+              GM，使用 X 卡與否是屬於你自己的課題，你也能有屬於你自己的答案。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Player -->
+      <div class="section-divider">
+        <span class="section-divider-label">參 · 玩家區段（參與者視角）</span>
+        <span class="section-divider-rule"></span>
+        <span class="section-tag tag-player">玩家區段　n = 111</span>
+      </div>
+
+      <!-- Q9 note -->
+      <div style="
+          margin-bottom: 24px;
+          padding: 12px 16px;
+          border-left: 2px solid var(--rule);
+          font-size: 13px;
+          color: var(--ink-faint);
+        ">
+        Q9
+        為跳轉題，讓填寫者可以選擇略過玩家區段，因此不列入分析。如果你注意到題號從
+        Q8 跳到 Q10，這就是原因。
+      </div>
+
+      <!-- Q10 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q10</div>
+          <div class="q-title">
+            X 卡是否提升參與陌生 GM 團務的意願
+            <small>1 = 更不願意　5 = 更願意　<span class="n-badge">n = 111　mean = 3.67</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="bimodal-note">
+            <div class="bimodal-block bimodal-low">
+              <strong>5.4%</strong>
+              負向影響（1–2 分）<br>6 人
+            </div>
+            <div class="bimodal-block bimodal-mid">
+              <strong>46.8%</strong>
+              中立（3 分）<br>52 人
+            </div>
+            <div class="bimodal-block bimodal-high">
+              <strong>47.7%</strong>
+              正向影響（4–5 分）<br>53 人
+            </div>
+          </div>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label">1</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-negative" data-width="2.7" data-label="2.7%"></div>
+              </div>
+              <div class="bar-count">3 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">2</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-accent" data-width="2.7" data-label="2.7%"></div>
+              </div>
+              <div class="bar-count">3 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">3</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-mid" data-width="46.8" data-label="46.8%"></div>
+              </div>
+              <div class="bar-count">52 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">4</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-positive" data-width="20.7" data-label="20.7%"></div>
+              </div>
+              <div class="bar-count">23 人</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">5</div>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-positive" data-width="27.0" data-label="27.0%"></div>
+              </div>
+              <div class="bar-count">30 人</div>
+            </div>
+          </div>
+          <div style="margin-top: 16px">
+            <div class="analysis-label" style="margin-bottom: 10px">
+              Q10 玩家參與意願　依 GM 使用 X 卡程度分色　n = 111
+            </div>
+            <div style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: var(--ink-light);
+              ">
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #2e7a4a;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>高使用 X 卡 GM（Q6 4–5 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #9fe1cb;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>中等使用（Q6 2–3 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #c4574a;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>完全不使用（Q6 1 分）</span>
+              <span><span style="
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background: #b4b2a9;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                  "></span>只填玩家區段</span>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-row">
+                <div class="bar-label">1</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="1.8" style="background: #c4574a; border-radius: 2px 0 0 2px" title="完全不使用 GM（1 分）：1.8%"></div>
+                  <div class="bar-fill stacked-seg" data-width="0.9" style="background: #b4b2a9; border-radius: 0 2px 2px 0" title="只填玩家區段：0.9%"></div>
+                </div>
+                <div class="bar-count">3 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">2</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="1.8" style="background: #9fe1cb; border-radius: 2px 0 0 2px" title="中等使用 GM（2–3 分）：1.8%"></div>
+                  <div class="bar-fill stacked-seg" data-width="0.9" style="background: #c4574a; border-radius: 0 2px 2px 0" title="完全不使用 GM（1 分）：0.9%"></div>
+                </div>
+                <div class="bar-count">3 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">3</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="10.8" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用 GM（4–5 分）：10.8%"></div>
+                  <div class="bar-fill stacked-seg" data-width="11.7" style="background: #9fe1cb; border-radius: 0" title="中等使用 GM（2–3 分）：11.7%"></div>
+                  <div class="bar-fill stacked-seg" data-width="13.5" style="background: #c4574a; border-radius: 0" title="完全不使用 GM（1 分）：13.5%"></div>
+                  <div class="bar-fill stacked-seg" data-width="10.8" style="background: #b4b2a9; border-radius: 0 2px 2px 0" title="只填玩家區段：10.8%"></div>
+                </div>
+                <div class="bar-count">52 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">4</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="8.1" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用 GM（4–5 分）：8.1%"></div>
+                  <div class="bar-fill stacked-seg" data-width="4.5" style="background: #9fe1cb; border-radius: 0" title="中等使用 GM（2–3 分）：4.5%"></div>
+                  <div class="bar-fill stacked-seg" data-width="2.7" style="background: #c4574a; border-radius: 0" title="完全不使用 GM（1 分）：2.7%"></div>
+                  <div class="bar-fill stacked-seg" data-width="5.4" style="background: #b4b2a9; border-radius: 0 2px 2px 0" title="只填玩家區段：5.4%"></div>
+                </div>
+                <div class="bar-count">23 人</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">5</div>
+                <div class="bar-track" style="overflow: hidden; display: flex">
+                  <div class="bar-fill stacked-seg" data-width="20.7" style="background: #2e7a4a; border-radius: 2px 0 0 2px" title="高使用 GM（4–5 分）：20.7%"></div>
+                  <div class="bar-fill stacked-seg" data-width="2.7" style="background: #9fe1cb; border-radius: 0" title="中等使用 GM（2–3 分）：2.7%"></div>
+                  <div class="bar-fill stacked-seg" data-width="0.9" style="background: #c4574a; border-radius: 0" title="完全不使用 GM（1 分）：0.9%"></div>
+                  <div class="bar-fill stacked-seg" data-width="2.7" style="background: #b4b2a9; border-radius: 0 2px 2px 0" title="只填玩家區段：2.7%"></div>
+                </div>
+                <div class="bar-count">30 人</div>
+              </div>
+            </div>
+          </div>
+          <div class="crosslink">
+            <span class="crosslink-icon">⇢</span>
+            <p>
+              <strong>Q6–Q10 跨區段連動分析：</strong>GM
+              端的雙峰使用分佈（Q6）與玩家端的中間偏正向分佈（Q10）呈現有趣對比——玩家群體對
+              X 卡的感受相對均一（多數人溫和正向或中立），而 GM
+              群體的使用行為則分歧明顯。這指向一個可能的<strong>不對稱性</strong>：即使
+              GM 本人未必頻繁使用 X 卡，其準備 X
+              卡的行為仍被玩家普遍視為正面訊號。
+            </p>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              認為 GM 準備 X
+              卡會讓自己「更不願意參加」該團務的回應，遠比「中立」或「更願意參加」的少，只有百分之五左右。可以有信心地說，大部分玩家對
+              GM 準備 X 卡是抱持中立或者歡迎的態度。
+            </p>
+            <p>
+              「中立」與「更願意參加」的比率接近，我剛看的時候覺得有點意外，把
+              GM 使用 X 卡頻率也放進去一起看，或許可以看出重視團務環境安全的 GM
+              擔任玩家的時候同樣也會偏好重視安全的 GM，但不是全部！
+            </p>
+            <p>
+              我的結論可能政治不正確，但我認為，有接近一半的人認為 GM 準備 X
+              卡與否不會影響他們參與「陌生團務」的意願，可能是因為：「安全，並不保障好玩」。甚至……有準備
+              X 卡，也不見得安全。這就不是這次問卷要處理的題目了。
+            </p>
+            <p>
+              影響一個玩家（無論他是否擔任
+              GM）報名參與一個「陌生團務」的意願，也許比起安全，可能有其他更強的因素……但這就是待以後再另外研究的題目了。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q11</div>
+          <div class="q-title">
+            X 卡影響參與意願的具體想法
+            <small>開放題，非必填　<span class="n-badge">n = 67</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <div class="subcategory">
+            <div class="subcategory-title">主要論點（意見一致性高）</div>
+            <ul class="finding-list">
+              <li>
+                <strong>「GM 重視安全」的訊號效果：</strong>最多受訪者提及的核心觀點。X 卡的存在被解讀為 GM
+                在意玩家感受、具備一定程度的跑團意識，而非 X
+                卡本身的功能性。此觀點在陌生團（野團）情境中尤為突出。
+              </li>
+              <li>
+                <strong>對野團/陌生環境的安全感強化：</strong>在不熟悉彼此底線的場合，X
+                卡的存在有助於降低參與的不確定感，尤其對女性受訪者或有特定高敏感觸發點者的影響較為顯著。
+              </li>
+              <li>
+                <strong>中立／不影響決定：</strong>相當數量的受訪者表示，X
+                卡的有無不影響參與意願，理由包括「自己個人接受度高」、「習慣直接開口提出」、「會依據
+                GM 風評而非工具的有無判斷是否參加」。
+              </li>
+            </ul>
+          </div>
+          <div class="subcategory">
+            <div class="subcategory-title">少數但值得記錄的觀點</div>
+            <ul class="finding-list">
+              <li>
+                X
+                卡的公開使用可能<strong>暴露個人隱私資訊</strong>，在部分群體中存在被針對或「被貼標籤」的社交風險
+              </li>
+              <li>
+                曾有過不愉快的 X 卡使用經驗（如 GM 未說明原因即出示 X
+                卡），導致對此工具產生負面聯結
+              </li>
+              <li>
+                認為工具本身不等於 GM 真正重視玩家，仍需整體態度與實際執行配合
+              </li>
+            </ul>
+          </div>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              偏向中立或增加參與意願的意見還蠻容易理解。我覺得這題值得注意的是幾個可能偏向負面或者指出
+              X 卡的使用方式如果沒有考慮清楚可能會造成問題的狀況。
+            </p>
+            <p>不愉快的使用 X 卡經驗，即使是我自己認識的團友也有聽過例子。</p>
+            <p>
+              暴露個人資訊的部份，其實 X 卡的原文文件有提到「舉 X
+              卡的人可以不用說明原因」但這個在實務上的執行很依賴 GM
+              的經驗。我自己對於 X
+              卡在網團的使用是盡量參考團友帶團的作法，他規劃 X 卡是可以「只有 GM
+              看到」（或者是所有人都看不到是誰舉的，我有點忘了）；這在面團（實體跑團）的情境下比較不容易達成，有些回應也提到了一些替代做法，這部分就留待每個
+              GM 各自研究。
+            </p>
+            <p>
+              總之，使用 X 卡的確是有可能會造成問題，有些在 X
+              卡的文件有提及，討論用法。實際執行還是要看現場狀況。這也是為什麼我可以理解有些
+              GM 知道並且讀過原始文件、甚至用過之後，選擇不準備 X
+              卡——也許這個工具並不適合他們，也可能有更適合的替代方案。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-number">Q13</div>
+          <div class="q-title">
+            玩家對此議題的補充意見
+            <small>開放題，非必填　<span class="n-badge">n = 18</span></small>
+          </div>
+        </div>
+        <div class="q-body">
+          <ul class="finding-list">
+            <li>
+              <strong>事後認知的問題（認知延遲）：</strong>不適感有時在當下難以辨識，往往事後回想才意識到「當時應該使用 X
+              卡」，顯示工具的即時使用存在認知延遲的問題。
+            </li>
+            <li>
+              <strong>X 卡的功能邊界：</strong>認為 X
+              卡是「便利的劃線工具」，但無法從根本解決遊戲環境的文化問題；工具能否發揮效果，最終仍取決於桌上成員的意願與互動慣性。
+            </li>
+            <li>
+              <strong>Session 0 與 X 卡的互補性：</strong>兩者應搭配使用，尤其對新手玩家而言，事前界定共識（Session
+              0）與遊戲中的即時退場機制（X 卡）是相輔相成的雙層保護。
+            </li>
+            <li>
+              <strong>網路推廣的缺口：</strong>特定網團社群對 X
+              卡的認識相當有限，安全工具的推廣覆蓋率尚不均勻。
+            </li>
+          </ul>
+          <div class="author-note">
+            <div class="author-note-label">老翰的想法</div>
+            <p>
+              我覺得這裡提到的「當下可能沒感覺到狀況，事後才覺得不舒服」可能是 X
+              卡比較難處理的狀況，需要 GM
+              在團務結束後主動與玩家保持聯絡，並且願意接收事後才浮現的不適回饋，才能夠處理。
+            </p>
+            <p>其他條我覺得比較常見，大家還是可以參考看看。</p>
+            <p>
+              總算是……一題一題把我對各題回應的想法寫完了。還是要再次強調，這些整理出來的資料，包括我的感想，都只是參考，如果你是
+              GM，重要的是能夠觀察自己所處的團務環境，找到適合自己、經營安全跑團環境的方式。如果你是玩家，希望這則問卷能夠讓你看到一些
+              GM 考慮事情的面向；玩家對 X
+              卡的理解程度，也可能影響工具在實際使用上能否發揮效果，建議有空的話花點時間讀讀原始文件。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overall Analysis -->
+      <div class="overall-section">
+        <div class="overall-title">整體跨題分析與觀察</div>
+
+        <div class="finding-card">
+          <div class="finding-num">01</div>
+          <div class="finding-content">
+            <div class="finding-title">知識漏斗效應</div>
+            <div class="finding-text">
+              Q2→Q3→Q7 顯示，X
+              卡的「知悉」與「理解」之間存在顯著落差，而「理解」與「正確執行」之間的落差可能更大。數位版本的
+              X
+              卡概念雖已在線上圈自發演化，但對工具原始設計邏輯的掌握仍有待加強。
+            </div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">02</div>
+          <div class="finding-content">
+            <div class="finding-title">工具功能的「訊號化」</div>
+            <div class="finding-text">
+              無論是 GM 區段或玩家區段，受訪者對 X
+              卡的評價最常落在「象徵意義」而非「功能頻率」——X
+              卡的價值被廣泛認為在於其宣示效果與信任建立，而非實際使用次數。這呼應了
+              X 卡設計者本身的立場。
+            </div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">03</div>
+          <div class="finding-content">
+            <div class="finding-title">情境差異的高度相關性</div>
+            <div class="finding-text">
+              受訪者的使用傾向與態度，受到「是否為野團/陌生玩家」、「是否為線上團」以及「與玩家熟識程度」等情境變項的高度影響。這指向未來研究在設計問卷時，有必要將跑團類型（面團/線上、固桌/野團）作為重要的分層變項。
+            </div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">04</div>
+          <div class="finding-content">
+            <div class="finding-title">GM 使用行為的兩極化</div>
+            <div class="finding-text">
+              Q6 的雙峰分佈顯示，「完全不用」與「總是用」的 GM
+              在此樣本中比例相當，中間態度反而最少。此現象值得深入探討——是否反映了跑團文化中兩種不同的安全工具哲學（事後應對
+              vs. 事前預防），或僅為本樣本特性，需更大樣本驗證。
+            </div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">05</div>
+          <div class="finding-content">
+            <div class="finding-title">濫用疑慮的實質比重有限</div>
+            <div class="finding-text">
+              儘管「濫用」在社群討論中是常見爭議點，但在本樣本的開放回覆中，持此觀點者佔少數，且多數論述並非基於親身經驗，而是對潛在風險的預設想像。此一發現不宜過度概化，但仍提供一個反向參考：實際使用者對濫用問題的現實擔憂程度，可能低於網路公開討論所呈現的印象。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="section-divider" style="margin-top: 48px">
+          <span class="section-divider-label">聯絡資訊</span>
+          <span class="section-divider-rule"></span>
+        </div>
+        <p style="
+            font-size: 14px;
+            color: var(--ink-light);
+            line-height: 1.85;
+            margin-top: 16px;
+          ">
+          關於這份問卷的內容，或者以後的問卷有想問什麼問題，可以傳訊息或寫 Email
+          聯絡：
+        </p>
+        <div style="
+            margin-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 14px;
+          ">
+          <span>臉書專頁：<a href="https://www.facebook.com/DragonicNotes" target="_blank" style="color: var(--accent)">龍語筆記</a></span>
+          <span>電子郵件：<a href="mailto:dragonicnotes@gmail.com" style="color: var(--accent)">dragonicnotes@gmail.com</a></span>
+        </div>
+      </div>
+
+      <div class="report-footer">
+        <p style="margin-top: 8px">
+          備註：這份資料使用 AI 工具 Claude
+          整理產生頁面，開放文字回應的回覆已去除可識別化資訊及情緒化用語。部份用詞與呈現形式手動微調。整理者附上的感想有使用
+          Claude 做文字檢查與採用部份調整建議。
         </p>
       </div>
-
-      <div style="margin-top:24px;">
-        <div class="analysis-label" style="margin-bottom:10px;">Q4 其他安全工具提及次數　依 X 卡使用程度分色</div>
-        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px;font-size:12px;color:var(--ink-light);">
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#2e7a4a;margin-right:6px;vertical-align:middle;"></span>高使用 X 卡（Q6 4–5 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#9FE1CB;margin-right:6px;vertical-align:middle;"></span>中等使用（Q6 2–3 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#c4574a;margin-right:6px;vertical-align:middle;"></span>完全不使用（Q6 1 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#b4b2a9;margin-right:6px;vertical-align:middle;"></span>只填玩家區段</span>
-        </div>
-        <div class="bar-chart">
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">X 卡使用者（GM 人數）</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="48.9" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用（4–5 分）：48.9%"></div><div class="bar-fill stacked-seg" data-width="26.6" style="background:#9FE1CB;border-radius:0;" title="中等使用（2–3 分）：26.6%"></div><div class="bar-fill stacked-seg" data-width="24.5" style="background:#c4574a;border-radius:0 2px 2px 0;" title="完全不使用（1 分）：24.5%"></div></div>
-            <div class="bar-count">94 人</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">線與帷幕（Lines & Veils）</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="19.1" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用（4–5 分）：19.1%"></div><div class="bar-fill stacked-seg" data-width="4.3" style="background:#9FE1CB;border-radius:0;" title="中等使用（2–3 分）：4.3%"></div><div class="bar-fill stacked-seg" data-width="2.1" style="background:#b4b2a9;border-radius:0 2px 2px 0;" title="只填玩家區段：2.1%"></div></div>
-            <div class="bar-count">24 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">門是開著的（Open Door）</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="5.3" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用（4–5 分）：5.3%"></div><div class="bar-fill stacked-seg" data-width="2.1" style="background:#9FE1CB;border-radius:0 2px 2px 0;" title="中等使用（2–3 分）：2.1%"></div></div>
-            <div class="bar-count">7 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">Session 0（第零次聚會）</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="2.1" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用（4–5 分）：2.1%"></div><div class="bar-fill stacked-seg" data-width="3.2" style="background:#9FE1CB;border-radius:0 2px 2px 0;" title="中等使用（2–3 分）：3.2%"></div></div>
-            <div class="bar-count">5 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">口頭溝通／直接說</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="1.1" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用（4–5 分）：1.1%"></div><div class="bar-fill stacked-seg" data-width="1.1" style="background:#9FE1CB;border-radius:0;" title="中等使用（2–3 分）：1.1%"></div><div class="bar-fill stacked-seg" data-width="3.2" style="background:#c4574a;border-radius:0 2px 2px 0;" title="完全不使用（1 分）：3.2%"></div></div>
-            <div class="bar-count">5 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">平台插件（ccfolia 等）</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="2.1" style="background:#2e7a4a;border-radius:2px;" title="高使用（4–5 分）：2.1%"></div></div>
-            <div class="bar-count">2 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">扮演同意清單／事前調查</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="2.1" style="background:#2e7a4a;border-radius:2px;" title="高使用（4–5 分）：2.1%"></div></div>
-            <div class="bar-count">2 次</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label" style="white-space:nowrap;">CATS</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="1.1" style="background:#9FE1CB;border-radius:2px;" title="中等使用（2–3 分）：1.1%"></div></div>
-            <div class="bar-count">1 次</div>
-          </div>
-        </div>
-      </div>
-      <div class="author-note" style="margin-top:16px;">
-        <div class="author-note-label">老翰的想法</div>
-        <p>這個圖表整理了前面用文字調查「其他安全工具」被提及的次數，並且同時把有使用 X 卡的 GM 依照不同頻率標色，讓大家參考這次回應中，各工具相對的提及頻率與使用者分布。</p>
-        <p>可以明確看到的是，安全工具裡「線與帷幕（Lines & Veils）」的確是第二常被提到的工具，而且在「總是會準備 X 卡」的 GM 中有三分之一多一點會搭配線與帷幕使用。</p>
-        <p>其他工具提及次數較少，在樣本規模的限制下不宜過度詮釋，僅供參考。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q7 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q7</div>
-      <div class="q-title">
-        GM 考慮或不考慮使用 X 卡的理由
-        <small>開放題，非必填　<span class="n-badge">n = 71</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="subcategory">
-        <div class="subcategory-title">支持使用 / 高頻率使用的理由（意見一致性高）</div>
-        <ul class="finding-list">
-          <li>認為 X 卡具有「<strong>象徵性宣示</strong>」功能——即使不常被實際使用，其存在本身即傳遞「本場允許提出不適」的訊號，降低玩家開口的心理門檻</li>
-          <li>將玩家安全體驗列為首要優先；尤其在開放招募（野團）或玩家互不相識的情境中，認為 X 卡的存在是一種基本保障</li>
-          <li>視 X 卡為提升 <strong>GM 專業形象</strong>與玩家信任感的工具</li>
-        </ul>
-      </div>
-      <div class="subcategory">
-        <div class="subcategory-title">不使用或低頻率使用的理由（多元，意見一致性中等）</div>
-        <ul class="finding-list">
-          <li><strong>情境因素：</strong>主要與親友或熟悉玩家跑團，已建立足夠默契與信任，認為不需要額外工具；或自身帶團量少</li>
-          <li><strong>前置替代策略：</strong>偏好以 Session 0、事前問卷或個別溝通取代，認為在遊戲中斷性較高的 X 卡不如「事前說清楚」有效</li>
-          <li><strong>遺忘與慣性：</strong>有受訪者坦言主要原因為「常忘記」，並非主動反對</li>
-          <li><strong>執行層面的結構性侷限：</strong>玩家在沉浸狀態下難以即時辨識自身不適、X 卡僅能中斷而無法解釋問題所在、線上文字/語音團中操作不便</li>
-        </ul>
-      </div>
-      <div class="crosslink">
-        <span class="crosslink-icon">⇢</span>
-        <p><strong>Q6–Q7 連動分析：</strong>Q6 的雙峰分佈在 Q7 的質性內容中獲得具體說明。「幾乎不使用」者多數並非反對 X 卡的立場，而是以不同前置策略取代，或受情境條件制約；「總是使用」者則傾向將 X 卡定位為象徵性宣示，而非期待其被頻繁觸發。<strong>兩端的核心目標（確保玩家安全）趨向一致，差異主要在於工具偏好與使用時機。</strong></p>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>雖然 AI 統整的文字回應稍微有點 AI 味，但就我看原始資料的感覺是合理的整理。無論是使用 X 卡或者不使用 X 卡的 GM 的想法，我覺得都值得參考。</p>
-        <p>如果你是 GM，我覺得讀這段其他 GM 分享的看法時，重要的不是把他們的意見當作標準答案，而是想想你的跑團環境中，你作為 GM 遇到的環境會讓你有什麼樣的想法。畢竟每個 GM 的個性不同、他們的玩家組成不同、玩家們的個性也各個不同，這些 GM 提供的使用或不使用 X 卡的想法，都各自有他們自己的脈絡。搞清楚你自己的脈絡，是你作為一個 GM 的重要功課。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q8 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q8</div>
-      <div class="q-title">
-        GM 對此議題的補充意見
-        <small>開放題，非必填　<span class="n-badge">n = 27</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <ul class="finding-list">
-        <li><strong>工具定位的釐清（多則回覆呼應）：</strong>X 卡本身不創造安全，只是促進安全的介面；真正的安全來自成員間的信任、共識與相互關懷。X 卡是「工具的最後手段」，更重要的是建立日常溝通文化。</li>
-        <li><strong>使用者素養的問題：</strong>使用者若未充分理解 X 卡的目的，可能將其視為「有放就沒事」的護身符；玩家在沉浸於故事時往往缺乏即時察覺不適的能力，X 卡在此情況下形同虛設。</li>
-        <li><strong>濫用疑慮的反思：</strong>論點集中於——擔心濫用的人往往本就缺乏對群體的信任；工具本身無法解決信任問題，X 卡僅是信任環境下的潤滑劑。</li>
-        <li><strong>心理門檻問題：</strong>即使受訪者個人樂於為他人使用 X 卡創造條件，自己卻難以主動使用，顯示「舉卡」這一行為對部分人而言仍有相當的社交成本。</li>
-        <li><strong>線上使用的特殊困難：</strong>文字團或語音團的媒介特性，使得實體 X 卡的操作流程難以複製，部分 GM 因此失去了 X 卡「無需解釋即可迴避」的設計優勢。</li>
-      </ul>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>這題收到的回應我覺得蠻值得一讀，指出了一些 X 卡在使用上可能遇到的問題，也提醒了不能只是準備了 X 卡，卻忘記當初準備它是為了營造安全的跑團環境。應用上，還是如上一題的心得，我覺得作為一個 GM，使用 X 卡與否是屬於你自己的課題，你也能有屬於你自己的答案。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section: Player -->
-  <div class="section-divider">
-    <span class="section-divider-label">參 · 玩家區段（參與者視角）</span>
-    <span class="section-divider-rule"></span>
-    <span class="section-tag tag-player">玩家區段　n = 111</span>
-  </div>
-
-  <!-- Q9 note -->
-  <div style="margin-bottom:24px;padding:12px 16px;border-left:2px solid var(--rule);font-size:13px;color:var(--ink-faint);">
-    Q9 為跳轉題，讓填寫者可以選擇略過玩家區段，因此不列入分析。如果你注意到題號從 Q8 跳到 Q10，這就是原因。
-  </div>
-
-  <!-- Q10 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q10</div>
-      <div class="q-title">
-        X 卡是否提升參與陌生 GM 團務的意願
-        <small>1 = 更不願意　5 = 更願意　<span class="n-badge">n = 111　mean = 3.67</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="bimodal-note">
-        <div class="bimodal-block bimodal-low">
-          <strong>5.4%</strong>
-          負向影響（1–2 分）<br>6 人
-        </div>
-        <div class="bimodal-block bimodal-mid">
-          <strong>46.8%</strong>
-          中立（3 分）<br>52 人
-        </div>
-        <div class="bimodal-block bimodal-high">
-          <strong>47.7%</strong>
-          正向影響（4–5 分）<br>53 人
-        </div>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <div class="bar-label">1</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-negative" data-width="2.7" data-label="2.7%"></div></div>
-          <div class="bar-count">3 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">2</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-accent" data-width="2.7" data-label="2.7%"></div></div>
-          <div class="bar-count">3 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">3</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-mid" data-width="46.8" data-label="46.8%"></div></div>
-          <div class="bar-count">52 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">4</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-positive" data-width="20.7" data-label="20.7%"></div></div>
-          <div class="bar-count">23 人</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">5</div>
-          <div class="bar-track"><div class="bar-fill bar-fill-positive" data-width="27.0" data-label="27.0%"></div></div>
-          <div class="bar-count">30 人</div>
-        </div>
-      </div>
-      <div style="margin-top:16px;">
-        <div class="analysis-label" style="margin-bottom:10px;">Q10 玩家參與意願　依 GM 使用 X 卡程度分色　n = 111</div>
-        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px;font-size:12px;color:var(--ink-light);">
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#2e7a4a;margin-right:6px;vertical-align:middle;"></span>高使用 X 卡 GM（Q6 4–5 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#9FE1CB;margin-right:6px;vertical-align:middle;"></span>中等使用（Q6 2–3 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#c4574a;margin-right:6px;vertical-align:middle;"></span>完全不使用（Q6 1 分）</span>
-          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#b4b2a9;margin-right:6px;vertical-align:middle;"></span>只填玩家區段</span>
-        </div>
-        <div class="bar-chart">
-          <div class="bar-row">
-            <div class="bar-label">1</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="1.8" style="background:#c4574a;border-radius:2px 0 0 2px;" title="完全不使用 GM（1 分）：1.8%"></div><div class="bar-fill stacked-seg" data-width="0.9" style="background:#b4b2a9;border-radius:0 2px 2px 0;" title="只填玩家區段：0.9%"></div></div>
-            <div class="bar-count">3 人</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label">2</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="1.8" style="background:#9FE1CB;border-radius:2px 0 0 2px;" title="中等使用 GM（2–3 分）：1.8%"></div><div class="bar-fill stacked-seg" data-width="0.9" style="background:#c4574a;border-radius:0 2px 2px 0;" title="完全不使用 GM（1 分）：0.9%"></div></div>
-            <div class="bar-count">3 人</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label">3</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="10.8" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用 GM（4–5 分）：10.8%"></div><div class="bar-fill stacked-seg" data-width="11.7" style="background:#9FE1CB;border-radius:0;" title="中等使用 GM（2–3 分）：11.7%"></div><div class="bar-fill stacked-seg" data-width="13.5" style="background:#c4574a;border-radius:0;" title="完全不使用 GM（1 分）：13.5%"></div><div class="bar-fill stacked-seg" data-width="10.8" style="background:#b4b2a9;border-radius:0 2px 2px 0;" title="只填玩家區段：10.8%"></div></div>
-            <div class="bar-count">52 人</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label">4</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="8.1" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用 GM（4–5 分）：8.1%"></div><div class="bar-fill stacked-seg" data-width="4.5" style="background:#9FE1CB;border-radius:0;" title="中等使用 GM（2–3 分）：4.5%"></div><div class="bar-fill stacked-seg" data-width="2.7" style="background:#c4574a;border-radius:0;" title="完全不使用 GM（1 分）：2.7%"></div><div class="bar-fill stacked-seg" data-width="5.4" style="background:#b4b2a9;border-radius:0 2px 2px 0;" title="只填玩家區段：5.4%"></div></div>
-            <div class="bar-count">23 人</div>
-          </div>
-          <div class="bar-row">
-            <div class="bar-label">5</div>
-            <div class="bar-track" style="overflow:hidden;display:flex;"><div class="bar-fill stacked-seg" data-width="20.7" style="background:#2e7a4a;border-radius:2px 0 0 2px;" title="高使用 GM（4–5 分）：20.7%"></div><div class="bar-fill stacked-seg" data-width="2.7" style="background:#9FE1CB;border-radius:0;" title="中等使用 GM（2–3 分）：2.7%"></div><div class="bar-fill stacked-seg" data-width="0.9" style="background:#c4574a;border-radius:0;" title="完全不使用 GM（1 分）：0.9%"></div><div class="bar-fill stacked-seg" data-width="2.7" style="background:#b4b2a9;border-radius:0 2px 2px 0;" title="只填玩家區段：2.7%"></div></div>
-            <div class="bar-count">30 人</div>
-          </div>
-        </div>
-      </div>
-      <div class="crosslink">
-        <span class="crosslink-icon">⇢</span>
-        <p><strong>Q6–Q10 跨區段連動分析：</strong>GM 端的雙峰使用分佈（Q6）與玩家端的中間偏正向分佈（Q10）呈現有趣對比——玩家群體對 X 卡的感受相對均一（多數人溫和正向或中立），而 GM 群體的使用行為則分歧明顯。這指向一個可能的<strong>不對稱性</strong>：即使 GM 本人未必頻繁使用 X 卡，其準備 X 卡的行為仍被玩家普遍視為正面訊號。</p>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>認為 GM 準備 X 卡會讓自己「更不願意參加」該團務的回應，遠比「中立」或「更願意參加」的少，只有百分之五左右。可以有信心地說，大部分玩家對 GM 準備 X 卡是抱持中立或者歡迎的態度。</p>
-        <p>「中立」與「更願意參加」的比率接近，我剛看的時候覺得有點意外，把 GM 使用 X 卡頻率也放進去一起看，或許可以看出重視團務環境安全的 GM 擔任玩家的時候同樣也會偏好重視安全的 GM，但不是全部！</p>
-        <p>我的結論可能政治不正確，但我認為，有接近一半的人認為 GM 準備 X 卡與否不會影響他們參與「陌生團務」的意願，可能是因為：「安全，並不保障好玩」。甚至……有準備 X 卡，也不見得安全。這就不是這次問卷要處理的題目了。</p>
-        <p>影響一個玩家（無論他是否擔任 GM）報名參與一個「陌生團務」的意願，也許比起安全，可能有其他更強的因素……但這就是待以後再另外研究的題目了。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q11 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q11</div>
-      <div class="q-title">
-        X 卡影響參與意願的具體想法
-        <small>開放題，非必填　<span class="n-badge">n = 67</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <div class="subcategory">
-        <div class="subcategory-title">主要論點（意見一致性高）</div>
-        <ul class="finding-list">
-          <li><strong>「GM 重視安全」的訊號效果：</strong>最多受訪者提及的核心觀點。X 卡的存在被解讀為 GM 在意玩家感受、具備一定程度的跑團意識，而非 X 卡本身的功能性。此觀點在陌生團（野團）情境中尤為突出。</li>
-          <li><strong>對野團/陌生環境的安全感強化：</strong>在不熟悉彼此底線的場合，X 卡的存在有助於降低參與的不確定感，尤其對女性受訪者或有特定高敏感觸發點者的影響較為顯著。</li>
-          <li><strong>中立／不影響決定：</strong>相當數量的受訪者表示，X 卡的有無不影響參與意願，理由包括「自己個人接受度高」、「習慣直接開口提出」、「會依據 GM 風評而非工具的有無判斷是否參加」。</li>
-        </ul>
-      </div>
-      <div class="subcategory">
-        <div class="subcategory-title">少數但值得記錄的觀點</div>
-        <ul class="finding-list">
-          <li>X 卡的公開使用可能<strong>暴露個人隱私資訊</strong>，在部分群體中存在被針對或「被貼標籤」的社交風險</li>
-          <li>曾有過不愉快的 X 卡使用經驗（如 GM 未說明原因即出示 X 卡），導致對此工具產生負面聯結</li>
-          <li>認為工具本身不等於 GM 真正重視玩家，仍需整體態度與實際執行配合</li>
-        </ul>
-      </div>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>偏向中立或增加參與意願的意見還蠻容易理解。我覺得這題值得注意的是幾個可能偏向負面或者指出 X 卡的使用方式如果沒有考慮清楚可能會造成問題的狀況。</p>
-        <p>不愉快的使用 X 卡經驗，即使是我自己認識的團友也有聽過例子。</p>
-        <p>暴露個人資訊的部份，其實 X 卡的原文文件有提到「舉 X 卡的人可以不用說明原因」但這個在實務上的執行很依賴 GM 的經驗。我自己對於 X 卡在網團的使用是盡量參考團友帶團的作法，他規劃 X 卡是可以「只有 GM 看到」（或者是所有人都看不到是誰舉的，我有點忘了）；這在面團（實體跑團）的情境下比較不容易達成，有些回應也提到了一些替代做法，這部分就留待每個 GM 各自研究。</p>
-        <p>總之，使用 X 卡的確是有可能會造成問題，有些在 X 卡的文件有提及，討論用法。實際執行還是要看現場狀況。這也是為什麼我可以理解有些 GM 知道並且讀過原始文件、甚至用過之後，選擇不準備 X 卡——也許這個工具並不適合他們，也可能有更適合的替代方案。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Q13 -->
-  <div class="q-block">
-    <div class="q-header">
-      <div class="q-number">Q13</div>
-      <div class="q-title">
-        玩家對此議題的補充意見
-        <small>開放題，非必填　<span class="n-badge">n = 18</span></small>
-      </div>
-    </div>
-    <div class="q-body">
-      <ul class="finding-list">
-        <li><strong>事後認知的問題（認知延遲）：</strong>不適感有時在當下難以辨識，往往事後回想才意識到「當時應該使用 X 卡」，顯示工具的即時使用存在認知延遲的問題。</li>
-        <li><strong>X 卡的功能邊界：</strong>認為 X 卡是「便利的劃線工具」，但無法從根本解決遊戲環境的文化問題；工具能否發揮效果，最終仍取決於桌上成員的意願與互動慣性。</li>
-        <li><strong>Session 0 與 X 卡的互補性：</strong>兩者應搭配使用，尤其對新手玩家而言，事前界定共識（Session 0）與遊戲中的即時退場機制（X 卡）是相輔相成的雙層保護。</li>
-        <li><strong>網路推廣的缺口：</strong>特定網團社群對 X 卡的認識相當有限，安全工具的推廣覆蓋率尚不均勻。</li>
-      </ul>
-      <div class="author-note">
-        <div class="author-note-label">老翰的想法</div>
-        <p>我覺得這裡提到的「當下可能沒感覺到狀況，事後才覺得不舒服」可能是 X 卡比較難處理的狀況，需要 GM 在團務結束後主動與玩家保持聯絡，並且願意接收事後才浮現的不適回饋，才能夠處理。</p>
-        <p>其他條我覺得比較常見，大家還是可以參考看看。</p>
-        <p>總算是……一題一題把我對各題回應的想法寫完了。還是要再次強調，這些整理出來的資料，包括我的感想，都只是參考，如果你是 GM，重要的是能夠觀察自己所處的團務環境，找到適合自己、經營安全跑團環境的方式。如果你是玩家，希望這則問卷能夠讓你看到一些 GM 考慮事情的面向；玩家對 X 卡的理解程度，也可能影響工具在實際使用上能否發揮效果，建議有空的話花點時間讀讀原始文件。</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Overall Analysis -->
-  <div class="overall-section">
-    <div class="overall-title">整體跨題分析與觀察</div>
-
-    <div class="finding-card">
-      <div class="finding-num">01</div>
-      <div class="finding-content">
-        <div class="finding-title">知識漏斗效應</div>
-        <div class="finding-text">Q2→Q3→Q7 顯示，X 卡的「知悉」與「理解」之間存在顯著落差，而「理解」與「正確執行」之間的落差可能更大。數位版本的 X 卡概念雖已在線上圈自發演化，但對工具原始設計邏輯的掌握仍有待加強。</div>
-      </div>
     </div>
 
-    <div class="finding-card">
-      <div class="finding-num">02</div>
-      <div class="finding-content">
-        <div class="finding-title">工具功能的「訊號化」</div>
-        <div class="finding-text">無論是 GM 區段或玩家區段，受訪者對 X 卡的評價最常落在「象徵意義」而非「功能頻率」——X 卡的價值被廣泛認為在於其宣示效果與信任建立，而非實際使用次數。這呼應了 X 卡設計者本身的立場。</div>
-      </div>
-    </div>
+    <script>
+      // Animate bars on load
+      function animateBars() {
+        const fills = document.querySelectorAll(".bar-fill");
+        fills.forEach((fill, i) => {
+          const targetWidth = parseFloat(fill.getAttribute("data-width"));
+          setTimeout(
+            () => {
+              fill.style.width = targetWidth + "%";
+            },
+            100 + i * 60,
+          );
+        });
+      }
 
-    <div class="finding-card">
-      <div class="finding-num">03</div>
-      <div class="finding-content">
-        <div class="finding-title">情境差異的高度相關性</div>
-        <div class="finding-text">受訪者的使用傾向與態度，受到「是否為野團/陌生玩家」、「是否為線上團」以及「與玩家熟識程度」等情境變項的高度影響。這指向未來研究在設計問卷時，有必要將跑團類型（面團/線上、固桌/野團）作為重要的分層變項。</div>
-      </div>
-    </div>
-
-    <div class="finding-card">
-      <div class="finding-num">04</div>
-      <div class="finding-content">
-        <div class="finding-title">GM 使用行為的兩極化</div>
-        <div class="finding-text">Q6 的雙峰分佈顯示，「完全不用」與「總是用」的 GM 在此樣本中比例相當，中間態度反而最少。此現象值得深入探討——是否反映了跑團文化中兩種不同的安全工具哲學（事後應對 vs. 事前預防），或僅為本樣本特性，需更大樣本驗證。</div>
-      </div>
-    </div>
-
-    <div class="finding-card">
-      <div class="finding-num">05</div>
-      <div class="finding-content">
-        <div class="finding-title">濫用疑慮的實質比重有限</div>
-        <div class="finding-text">儘管「濫用」在社群討論中是常見爭議點，但在本樣本的開放回覆中，持此觀點者佔少數，且多數論述並非基於親身經驗，而是對潛在風險的預設想像。此一發現不宜過度概化，但仍提供一個反向參考：實際使用者對濫用問題的現實擔憂程度，可能低於網路公開討論所呈現的印象。</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-section">
-    <div class="section-divider" style="margin-top:48px;">
-      <span class="section-divider-label">聯絡資訊</span>
-      <span class="section-divider-rule"></span>
-    </div>
-    <p style="font-size:14px;color:var(--ink-light);line-height:1.85;margin-top:16px;">關於這份問卷的內容，或者以後的問卷有想問什麼問題，可以傳訊息或寫 Email 聯絡：</p>
-    <div style="margin-top:14px;display:flex;flex-direction:column;gap:8px;font-size:14px;">
-      <span>臉書專頁：<a href="https://www.facebook.com/DragonicNotes" target="_blank" style="color:var(--accent);">龍與筆記</a></span>
-      <span>電子郵件：<a href="mailto:dragonicnotes@gmail.com" style="color:var(--accent);">dragonicnotes@gmail.com</a></span>
-    </div>
-  </div>
-
-  <div class="report-footer">
-    <p style="margin-top:8px;">備註：這份資料使用 AI 工具 Claude 整理產生頁面，開放文字回應的回覆已去除可識別化資訊及情緒化用語。部份用詞與呈現形式手動微調。整理者附上的感想有使用 Claude 做文字檢查與採用部份調整建議。</p>
-  </div>
-
-</div>
-
-<script>
-  // Animate bars on load
-  function animateBars() {
-    const fills = document.querySelectorAll('.bar-fill');
-    fills.forEach((fill, i) => {
-      const targetWidth = parseFloat(fill.getAttribute('data-width'));
-      setTimeout(() => {
-        fill.style.width = targetWidth + '%';
-      }, 100 + i * 60);
-    });
-  }
-
-  // Run after DOM ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', animateBars);
-  } else {
-    animateBars();
-  }
-</script>
-
-</body>
+      // Run after DOM ready
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", animateBars);
+      } else {
+        animateBars();
+      }
+    </script>
+  </body>
 </html>
