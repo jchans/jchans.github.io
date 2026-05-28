@@ -2,6 +2,7 @@
 title: TRPG Bundle Rec 2026
 date: 2026-12-29
 preview: "紀錄一些我有興趣的 Bundle 資料"
+show: false
 tags:
   - TRPG
   - Bundles

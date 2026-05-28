@@ -75,23 +75,6 @@ tags:
 
 ---
 
-## 推廣活動
-
-按照預定舉辦日期排序，如果已結束會分別註明。
-
-### 已結束
-
-- 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](https://www.plurk.com/p/3i5p2033cl)
-- 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3i66uty8uo)
-- 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](https://www.plurk.com/p/3i7o2lfowk)
-- 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
-- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
-- 2026/02/15 ~ 2026/03/01 ，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》](https://www.plurk.com/p/3i9unasgdv)
-- 2026/03/21 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
-- 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
-
----
-
 ## 跑團節目
 
 小標題是「頻道名稱／節目或戰役名稱」
@@ -112,7 +95,7 @@ tags:
 - 2026/03/06 ，[黯潮環野，第一季 Ep. 9](https://www.youtube.com/watch?v=VeMRmuz_XcY)
 - 2026/03/13 ，[黯潮環野，第一季 Ep. 10](https://www.youtube.com/watch?v=Kjz991Pe03U)
 - 2026/03/21 ，[黯潮環野，第一季 Ep. 11](https://www.youtube.com/watch?v=BZLutyw7UAE)
-- 2026/03/27 ，[黯潮環野，第一季 Ep. 12](https://www.youtube.com/watch?v=BZLutyw7UAE)
+- 2026/03/27 ，[黯潮環野，第一季 Ep. 12](https://www.youtube.com/watch?v=ms8_rOIc56c)
 
 ### 酥魚&獾的 trpg 酒館／黯林信使
 
@@ -163,6 +146,23 @@ tags:
 ### 待整理
 
 - 嗚夫沃夫的寂靜之音
+
+---
+
+## 推廣活動
+
+按照預定舉辦日期排序，如果已結束會分別註明。
+
+### 已結束
+
+- 2026/01/17 ，桃園 trpg 推廣會， [1 月 TRPG 推廣活動](https://www.plurk.com/p/3i5p2033cl)
+- 2026/01/31 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3i66uty8uo)
+- 2026/01/31 ，台中 TRPG 拓展企劃，[一月台中 TRPG 新手推廣活動](https://www.plurk.com/p/3i7o2lfowk)
+- 2026/02/07 ，桃園 trpg 推廣會， [2 月 TRPG 推廣活動](https://www.plurk.com/p/3i8khkv386)
+- 2026/02/08 ，南部 TRPG 推廣會， [2/8 台南推廣會](https://www.plurk.com/p/3i7nslg5fo)
+- 2026/02/15 ~ 2026/03/01 ，蜥友推廣會， [2026年春季TRPG新手推廣活動 《春日﹒影》](https://www.plurk.com/p/3i9unasgdv)
+- 2026/03/21 ，桃園 trpg 推廣會， [3 月 TRPG 推廣活動](https://www.plurk.com/p/3iei4rapmc)
+- 2026/03/28 ，TRPG 在新竹，[線下實體推廣活動](https://www.plurk.com/p/3ied8haxgt)
 
 ---
 
@@ -390,5 +390,3 @@ tags:
 ### 2026/04/01 週三
 
 - 台灣TRPG協會，[奇幻森林遊樂園市集2026 相關活動資訊公佈， 4/11~4/12 舉辦](https://www.facebook.com/share/p/1DgePYtg1Q/)
-
----
