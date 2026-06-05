@@ -21,15 +21,15 @@ tags:
 
 ### 社群網站
 
-- IG： https://www.instagram.com/dungeonnow/
-- Threads: https://www.threads.com/@dungeonnow
+- [IG](https://www.instagram.com/dungeonnow/)
+- [Threads](https://www.threads.com/@dungeonnow)
 
 ## 節目頻道
 
 新集數每週六 20:00 在 twitch 首播，週日 20:00 在 YouTube 首播
 
-- Twitch 頻道： https://www.twitch.tv/dungeonnow
-- YouTube 頻道： https://www.youtube.com/@dungeonnow
+- [Twitch](https://www.twitch.tv/dungeonnow)
+- [YouTube](https://www.youtube.com/@dungeonnow)
 
 ### 過往集數
 
