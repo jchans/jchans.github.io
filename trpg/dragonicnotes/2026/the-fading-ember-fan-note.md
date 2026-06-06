@@ -6,7 +6,7 @@ tags:
   - TRPG
 ---
 
-注意：本頁不是官方資訊，只是整理者為了自己找資料方便而整理
+注意：本頁不是官方資訊，只是整理者為了自己找資料方便而整理，實際資訊還是請以官方發布的東西為主。
 
 最後更新： 2026-06-07 00:15
 
@@ -26,7 +26,7 @@ tags:
 
 ## 節目頻道
 
-新集數每週六 20:00 在 twitch 首播，週日 20:00 在 YouTube 首播
+新集數每週六 20:00 在 twitch 首播， VOD 會放在 YouTube 。
 
 - [Twitch](https://www.twitch.tv/dungeonnow)
 - [YouTube](https://www.youtube.com/@dungeonnow)
